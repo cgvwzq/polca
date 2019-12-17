@@ -1,0 +1,55 @@
+digraph g {
+
+	s0 [shape="circle" label="0"];
+	s1 [shape="circle" label="1"];
+	s2 [shape="circle" label="2"];
+	s3 [shape="circle" label="3"];
+	s4 [shape="circle" label="4"];
+	s5 [shape="circle" label="5"];
+	s6 [shape="circle" label="6"];
+	s7 [shape="circle" label="7"];
+	s0 -> s1 [label="h(0) / _"];
+	s0 -> s6 [label="h(1) / _"];
+	s0 -> s5 [label="h(2) / _"];
+	s0 -> s0 [label="h(3) / _"];
+	s0 -> s0 [label="m() / 0"];
+	s1 -> s1 [label="h(0) / _"];
+	s1 -> s6 [label="h(1) / _"];
+	s1 -> s2 [label="h(2) / _"];
+	s1 -> s4 [label="h(3) / _"];
+	s1 -> s1 [label="m() / 2"];
+	s2 -> s3 [label="h(0) / _"];
+	s2 -> s7 [label="h(1) / _"];
+	s2 -> s2 [label="h(2) / _"];
+	s2 -> s4 [label="h(3) / _"];
+	s2 -> s2 [label="m() / 1"];
+	s3 -> s3 [label="h(0) / _"];
+	s3 -> s7 [label="h(1) / _"];
+	s3 -> s2 [label="h(2) / _"];
+	s3 -> s4 [label="h(3) / _"];
+	s3 -> s3 [label="m() / 3"];
+	s4 -> s1 [label="h(0) / _"];
+	s4 -> s6 [label="h(1) / _"];
+	s4 -> s2 [label="h(2) / _"];
+	s4 -> s4 [label="h(3) / _"];
+	s4 -> s4 [label="m() / 1"];
+	s5 -> s3 [label="h(0) / _"];
+	s5 -> s7 [label="h(1) / _"];
+	s5 -> s5 [label="h(2) / _"];
+	s5 -> s0 [label="h(3) / _"];
+	s5 -> s5 [label="m() / 0"];
+	s6 -> s1 [label="h(0) / _"];
+	s6 -> s6 [label="h(1) / _"];
+	s6 -> s5 [label="h(2) / _"];
+	s6 -> s0 [label="h(3) / _"];
+	s6 -> s6 [label="m() / 2"];
+	s7 -> s3 [label="h(0) / _"];
+	s7 -> s7 [label="h(1) / _"];
+	s7 -> s5 [label="h(2) / _"];
+	s7 -> s0 [label="h(3) / _"];
+	s7 -> s7 [label="m() / 3"];
+
+__start0 [label="" shape="none" width="0" height="0"];
+__start0 -> s0;
+
+}
