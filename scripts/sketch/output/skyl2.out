@@ -1,0 +1,3153 @@
+SKETCH version 1.7.5
+Benchmark = skyl2.sk
+/* BEGIN PACKAGE ANONYMOUS*/
+/*skyl2.sk:5*/
+
+void _main ()/*skyl2.sk:5*/
+{
+  int[4] s0 = {3,3,3,0};
+  int[4] s1 = {0,3,3,0};
+  int[4] s2 = {0,0,3,0};
+  int[4] s3 = {3,0,3,0};
+  int[4] s4 = {0,3,0,0};
+  int[4] s5 = {3,3,0,3};
+  int[4] s6 = {0,3,0,3};
+  int[4] s7 = {0,0,0,3};
+  int[4] s8 = {3,0,0,3};
+  int[4] s9 = {3,3,0,0};
+  int[4] s10 = {3,0,0,0};
+  int[4] s11 = {0,1,3,0};
+  int[4] s12 = {2,3,0,2};
+  int[4] s13 = {3,1,3,3};
+  int[4] s14 = {0,1,3,3};
+  int[4] s15 = {3,1,3,0};
+  int[4] s16 = {3,0,3,3};
+  int[4] s17 = {0,0,3,3};
+  int[4] s18 = {0,1,0,3};
+  int[4] s19 = {2,3,2,0};
+  int[4] s20 = {0,0,1,3};
+  int[4] s21 = {3,1,0,3};
+  int[4] s22 = {3,0,1,3};
+  int[4] s23 = {2,2,3,0};
+  int[4] s24 = {1,1,0,3};
+  int[4] s25 = {1,0,1,3};
+  int[4] s26 = {1,1,3,3};
+  int[4] s27 = {1,1,3,0};
+  int[4] s28 = {0,2,3,0};
+  int[4] s29 = {2,0,3,0};
+  int[4] s30 = {1,0,3,3};
+  int[4] s31 = {3,2,3,0};
+  int[4] s32 = {3,2,3,1};
+  int[4] s33 = {3,0,1,0};
+  int[4] s34 = {0,3,3,3};
+  int[4] s35 = {1,3,3,0};
+  int[4] s36 = {0,2,3,1};
+  int[4] s37 = {0,3,2,0};
+  int[4] s38 = {1,0,3,1};
+  int[4] s39 = {0,3,0,2};
+  int[4] s40 = {1,3,0,3};
+  int[4] s41 = {0,0,3,1};
+  int[4] s42 = {3,0,3,1};
+  int[4] s43 = {3,3,0,1};
+  int[4] s44 = {3,3,1,2};
+  int[4] s45 = {0,3,1,2};
+  int[4] s46 = {3,0,1,2};
+  int[4] s47 = {0,1,2,3};
+  int[4] s48 = {0,2,3,2};
+  int[4] s49 = {3,0,0,1};
+  int[4] s50 = {3,3,0,2};
+  int[4] s51 = {2,0,3,2};
+  int[4] s52 = {0,3,1,0};
+  int[4] s53 = {2,1,3,2};
+  int[4] s54 = {3,2,0,3};
+  int[4] s55 = {3,2,1,3};
+  int[4] s56 = {0,2,2,3};
+  int[4] s57 = {2,3,3,1};
+  int[4] s58 = {0,3,3,1};
+  int[4] s59 = {3,0,0,2};
+  int[4] s60 = {3,1,1,3};
+  int[4] s61 = {3,1,0,1};
+  int[4] s62 = {2,0,3,1};
+  int[4] s63 = {0,3,1,3};
+  int[4] s64 = {3,2,0,2};
+  int[4] s65 = {1,0,3,0};
+  int[4] s66 = {1,2,3,0};
+  int[4] s67 = {3,2,1,2};
+  int[4] s68 = {1,3,1,3};
+  int[4] s69 = {1,3,1,2};
+  int[4] s70 = {1,3,1,0};
+  int[4] s71 = {2,3,2,1};
+  int[4] s72 = {3,3,1,3};
+  int[4] s73 = {0,3,2,3};
+  int[4] s74 = {3,0,3,2};
+  int[4] s75 = {3,2,0,1};
+  int[4] s76 = {0,1,3,2};
+  int[4] s77 = {1,3,2,3};
+  int[4] s78 = {0,3,2,1};
+  int[4] s79 = {1,3,3,3};
+  int[4] s80 = {3,1,0,0};
+  int[4] s81 = {0,3,1,1};
+  int[4] s82 = {2,3,0,0};
+  int[4] s83 = {3,0,2,2};
+  int[4] s84 = {3,2,1,0};
+  int[4] s85 = {3,3,3,1};
+  int[4] s86 = {1,3,0,0};
+  int[4] s87 = {3,1,1,1};
+  int[4] s88 = {3,3,1,0};
+  int[4] s89 = {3,0,1,1};
+  int[4] s90 = {1,2,3,3};
+  int[4] s91 = {3,1,0,2};
+  int[4] s92 = {3,1,2,2};
+  int[4] s93 = {3,1,2,0};
+  int[4] s94 = {3,0,2,0};
+  int[4] s95 = {3,1,3,1};
+  int[4] s96 = {0,1,3,1};
+  int[4] s97 = {0,2,3,3};
+  int[4] s98 = {2,0,3,3};
+  int[4] s99 = {0,0,2,3};
+  int[4] s100 = {0,1,1,3};
+  int[4] s101 = {1,3,0,1};
+  int[4] s102 = {2,3,1,2};
+  int[4] s103 = {2,3,1,0};
+  int[4] s104 = {3,0,2,3};
+  int[4] s105 = {3,1,2,3};
+  int[4] s106 = {3,1,2,1};
+  int[4] s107 = {2,1,3,0};
+  int[4] s108 = {3,3,2,0};
+  int[4] s109 = {1,0,3,2};
+  int[4] s110 = {1,1,2,3};
+  int[4] s111 = {1,1,3,1};
+  int[4] s112 = {2,1,3,3};
+  int[4] s113 = {1,1,1,3};
+  int[4] s114 = {1,3,1,1};
+  int[4] s115 = {2,3,1,1};
+  int[4] s116 = {1,2,1,3};
+  int[4] s117 = {3,2,0,0};
+  int[4] s118 = {1,0,2,3};
+  int[4] s119 = {3,1,1,0};
+  int[4] s120 = {2,0,2,3};
+  int[4] s121 = {0,3,3,2};
+  int[4] s122 = {0,3,0,1};
+  int[4] s123 = {2,0,1,3};
+  int[4] s124 = {1,3,0,2};
+  int[4] s125 = {1,0,0,3};
+  int[4] s126 = {3,2,2,0};
+  int[4] s127 = {3,0,2,1};
+  int[4] s128 = {2,0,0,3};
+  int[4] s129 = {2,3,0,1};
+  int[4] s130 = {1,2,0,3};
+  int[4] s131 = {2,2,0,3};
+  int[4] s132 = {2,3,0,3};
+  int[4] s133 = {2,1,0,3};
+  int[4] s134 = {2,1,3,1};
+  int[4] s135 = {2,2,3,1};
+  int[4] s136 = {3,2,1,1};
+  int[4] s137 = {3,2,2,1};
+  int[4] s138 = {3,1,3,2};
+  int[4] s139 = {1,1,3,2};
+  int[4] s140 = {2,2,1,3};
+  int[4] s141 = {2,1,1,3};
+  int[4] s142 = {2,1,2,3};
+  int[4] s143 = {3,3,2,1};
+  int[4] s144 = {1,3,2,1};
+  int[4] s145 = {1,2,3,1};
+  int[4] s146 = {1,2,2,3};
+  int[4] s147 = {0,3,2,2};
+  int[4] s148 = {1,3,2,0};
+  int[4] s149 = {2,3,3,0};
+  int[4] s150 = {0,2,1,3};
+  int[4] s151 = {0,2,0,3};
+  int[4] s152 = {1,3,3,1};
+  int[4] s153 = {3,1,1,2};
+  int[4] s154 = {1,3,3,2};
+  int[4] s155 = {2,3,1,3};
+  int[4] s156 = {0,0,3,2};
+  int[4] s157 = {1,2,3,2};
+  int[4] s158 = {1,3,2,2};
+  int[4] s159 = {3,3,1,1};
+  int[4] _out_s6 = {0,0,0,0};
+  missState(s0, _out_s6);
+  assert (_out_s6 == s35); //Assert at skyl2.sk:169 (0)
+  int[4] _out_s8 = {0,0,0,0};
+  missState(s1, _out_s8);
+  assert (_out_s8 == s11); //Assert at skyl2.sk:170 (0)
+  int[4] _out_s10 = {0,0,0,0};
+  missState(s2, _out_s10);
+  assert (_out_s10 == s72); //Assert at skyl2.sk:171 (0)
+  int[4] _out_s12 = {0,0,0,0};
+  missState(s3, _out_s12);
+  assert (_out_s12 == s65); //Assert at skyl2.sk:172 (0)
+  int[4] _out_s14 = {0,0,0,0};
+  missState(s4, _out_s14);
+  assert (_out_s14 == s13); //Assert at skyl2.sk:173 (0)
+  int[4] _out_s16 = {0,0,0,0};
+  missState(s5, _out_s16);
+  assert (_out_s16 == s40); //Assert at skyl2.sk:174 (0)
+  int[4] _out_s18 = {0,0,0,0};
+  missState(s6, _out_s18);
+  assert (_out_s18 == s18); //Assert at skyl2.sk:175 (0)
+  int[4] _out_s20 = {0,0,0,0};
+  missState(s7, _out_s20);
+  assert (_out_s20 == s85); //Assert at skyl2.sk:176 (0)
+  int[4] _out_s22 = {0,0,0,0};
+  missState(s8, _out_s22);
+  assert (_out_s22 == s125); //Assert at skyl2.sk:177 (0)
+  int[4] _out_s24 = {0,0,0,0};
+  missState(s9, _out_s24);
+  assert (_out_s24 == s86); //Assert at skyl2.sk:178 (0)
+  int[4] _out_s26 = {0,0,0,0};
+  missState(s10, _out_s26);
+  assert (_out_s26 == s79); //Assert at skyl2.sk:179 (0)
+  int[4] _out_s28 = {0,0,0,0};
+  missState(s11, _out_s28);
+  assert (_out_s28 == s102); //Assert at skyl2.sk:180 (0)
+  int[4] _out_s30 = {0,0,0,0};
+  missState(s12, _out_s30);
+  assert (_out_s30 == s60); //Assert at skyl2.sk:181 (0)
+  int[4] _out_s32 = {0,0,0,0};
+  missState(s13, _out_s32);
+  assert (_out_s32 == s26); //Assert at skyl2.sk:182 (0)
+  int[4] _out_s34 = {0,0,0,0};
+  missState(s14, _out_s34);
+  assert (_out_s34 == s100); //Assert at skyl2.sk:183 (0)
+  int[4] _out_s36 = {0,0,0,0};
+  missState(s15, _out_s36);
+  assert (_out_s36 == s27); //Assert at skyl2.sk:184 (0)
+  int[4] _out_s38 = {0,0,0,0};
+  missState(s16, _out_s38);
+  assert (_out_s38 == s30); //Assert at skyl2.sk:185 (0)
+  int[4] _out_s40 = {0,0,0,0};
+  missState(s17, _out_s40);
+  assert (_out_s40 == s20); //Assert at skyl2.sk:186 (0)
+  int[4] _out_s42 = {0,0,0,0};
+  missState(s18, _out_s42);
+  assert (_out_s42 == s71); //Assert at skyl2.sk:187 (0)
+  int[4] _out_s44 = {0,0,0,0};
+  missState(s19, _out_s44);
+  assert (_out_s44 == s95); //Assert at skyl2.sk:188 (0)
+  int[4] _out_s46 = {0,0,0,0};
+  missState(s20, _out_s46);
+  assert (_out_s46 == s135); //Assert at skyl2.sk:189 (0)
+  int[4] _out_s48 = {0,0,0,0};
+  missState(s21, _out_s48);
+  assert (_out_s48 == s24); //Assert at skyl2.sk:190 (0)
+  int[4] _out_s50 = {0,0,0,0};
+  missState(s22, _out_s50);
+  assert (_out_s50 == s25); //Assert at skyl2.sk:191 (0)
+  int[4] _out_s52 = {0,0,0,0};
+  missState(s23, _out_s52);
+  assert (_out_s52 == s159); //Assert at skyl2.sk:192 (0)
+  int[4] _out_s54 = {0,0,0,0};
+  missState(s24, _out_s54);
+  assert (_out_s54 == s143); //Assert at skyl2.sk:193 (0)
+  int[4] _out_s56 = {0,0,0,0};
+  missState(s25, _out_s56);
+  assert (_out_s56 == s32); //Assert at skyl2.sk:194 (0)
+  int[4] _out_s58 = {0,0,0,0};
+  missState(s26, _out_s58);
+  assert (_out_s58 == s113); //Assert at skyl2.sk:195 (0)
+  int[4] _out_s60 = {0,0,0,0};
+  missState(s27, _out_s60);
+  assert (_out_s60 == s44); //Assert at skyl2.sk:196 (0)
+  int[4] _out_s62 = {0,0,0,0};
+  missState(s28, _out_s62);
+  assert (_out_s62 == s114); //Assert at skyl2.sk:197 (0)
+  int[4] _out_s64 = {0,0,0,0};
+  missState(s29, _out_s64);
+  assert (_out_s64 == s87); //Assert at skyl2.sk:198 (0)
+  int[4] _out_s66 = {0,0,0,0};
+  missState(s30, _out_s66);
+  assert (_out_s66 == s25); //Assert at skyl2.sk:199 (0)
+  int[4] _out_s68 = {0,0,0,0};
+  missState(s31, _out_s68);
+  assert (_out_s68 == s66); //Assert at skyl2.sk:200 (0)
+  int[4] _out_s70 = {0,0,0,0};
+  missState(s32, _out_s70);
+  assert (_out_s70 == s145); //Assert at skyl2.sk:201 (0)
+  int[4] _out_s72 = {0,0,0,0};
+  missState(s33, _out_s72);
+  assert (_out_s72 == s157); //Assert at skyl2.sk:202 (0)
+  int[4] _out_s74 = {0,0,0,0};
+  missState(s34, _out_s74);
+  assert (_out_s74 == s14); //Assert at skyl2.sk:203 (0)
+  int[4] _out_s76 = {0,0,0,0};
+  missState(s35, _out_s76);
+  assert (_out_s76 == s27); //Assert at skyl2.sk:204 (0)
+  int[4] _out_s78 = {0,0,0,0};
+  missState(s36, _out_s78);
+  assert (_out_s78 == s69); //Assert at skyl2.sk:205 (0)
+  int[4] _out_s80 = {0,0,0,0};
+  missState(s37, _out_s80);
+  assert (_out_s80 == s111); //Assert at skyl2.sk:206 (0)
+  int[4] _out_s82 = {0,0,0,0};
+  missState(s38, _out_s82);
+  assert (_out_s82 == s55); //Assert at skyl2.sk:207 (0)
+  int[4] _out_s84 = {0,0,0,0};
+  missState(s39, _out_s84);
+  assert (_out_s84 == s113); //Assert at skyl2.sk:208 (0)
+  int[4] _out_s86 = {0,0,0,0};
+  missState(s40, _out_s86);
+  assert (_out_s86 == s24); //Assert at skyl2.sk:209 (0)
+  int[4] _out_s88 = {0,0,0,0};
+  missState(s41, _out_s88);
+  assert (_out_s88 == s140); //Assert at skyl2.sk:210 (0)
+  int[4] _out_s90 = {0,0,0,0};
+  missState(s42, _out_s90);
+  assert (_out_s90 == s38); //Assert at skyl2.sk:211 (0)
+  int[4] _out_s92 = {0,0,0,0};
+  missState(s43, _out_s92);
+  assert (_out_s92 == s101); //Assert at skyl2.sk:212 (0)
+  int[4] _out_s94 = {0,0,0,0};
+  missState(s44, _out_s94);
+  assert (_out_s94 == s69); //Assert at skyl2.sk:213 (0)
+  int[4] _out_s96 = {0,0,0,0};
+  missState(s45, _out_s96);
+  assert (_out_s96 == s110); //Assert at skyl2.sk:214 (0)
+  int[4] _out_s98 = {0,0,0,0};
+  missState(s46, _out_s98);
+  assert (_out_s98 == s110); //Assert at skyl2.sk:215 (0)
+  int[4] _out_s100 = {0,0,0,0};
+  missState(s47, _out_s100);
+  assert (_out_s100 == s145); //Assert at skyl2.sk:216 (0)
+  int[4] _out_s102 = {0,0,0,0};
+  missState(s48, _out_s102);
+  assert (_out_s102 == s68); //Assert at skyl2.sk:217 (0)
+  int[4] _out_s104 = {0,0,0,0};
+  missState(s49, _out_s104);
+  assert (_out_s104 == s146); //Assert at skyl2.sk:218 (0)
+  int[4] _out_s106 = {0,0,0,0};
+  missState(s50, _out_s106);
+  assert (_out_s106 == s124); //Assert at skyl2.sk:219 (0)
+  int[4] _out_s108 = {0,0,0,0};
+  missState(s51, _out_s108);
+  assert (_out_s108 == s60); //Assert at skyl2.sk:220 (0)
+  int[4] _out_s110 = {0,0,0,0};
+  missState(s52, _out_s110);
+  assert (_out_s110 == s53); //Assert at skyl2.sk:221 (0)
+  int[4] _out_s112 = {0,0,0,0};
+  missState(s53, _out_s112);
+  assert (_out_s112 == s55); //Assert at skyl2.sk:222 (0)
+  int[4] _out_s114 = {0,0,0,0};
+  missState(s54, _out_s114);
+  assert (_out_s114 == s130); //Assert at skyl2.sk:223 (0)
+  int[4] _out_s116 = {0,0,0,0};
+  missState(s55, _out_s116);
+  assert (_out_s116 == s116); //Assert at skyl2.sk:224 (0)
+  int[4] _out_s118 = {0,0,0,0};
+  missState(s56, _out_s118);
+  assert (_out_s118 == s152); //Assert at skyl2.sk:225 (0)
+  int[4] _out_s120 = {0,0,0,0};
+  missState(s57, _out_s120);
+  assert (_out_s120 == s134); //Assert at skyl2.sk:226 (0)
+  int[4] _out_s122 = {0,0,0,0};
+  missState(s58, _out_s122);
+  assert (_out_s122 == s96); //Assert at skyl2.sk:227 (0)
+  int[4] _out_s124 = {0,0,0,0};
+  missState(s59, _out_s124);
+  assert (_out_s124 == s113); //Assert at skyl2.sk:228 (0)
+  int[4] _out_s126 = {0,0,0,0};
+  missState(s60, _out_s126);
+  assert (_out_s126 == s113); //Assert at skyl2.sk:229 (0)
+  int[4] _out_s128 = {0,0,0,0};
+  missState(s61, _out_s128);
+  assert (_out_s128 == s77); //Assert at skyl2.sk:230 (0)
+  int[4] _out_s130 = {0,0,0,0};
+  missState(s62, _out_s130);
+  assert (_out_s130 == s153); //Assert at skyl2.sk:231 (0)
+  int[4] _out_s132 = {0,0,0,0};
+  missState(s63, _out_s132);
+  assert (_out_s132 == s100); //Assert at skyl2.sk:232 (0)
+  int[4] _out_s134 = {0,0,0,0};
+  missState(s64, _out_s134);
+  assert (_out_s134 == s68); //Assert at skyl2.sk:233 (0)
+  int[4] _out_s136 = {0,0,0,0};
+  missState(s65, _out_s136);
+  assert (_out_s136 == s67); //Assert at skyl2.sk:234 (0)
+  int[4] _out_s138 = {0,0,0,0};
+  missState(s66, _out_s138);
+  assert (_out_s138 == s115); //Assert at skyl2.sk:235 (0)
+  int[4] _out_s140 = {0,0,0,0};
+  missState(s67, _out_s140);
+  assert (_out_s140 == s77); //Assert at skyl2.sk:236 (0)
+  int[4] _out_s142 = {0,0,0,0};
+  missState(s68, _out_s142);
+  assert (_out_s142 == s113); //Assert at skyl2.sk:237 (0)
+  int[4] _out_s144 = {0,0,0,0};
+  missState(s69, _out_s144);
+  assert (_out_s144 == s142); //Assert at skyl2.sk:238 (0)
+  int[4] _out_s146 = {0,0,0,0};
+  missState(s70, _out_s146);
+  assert (_out_s146 == s138); //Assert at skyl2.sk:239 (0)
+  int[4] _out_s148 = {0,0,0,0};
+  missState(s71, _out_s148);
+  assert (_out_s148 == s138); //Assert at skyl2.sk:240 (0)
+  int[4] _out_s150 = {0,0,0,0};
+  missState(s72, _out_s150);
+  assert (_out_s150 == s68); //Assert at skyl2.sk:241 (0)
+  int[4] _out_s152 = {0,0,0,0};
+  missState(s73, _out_s152);
+  assert (_out_s152 == s47); //Assert at skyl2.sk:242 (0)
+  int[4] _out_s154 = {0,0,0,0};
+  missState(s74, _out_s154);
+  assert (_out_s154 == s109); //Assert at skyl2.sk:243 (0)
+  int[4] _out_s156 = {0,0,0,0};
+  missState(s75, _out_s156);
+  assert (_out_s156 == s69); //Assert at skyl2.sk:244 (0)
+  int[4] _out_s158 = {0,0,0,0};
+  missState(s76, _out_s158);
+  assert (_out_s158 == s116); //Assert at skyl2.sk:245 (0)
+  int[4] _out_s160 = {0,0,0,0};
+  missState(s77, _out_s160);
+  assert (_out_s160 == s110); //Assert at skyl2.sk:246 (0)
+  int[4] _out_s162 = {0,0,0,0};
+  missState(s78, _out_s162);
+  assert (_out_s162 == s139); //Assert at skyl2.sk:247 (0)
+  int[4] _out_s164 = {0,0,0,0};
+  missState(s79, _out_s164);
+  assert (_out_s164 == s26); //Assert at skyl2.sk:248 (0)
+  int[4] _out_s166 = {0,0,0,0};
+  missState(s80, _out_s166);
+  assert (_out_s166 == s158); //Assert at skyl2.sk:249 (0)
+  int[4] _out_s168 = {0,0,0,0};
+  missState(s81, _out_s168);
+  assert (_out_s168 == s112); //Assert at skyl2.sk:250 (0)
+  int[4] _out_s170 = {0,0,0,0};
+  missState(s82, _out_s170);
+  assert (_out_s170 == s87); //Assert at skyl2.sk:251 (0)
+  int[4] _out_s172 = {0,0,0,0};
+  missState(s83, _out_s172);
+  assert (_out_s172 == s26); //Assert at skyl2.sk:252 (0)
+  int[4] _out_s174 = {0,0,0,0};
+  missState(s84, _out_s174);
+  assert (_out_s174 == s144); //Assert at skyl2.sk:253 (0)
+  int[4] _out_s176 = {0,0,0,0};
+  missState(s85, _out_s176);
+  assert (_out_s176 == s152); //Assert at skyl2.sk:254 (0)
+  int[4] _out_s178 = {0,0,0,0};
+  missState(s86, _out_s178);
+  assert (_out_s178 == s92); //Assert at skyl2.sk:255 (0)
+  int[4] _out_s180 = {0,0,0,0};
+  missState(s87, _out_s180);
+  assert (_out_s180 == s79); //Assert at skyl2.sk:256 (0)
+  int[4] _out_s182 = {0,0,0,0};
+  missState(s88, _out_s182);
+  assert (_out_s182 == s70); //Assert at skyl2.sk:257 (0)
+  int[4] _out_s184 = {0,0,0,0};
+  missState(s89, _out_s184);
+  assert (_out_s184 == s90); //Assert at skyl2.sk:258 (0)
+  int[4] _out_s186 = {0,0,0,0};
+  missState(s90, _out_s186);
+  assert (_out_s186 == s116); //Assert at skyl2.sk:259 (0)
+  int[4] _out_s188 = {0,0,0,0};
+  missState(s91, _out_s188);
+  assert (_out_s188 == s116); //Assert at skyl2.sk:260 (0)
+  int[4] _out_s190 = {0,0,0,0};
+  missState(s92, _out_s190);
+  assert (_out_s190 == s90); //Assert at skyl2.sk:261 (0)
+  int[4] _out_s192 = {0,0,0,0};
+  missState(s93, _out_s192);
+  assert (_out_s192 == s145); //Assert at skyl2.sk:262 (0)
+  int[4] _out_s194 = {0,0,0,0};
+  missState(s94, _out_s194);
+  assert (_out_s194 == s111); //Assert at skyl2.sk:263 (0)
+  int[4] _out_s196 = {0,0,0,0};
+  missState(s95, _out_s196);
+  assert (_out_s196 == s111); //Assert at skyl2.sk:264 (0)
+  int[4] _out_s198 = {0,0,0,0};
+  missState(s96, _out_s198);
+  assert (_out_s198 == s155); //Assert at skyl2.sk:265 (0)
+  int[4] _out_s200 = {0,0,0,0};
+  missState(s97, _out_s200);
+  assert (_out_s200 == s150); //Assert at skyl2.sk:266 (0)
+  int[4] _out_s202 = {0,0,0,0};
+  missState(s98, _out_s202);
+  assert (_out_s202 == s123); //Assert at skyl2.sk:267 (0)
+  int[4] _out_s204 = {0,0,0,0};
+  missState(s99, _out_s204);
+  assert (_out_s204 == s111); //Assert at skyl2.sk:268 (0)
+  int[4] _out_s206 = {0,0,0,0};
+  missState(s100, _out_s206);
+  assert (_out_s206 == s57); //Assert at skyl2.sk:269 (0)
+  int[4] _out_s208 = {0,0,0,0};
+  missState(s101, _out_s208);
+  assert (_out_s208 == s105); //Assert at skyl2.sk:270 (0)
+  int[4] _out_s210 = {0,0,0,0};
+  missState(s102, _out_s210);
+  assert (_out_s210 == s105); //Assert at skyl2.sk:271 (0)
+  int[4] _out_s212 = {0,0,0,0};
+  missState(s103, _out_s212);
+  assert (_out_s212 == s106); //Assert at skyl2.sk:272 (0)
+  int[4] _out_s214 = {0,0,0,0};
+  missState(s104, _out_s214);
+  assert (_out_s214 == s118); //Assert at skyl2.sk:273 (0)
+  int[4] _out_s216 = {0,0,0,0};
+  missState(s105, _out_s216);
+  assert (_out_s216 == s110); //Assert at skyl2.sk:274 (0)
+  int[4] _out_s218 = {0,0,0,0};
+  missState(s106, _out_s218);
+  assert (_out_s218 == s157); //Assert at skyl2.sk:275 (0)
+  int[4] _out_s220 = {0,0,0,0};
+  missState(s107, _out_s220);
+  assert (_out_s220 == s136); //Assert at skyl2.sk:276 (0)
+  int[4] _out_s222 = {0,0,0,0};
+  missState(s108, _out_s222);
+  assert (_out_s222 == s148); //Assert at skyl2.sk:277 (0)
+  int[4] _out_s224 = {0,0,0,0};
+  missState(s109, _out_s224);
+  assert (_out_s224 == s141); //Assert at skyl2.sk:278 (0)
+  int[4] _out_s226 = {0,0,0,0};
+  missState(s110, _out_s226);
+  assert (_out_s226 == s135); //Assert at skyl2.sk:279 (0)
+  int[4] _out_s228 = {0,0,0,0};
+  missState(s111, _out_s228);
+  assert (_out_s228 == s72); //Assert at skyl2.sk:280 (0)
+  int[4] _out_s230 = {0,0,0,0};
+  missState(s112, _out_s230);
+  assert (_out_s230 == s141); //Assert at skyl2.sk:281 (0)
+  int[4] _out_s232 = {0,0,0,0};
+  missState(s113, _out_s232);
+  assert (_out_s232 == s85); //Assert at skyl2.sk:282 (0)
+  int[4] _out_s234 = {0,0,0,0};
+  missState(s114, _out_s234);
+  assert (_out_s234 == s13); //Assert at skyl2.sk:283 (0)
+  int[4] _out_s236 = {0,0,0,0};
+  missState(s115, _out_s236);
+  assert (_out_s236 == s92); //Assert at skyl2.sk:284 (0)
+  int[4] _out_s238 = {0,0,0,0};
+  missState(s116, _out_s238);
+  assert (_out_s238 == s71); //Assert at skyl2.sk:285 (0)
+  int[4] _out_s240 = {0,0,0,0};
+  missState(s117, _out_s240);
+  assert (_out_s240 == s114); //Assert at skyl2.sk:286 (0)
+  int[4] _out_s242 = {0,0,0,0};
+  missState(s118, _out_s242);
+  assert (_out_s242 == s134); //Assert at skyl2.sk:287 (0)
+  int[4] _out_s244 = {0,0,0,0};
+  missState(s119, _out_s244);
+  assert (_out_s244 == s154); //Assert at skyl2.sk:288 (0)
+  int[4] _out_s246 = {0,0,0,0};
+  missState(s120, _out_s246);
+  assert (_out_s246 == s95); //Assert at skyl2.sk:289 (0)
+  int[4] _out_s248 = {0,0,0,0};
+  missState(s121, _out_s248);
+  assert (_out_s248 == s76); //Assert at skyl2.sk:290 (0)
+  int[4] _out_s250 = {0,0,0,0};
+  missState(s122, _out_s250);
+  assert (_out_s250 == s142); //Assert at skyl2.sk:291 (0)
+  int[4] _out_s252 = {0,0,0,0};
+  missState(s123, _out_s252);
+  assert (_out_s252 == s106); //Assert at skyl2.sk:292 (0)
+  int[4] _out_s254 = {0,0,0,0};
+  missState(s124, _out_s254);
+  assert (_out_s254 == s141); //Assert at skyl2.sk:293 (0)
+  int[4] _out_s256 = {0,0,0,0};
+  missState(s125, _out_s256);
+  assert (_out_s256 == s137); //Assert at skyl2.sk:294 (0)
+  int[4] _out_s258 = {0,0,0,0};
+  missState(s126, _out_s258);
+  assert (_out_s258 == s152); //Assert at skyl2.sk:295 (0)
+  int[4] _out_s260 = {0,0,0,0};
+  missState(s127, _out_s260);
+  assert (_out_s260 == s139); //Assert at skyl2.sk:296 (0)
+  int[4] _out_s262 = {0,0,0,0};
+  missState(s128, _out_s262);
+  assert (_out_s262 == s87); //Assert at skyl2.sk:297 (0)
+  int[4] _out_s264 = {0,0,0,0};
+  missState(s129, _out_s264);
+  assert (_out_s264 == s153); //Assert at skyl2.sk:298 (0)
+  int[4] _out_s266 = {0,0,0,0};
+  missState(s130, _out_s266);
+  assert (_out_s266 == s115); //Assert at skyl2.sk:299 (0)
+  int[4] _out_s268 = {0,0,0,0};
+  missState(s131, _out_s268);
+  assert (_out_s268 == s159); //Assert at skyl2.sk:300 (0)
+  int[4] _out_s270 = {0,0,0,0};
+  missState(s132, _out_s270);
+  assert (_out_s270 == s133); //Assert at skyl2.sk:301 (0)
+  int[4] _out_s272 = {0,0,0,0};
+  missState(s133, _out_s272);
+  assert (_out_s272 == s136); //Assert at skyl2.sk:302 (0)
+  int[4] _out_s274 = {0,0,0,0};
+  missState(s134, _out_s274);
+  assert (_out_s274 == s67); //Assert at skyl2.sk:303 (0)
+  int[4] _out_s276 = {0,0,0,0};
+  missState(s135, _out_s276);
+  assert (_out_s276 == s44); //Assert at skyl2.sk:304 (0)
+  int[4] _out_s278 = {0,0,0,0};
+  missState(s136, _out_s278);
+  assert (_out_s278 == s158); //Assert at skyl2.sk:305 (0)
+  int[4] _out_s280 = {0,0,0,0};
+  missState(s137, _out_s280);
+  assert (_out_s280 == s154); //Assert at skyl2.sk:306 (0)
+  int[4] _out_s282 = {0,0,0,0};
+  missState(s138, _out_s282);
+  assert (_out_s282 == s139); //Assert at skyl2.sk:307 (0)
+  int[4] _out_s284 = {0,0,0,0};
+  missState(s139, _out_s284);
+  assert (_out_s284 == s140); //Assert at skyl2.sk:308 (0)
+  int[4] _out_s286 = {0,0,0,0};
+  missState(s140, _out_s286);
+  assert (_out_s286 == s143); //Assert at skyl2.sk:309 (0)
+  int[4] _out_s288 = {0,0,0,0};
+  missState(s141, _out_s288);
+  assert (_out_s288 == s137); //Assert at skyl2.sk:310 (0)
+  int[4] _out_s290 = {0,0,0,0};
+  missState(s142, _out_s290);
+  assert (_out_s290 == s32); //Assert at skyl2.sk:311 (0)
+  int[4] _out_s292 = {0,0,0,0};
+  missState(s143, _out_s292);
+  assert (_out_s292 == s144); //Assert at skyl2.sk:312 (0)
+  int[4] _out_s294 = {0,0,0,0};
+  missState(s144, _out_s294);
+  assert (_out_s294 == s53); //Assert at skyl2.sk:313 (0)
+  int[4] _out_s296 = {0,0,0,0};
+  missState(s145, _out_s296);
+  assert (_out_s296 == s102); //Assert at skyl2.sk:314 (0)
+  int[4] _out_s298 = {0,0,0,0};
+  missState(s146, _out_s298);
+  assert (_out_s298 == s57); //Assert at skyl2.sk:315 (0)
+  int[4] _out_s300 = {0,0,0,0};
+  missState(s147, _out_s300);
+  assert (_out_s300 == s26); //Assert at skyl2.sk:316 (0)
+  int[4] _out_s302 = {0,0,0,0};
+  missState(s148, _out_s302);
+  assert (_out_s302 == s134); //Assert at skyl2.sk:317 (0)
+  int[4] _out_s304 = {0,0,0,0};
+  missState(s149, _out_s304);
+  assert (_out_s304 == s107); //Assert at skyl2.sk:318 (0)
+  int[4] _out_s306 = {0,0,0,0};
+  missState(s150, _out_s306);
+  assert (_out_s306 == s144); //Assert at skyl2.sk:319 (0)
+  int[4] _out_s308 = {0,0,0,0};
+  missState(s151, _out_s308);
+  assert (_out_s308 == s114); //Assert at skyl2.sk:320 (0)
+  int[4] _out_s310 = {0,0,0,0};
+  missState(s152, _out_s310);
+  assert (_out_s310 == s111); //Assert at skyl2.sk:321 (0)
+  int[4] _out_s312 = {0,0,0,0};
+  missState(s153, _out_s312);
+  assert (_out_s312 == s146); //Assert at skyl2.sk:322 (0)
+  int[4] _out_s314 = {0,0,0,0};
+  missState(s154, _out_s314);
+  assert (_out_s314 == s139); //Assert at skyl2.sk:323 (0)
+  int[4] _out_s316 = {0,0,0,0};
+  missState(s155, _out_s316);
+  assert (_out_s316 == s141); //Assert at skyl2.sk:324 (0)
+  int[4] _out_s318 = {0,0,0,0};
+  missState(s156, _out_s318);
+  assert (_out_s318 == s113); //Assert at skyl2.sk:325 (0)
+  int[4] _out_s320 = {0,0,0,0};
+  missState(s157, _out_s320);
+  assert (_out_s320 == s155); //Assert at skyl2.sk:326 (0)
+  int[4] _out_s322 = {0,0,0,0};
+  missState(s158, _out_s322);
+  assert (_out_s322 == s112); //Assert at skyl2.sk:327 (0)
+  int[4] _out_s324 = {0,0,0,0};
+  missState(s159, _out_s324);
+  assert (_out_s324 == s114); //Assert at skyl2.sk:328 (0)
+  int _out_s326 = 0;
+  missIdx(s0, _out_s326);
+  assert (_out_s326 == 0); //Assert at skyl2.sk:331 (0)
+  int _out_s328 = 0;
+  missIdx(s1, _out_s328);
+  assert (_out_s328 == 1); //Assert at skyl2.sk:332 (0)
+  int _out_s330 = 0;
+  missIdx(s2, _out_s330);
+  assert (_out_s330 == 2); //Assert at skyl2.sk:333 (0)
+  int _out_s332 = 0;
+  missIdx(s3, _out_s332);
+  assert (_out_s332 == 0); //Assert at skyl2.sk:334 (0)
+  int _out_s334 = 0;
+  missIdx(s4, _out_s334);
+  assert (_out_s334 == 1); //Assert at skyl2.sk:335 (0)
+  int _out_s336 = 0;
+  missIdx(s5, _out_s336);
+  assert (_out_s336 == 0); //Assert at skyl2.sk:336 (0)
+  int _out_s338 = 0;
+  missIdx(s6, _out_s338);
+  assert (_out_s338 == 1); //Assert at skyl2.sk:337 (0)
+  int _out_s340 = 0;
+  missIdx(s7, _out_s340);
+  assert (_out_s340 == 3); //Assert at skyl2.sk:338 (0)
+  int _out_s342 = 0;
+  missIdx(s8, _out_s342);
+  assert (_out_s342 == 0); //Assert at skyl2.sk:339 (0)
+  int _out_s344 = 0;
+  missIdx(s9, _out_s344);
+  assert (_out_s344 == 0); //Assert at skyl2.sk:340 (0)
+  int _out_s346 = 0;
+  missIdx(s10, _out_s346);
+  assert (_out_s346 == 0); //Assert at skyl2.sk:341 (0)
+  int _out_s348 = 0;
+  missIdx(s11, _out_s348);
+  assert (_out_s348 == 2); //Assert at skyl2.sk:342 (0)
+  int _out_s350 = 0;
+  missIdx(s12, _out_s350);
+  assert (_out_s350 == 1); //Assert at skyl2.sk:343 (0)
+  int _out_s352 = 0;
+  missIdx(s13, _out_s352);
+  assert (_out_s352 == 0); //Assert at skyl2.sk:344 (0)
+  int _out_s354 = 0;
+  missIdx(s14, _out_s354);
+  assert (_out_s354 == 2); //Assert at skyl2.sk:345 (0)
+  int _out_s356 = 0;
+  missIdx(s15, _out_s356);
+  assert (_out_s356 == 0); //Assert at skyl2.sk:346 (0)
+  int _out_s358 = 0;
+  missIdx(s16, _out_s358);
+  assert (_out_s358 == 0); //Assert at skyl2.sk:347 (0)
+  int _out_s360 = 0;
+  missIdx(s17, _out_s360);
+  assert (_out_s360 == 2); //Assert at skyl2.sk:348 (0)
+  int _out_s362 = 0;
+  missIdx(s18, _out_s362);
+  assert (_out_s362 == 3); //Assert at skyl2.sk:349 (0)
+  int _out_s364 = 0;
+  missIdx(s19, _out_s364);
+  assert (_out_s364 == 1); //Assert at skyl2.sk:350 (0)
+  int _out_s366 = 0;
+  missIdx(s20, _out_s366);
+  assert (_out_s366 == 3); //Assert at skyl2.sk:351 (0)
+  int _out_s368 = 0;
+  missIdx(s21, _out_s368);
+  assert (_out_s368 == 0); //Assert at skyl2.sk:352 (0)
+  int _out_s370 = 0;
+  missIdx(s22, _out_s370);
+  assert (_out_s370 == 0); //Assert at skyl2.sk:353 (0)
+  int _out_s372 = 0;
+  missIdx(s23, _out_s372);
+  assert (_out_s372 == 2); //Assert at skyl2.sk:354 (0)
+  int _out_s374 = 0;
+  missIdx(s24, _out_s374);
+  assert (_out_s374 == 3); //Assert at skyl2.sk:355 (0)
+  int _out_s376 = 0;
+  missIdx(s25, _out_s376);
+  assert (_out_s376 == 3); //Assert at skyl2.sk:356 (0)
+  int _out_s378 = 0;
+  missIdx(s26, _out_s378);
+  assert (_out_s378 == 2); //Assert at skyl2.sk:357 (0)
+  int _out_s380 = 0;
+  missIdx(s27, _out_s380);
+  assert (_out_s380 == 2); //Assert at skyl2.sk:358 (0)
+  int _out_s382 = 0;
+  missIdx(s28, _out_s382);
+  assert (_out_s382 == 2); //Assert at skyl2.sk:359 (0)
+  int _out_s384 = 0;
+  missIdx(s29, _out_s384);
+  assert (_out_s384 == 2); //Assert at skyl2.sk:360 (0)
+  int _out_s386 = 0;
+  missIdx(s30, _out_s386);
+  assert (_out_s386 == 2); //Assert at skyl2.sk:361 (0)
+  int _out_s388 = 0;
+  missIdx(s31, _out_s388);
+  assert (_out_s388 == 0); //Assert at skyl2.sk:362 (0)
+  int _out_s390 = 0;
+  missIdx(s32, _out_s390);
+  assert (_out_s390 == 0); //Assert at skyl2.sk:363 (0)
+  int _out_s392 = 0;
+  missIdx(s33, _out_s392);
+  assert (_out_s392 == 0); //Assert at skyl2.sk:364 (0)
+  int _out_s394 = 0;
+  missIdx(s34, _out_s394);
+  assert (_out_s394 == 1); //Assert at skyl2.sk:365 (0)
+  int _out_s396 = 0;
+  missIdx(s35, _out_s396);
+  assert (_out_s396 == 1); //Assert at skyl2.sk:366 (0)
+  int _out_s398 = 0;
+  missIdx(s36, _out_s398);
+  assert (_out_s398 == 2); //Assert at skyl2.sk:367 (0)
+  int _out_s400 = 0;
+  missIdx(s37, _out_s400);
+  assert (_out_s400 == 1); //Assert at skyl2.sk:368 (0)
+  int _out_s402 = 0;
+  missIdx(s38, _out_s402);
+  assert (_out_s402 == 2); //Assert at skyl2.sk:369 (0)
+  int _out_s404 = 0;
+  missIdx(s39, _out_s404);
+  assert (_out_s404 == 1); //Assert at skyl2.sk:370 (0)
+  int _out_s406 = 0;
+  missIdx(s40, _out_s406);
+  assert (_out_s406 == 1); //Assert at skyl2.sk:371 (0)
+  int _out_s408 = 0;
+  missIdx(s41, _out_s408);
+  assert (_out_s408 == 2); //Assert at skyl2.sk:372 (0)
+  int _out_s410 = 0;
+  missIdx(s42, _out_s410);
+  assert (_out_s410 == 0); //Assert at skyl2.sk:373 (0)
+  int _out_s412 = 0;
+  missIdx(s43, _out_s412);
+  assert (_out_s412 == 0); //Assert at skyl2.sk:374 (0)
+  int _out_s414 = 0;
+  missIdx(s44, _out_s414);
+  assert (_out_s414 == 0); //Assert at skyl2.sk:375 (0)
+  int _out_s416 = 0;
+  missIdx(s45, _out_s416);
+  assert (_out_s416 == 1); //Assert at skyl2.sk:376 (0)
+  int _out_s418 = 0;
+  missIdx(s46, _out_s418);
+  assert (_out_s418 == 0); //Assert at skyl2.sk:377 (0)
+  int _out_s420 = 0;
+  missIdx(s47, _out_s420);
+  assert (_out_s420 == 3); //Assert at skyl2.sk:378 (0)
+  int _out_s422 = 0;
+  missIdx(s48, _out_s422);
+  assert (_out_s422 == 2); //Assert at skyl2.sk:379 (0)
+  int _out_s424 = 0;
+  missIdx(s49, _out_s424);
+  assert (_out_s424 == 0); //Assert at skyl2.sk:380 (0)
+  int _out_s426 = 0;
+  missIdx(s50, _out_s426);
+  assert (_out_s426 == 0); //Assert at skyl2.sk:381 (0)
+  int _out_s428 = 0;
+  missIdx(s51, _out_s428);
+  assert (_out_s428 == 2); //Assert at skyl2.sk:382 (0)
+  int _out_s430 = 0;
+  missIdx(s52, _out_s430);
+  assert (_out_s430 == 1); //Assert at skyl2.sk:383 (0)
+  int _out_s432 = 0;
+  missIdx(s53, _out_s432);
+  assert (_out_s432 == 2); //Assert at skyl2.sk:384 (0)
+  int _out_s434 = 0;
+  missIdx(s54, _out_s434);
+  assert (_out_s434 == 0); //Assert at skyl2.sk:385 (0)
+  int _out_s436 = 0;
+  missIdx(s55, _out_s436);
+  assert (_out_s436 == 0); //Assert at skyl2.sk:386 (0)
+  int _out_s438 = 0;
+  missIdx(s56, _out_s438);
+  assert (_out_s438 == 3); //Assert at skyl2.sk:387 (0)
+  int _out_s440 = 0;
+  missIdx(s57, _out_s440);
+  assert (_out_s440 == 1); //Assert at skyl2.sk:388 (0)
+  int _out_s442 = 0;
+  missIdx(s58, _out_s442);
+  assert (_out_s442 == 1); //Assert at skyl2.sk:389 (0)
+  int _out_s444 = 0;
+  missIdx(s59, _out_s444);
+  assert (_out_s444 == 0); //Assert at skyl2.sk:390 (0)
+  int _out_s446 = 0;
+  missIdx(s60, _out_s446);
+  assert (_out_s446 == 0); //Assert at skyl2.sk:391 (0)
+  int _out_s448 = 0;
+  missIdx(s61, _out_s448);
+  assert (_out_s448 == 0); //Assert at skyl2.sk:392 (0)
+  int _out_s450 = 0;
+  missIdx(s62, _out_s450);
+  assert (_out_s450 == 2); //Assert at skyl2.sk:393 (0)
+  int _out_s452 = 0;
+  missIdx(s63, _out_s452);
+  assert (_out_s452 == 1); //Assert at skyl2.sk:394 (0)
+  int _out_s454 = 0;
+  missIdx(s64, _out_s454);
+  assert (_out_s454 == 0); //Assert at skyl2.sk:395 (0)
+  int _out_s456 = 0;
+  missIdx(s65, _out_s456);
+  assert (_out_s456 == 2); //Assert at skyl2.sk:396 (0)
+  int _out_s458 = 0;
+  missIdx(s66, _out_s458);
+  assert (_out_s458 == 2); //Assert at skyl2.sk:397 (0)
+  int _out_s460 = 0;
+  missIdx(s67, _out_s460);
+  assert (_out_s460 == 0); //Assert at skyl2.sk:398 (0)
+  int _out_s462 = 0;
+  missIdx(s68, _out_s462);
+  assert (_out_s462 == 1); //Assert at skyl2.sk:399 (0)
+  int _out_s464 = 0;
+  missIdx(s69, _out_s464);
+  assert (_out_s464 == 1); //Assert at skyl2.sk:400 (0)
+  int _out_s466 = 0;
+  missIdx(s70, _out_s466);
+  assert (_out_s466 == 1); //Assert at skyl2.sk:401 (0)
+  int _out_s468 = 0;
+  missIdx(s71, _out_s468);
+  assert (_out_s468 == 1); //Assert at skyl2.sk:402 (0)
+  int _out_s470 = 0;
+  missIdx(s72, _out_s470);
+  assert (_out_s470 == 0); //Assert at skyl2.sk:403 (0)
+  int _out_s472 = 0;
+  missIdx(s73, _out_s472);
+  assert (_out_s472 == 1); //Assert at skyl2.sk:404 (0)
+  int _out_s474 = 0;
+  missIdx(s74, _out_s474);
+  assert (_out_s474 == 0); //Assert at skyl2.sk:405 (0)
+  int _out_s476 = 0;
+  missIdx(s75, _out_s476);
+  assert (_out_s476 == 0); //Assert at skyl2.sk:406 (0)
+  int _out_s478 = 0;
+  missIdx(s76, _out_s478);
+  assert (_out_s478 == 2); //Assert at skyl2.sk:407 (0)
+  int _out_s480 = 0;
+  missIdx(s77, _out_s480);
+  assert (_out_s480 == 1); //Assert at skyl2.sk:408 (0)
+  int _out_s482 = 0;
+  missIdx(s78, _out_s482);
+  assert (_out_s482 == 1); //Assert at skyl2.sk:409 (0)
+  int _out_s484 = 0;
+  missIdx(s79, _out_s484);
+  assert (_out_s484 == 1); //Assert at skyl2.sk:410 (0)
+  int _out_s486 = 0;
+  missIdx(s80, _out_s486);
+  assert (_out_s486 == 0); //Assert at skyl2.sk:411 (0)
+  int _out_s488 = 0;
+  missIdx(s81, _out_s488);
+  assert (_out_s488 == 1); //Assert at skyl2.sk:412 (0)
+  int _out_s490 = 0;
+  missIdx(s82, _out_s490);
+  assert (_out_s490 == 1); //Assert at skyl2.sk:413 (0)
+  int _out_s492 = 0;
+  missIdx(s83, _out_s492);
+  assert (_out_s492 == 0); //Assert at skyl2.sk:414 (0)
+  int _out_s494 = 0;
+  missIdx(s84, _out_s494);
+  assert (_out_s494 == 0); //Assert at skyl2.sk:415 (0)
+  int _out_s496 = 0;
+  missIdx(s85, _out_s496);
+  assert (_out_s496 == 0); //Assert at skyl2.sk:416 (0)
+  int _out_s498 = 0;
+  missIdx(s86, _out_s498);
+  assert (_out_s498 == 1); //Assert at skyl2.sk:417 (0)
+  int _out_s500 = 0;
+  missIdx(s87, _out_s500);
+  assert (_out_s500 == 0); //Assert at skyl2.sk:418 (0)
+  int _out_s502 = 0;
+  missIdx(s88, _out_s502);
+  assert (_out_s502 == 0); //Assert at skyl2.sk:419 (0)
+  int _out_s504 = 0;
+  missIdx(s89, _out_s504);
+  assert (_out_s504 == 0); //Assert at skyl2.sk:420 (0)
+  int _out_s506 = 0;
+  missIdx(s90, _out_s506);
+  assert (_out_s506 == 2); //Assert at skyl2.sk:421 (0)
+  int _out_s508 = 0;
+  missIdx(s91, _out_s508);
+  assert (_out_s508 == 0); //Assert at skyl2.sk:422 (0)
+  int _out_s510 = 0;
+  missIdx(s92, _out_s510);
+  assert (_out_s510 == 0); //Assert at skyl2.sk:423 (0)
+  int _out_s512 = 0;
+  missIdx(s93, _out_s512);
+  assert (_out_s512 == 0); //Assert at skyl2.sk:424 (0)
+  int _out_s514 = 0;
+  missIdx(s94, _out_s514);
+  assert (_out_s514 == 0); //Assert at skyl2.sk:425 (0)
+  int _out_s516 = 0;
+  missIdx(s95, _out_s516);
+  assert (_out_s516 == 0); //Assert at skyl2.sk:426 (0)
+  int _out_s518 = 0;
+  missIdx(s96, _out_s518);
+  assert (_out_s518 == 2); //Assert at skyl2.sk:427 (0)
+  int _out_s520 = 0;
+  missIdx(s97, _out_s520);
+  assert (_out_s520 == 2); //Assert at skyl2.sk:428 (0)
+  int _out_s522 = 0;
+  missIdx(s98, _out_s522);
+  assert (_out_s522 == 2); //Assert at skyl2.sk:429 (0)
+  int _out_s524 = 0;
+  missIdx(s99, _out_s524);
+  assert (_out_s524 == 3); //Assert at skyl2.sk:430 (0)
+  int _out_s526 = 0;
+  missIdx(s100, _out_s526);
+  assert (_out_s526 == 3); //Assert at skyl2.sk:431 (0)
+  int _out_s528 = 0;
+  missIdx(s101, _out_s528);
+  assert (_out_s528 == 1); //Assert at skyl2.sk:432 (0)
+  int _out_s530 = 0;
+  missIdx(s102, _out_s530);
+  assert (_out_s530 == 1); //Assert at skyl2.sk:433 (0)
+  int _out_s532 = 0;
+  missIdx(s103, _out_s532);
+  assert (_out_s532 == 1); //Assert at skyl2.sk:434 (0)
+  int _out_s534 = 0;
+  missIdx(s104, _out_s534);
+  assert (_out_s534 == 0); //Assert at skyl2.sk:435 (0)
+  int _out_s536 = 0;
+  missIdx(s105, _out_s536);
+  assert (_out_s536 == 0); //Assert at skyl2.sk:436 (0)
+  int _out_s538 = 0;
+  missIdx(s106, _out_s538);
+  assert (_out_s538 == 0); //Assert at skyl2.sk:437 (0)
+  int _out_s540 = 0;
+  missIdx(s107, _out_s540);
+  assert (_out_s540 == 2); //Assert at skyl2.sk:438 (0)
+  int _out_s542 = 0;
+  missIdx(s108, _out_s542);
+  assert (_out_s542 == 0); //Assert at skyl2.sk:439 (0)
+  int _out_s544 = 0;
+  missIdx(s109, _out_s544);
+  assert (_out_s544 == 2); //Assert at skyl2.sk:440 (0)
+  int _out_s546 = 0;
+  missIdx(s110, _out_s546);
+  assert (_out_s546 == 3); //Assert at skyl2.sk:441 (0)
+  int _out_s548 = 0;
+  missIdx(s111, _out_s548);
+  assert (_out_s548 == 2); //Assert at skyl2.sk:442 (0)
+  int _out_s550 = 0;
+  missIdx(s112, _out_s550);
+  assert (_out_s550 == 2); //Assert at skyl2.sk:443 (0)
+  int _out_s552 = 0;
+  missIdx(s113, _out_s552);
+  assert (_out_s552 == 3); //Assert at skyl2.sk:444 (0)
+  int _out_s554 = 0;
+  missIdx(s114, _out_s554);
+  assert (_out_s554 == 1); //Assert at skyl2.sk:445 (0)
+  int _out_s556 = 0;
+  missIdx(s115, _out_s556);
+  assert (_out_s556 == 1); //Assert at skyl2.sk:446 (0)
+  int _out_s558 = 0;
+  missIdx(s116, _out_s558);
+  assert (_out_s558 == 3); //Assert at skyl2.sk:447 (0)
+  int _out_s560 = 0;
+  missIdx(s117, _out_s560);
+  assert (_out_s560 == 0); //Assert at skyl2.sk:448 (0)
+  int _out_s562 = 0;
+  missIdx(s118, _out_s562);
+  assert (_out_s562 == 3); //Assert at skyl2.sk:449 (0)
+  int _out_s564 = 0;
+  missIdx(s119, _out_s564);
+  assert (_out_s564 == 0); //Assert at skyl2.sk:450 (0)
+  int _out_s566 = 0;
+  missIdx(s120, _out_s566);
+  assert (_out_s566 == 3); //Assert at skyl2.sk:451 (0)
+  int _out_s568 = 0;
+  missIdx(s121, _out_s568);
+  assert (_out_s568 == 1); //Assert at skyl2.sk:452 (0)
+  int _out_s570 = 0;
+  missIdx(s122, _out_s570);
+  assert (_out_s570 == 1); //Assert at skyl2.sk:453 (0)
+  int _out_s572 = 0;
+  missIdx(s123, _out_s572);
+  assert (_out_s572 == 3); //Assert at skyl2.sk:454 (0)
+  int _out_s574 = 0;
+  missIdx(s124, _out_s574);
+  assert (_out_s574 == 1); //Assert at skyl2.sk:455 (0)
+  int _out_s576 = 0;
+  missIdx(s125, _out_s576);
+  assert (_out_s576 == 3); //Assert at skyl2.sk:456 (0)
+  int _out_s578 = 0;
+  missIdx(s126, _out_s578);
+  assert (_out_s578 == 0); //Assert at skyl2.sk:457 (0)
+  int _out_s580 = 0;
+  missIdx(s127, _out_s580);
+  assert (_out_s580 == 0); //Assert at skyl2.sk:458 (0)
+  int _out_s582 = 0;
+  missIdx(s128, _out_s582);
+  assert (_out_s582 == 3); //Assert at skyl2.sk:459 (0)
+  int _out_s584 = 0;
+  missIdx(s129, _out_s584);
+  assert (_out_s584 == 1); //Assert at skyl2.sk:460 (0)
+  int _out_s586 = 0;
+  missIdx(s130, _out_s586);
+  assert (_out_s586 == 3); //Assert at skyl2.sk:461 (0)
+  int _out_s588 = 0;
+  missIdx(s131, _out_s588);
+  assert (_out_s588 == 3); //Assert at skyl2.sk:462 (0)
+  int _out_s590 = 0;
+  missIdx(s132, _out_s590);
+  assert (_out_s590 == 1); //Assert at skyl2.sk:463 (0)
+  int _out_s592 = 0;
+  missIdx(s133, _out_s592);
+  assert (_out_s592 == 3); //Assert at skyl2.sk:464 (0)
+  int _out_s594 = 0;
+  missIdx(s134, _out_s594);
+  assert (_out_s594 == 2); //Assert at skyl2.sk:465 (0)
+  int _out_s596 = 0;
+  missIdx(s135, _out_s596);
+  assert (_out_s596 == 2); //Assert at skyl2.sk:466 (0)
+  int _out_s598 = 0;
+  missIdx(s136, _out_s598);
+  assert (_out_s598 == 0); //Assert at skyl2.sk:467 (0)
+  int _out_s600 = 0;
+  missIdx(s137, _out_s600);
+  assert (_out_s600 == 0); //Assert at skyl2.sk:468 (0)
+  int _out_s602 = 0;
+  missIdx(s138, _out_s602);
+  assert (_out_s602 == 0); //Assert at skyl2.sk:469 (0)
+  int _out_s604 = 0;
+  missIdx(s139, _out_s604);
+  assert (_out_s604 == 2); //Assert at skyl2.sk:470 (0)
+  int _out_s606 = 0;
+  missIdx(s140, _out_s606);
+  assert (_out_s606 == 3); //Assert at skyl2.sk:471 (0)
+  int _out_s608 = 0;
+  missIdx(s141, _out_s608);
+  assert (_out_s608 == 3); //Assert at skyl2.sk:472 (0)
+  int _out_s610 = 0;
+  missIdx(s142, _out_s610);
+  assert (_out_s610 == 3); //Assert at skyl2.sk:473 (0)
+  int _out_s612 = 0;
+  missIdx(s143, _out_s612);
+  assert (_out_s612 == 0); //Assert at skyl2.sk:474 (0)
+  int _out_s614 = 0;
+  missIdx(s144, _out_s614);
+  assert (_out_s614 == 1); //Assert at skyl2.sk:475 (0)
+  int _out_s616 = 0;
+  missIdx(s145, _out_s616);
+  assert (_out_s616 == 2); //Assert at skyl2.sk:476 (0)
+  int _out_s618 = 0;
+  missIdx(s146, _out_s618);
+  assert (_out_s618 == 3); //Assert at skyl2.sk:477 (0)
+  int _out_s620 = 0;
+  missIdx(s147, _out_s620);
+  assert (_out_s620 == 1); //Assert at skyl2.sk:478 (0)
+  int _out_s622 = 0;
+  missIdx(s148, _out_s622);
+  assert (_out_s622 == 1); //Assert at skyl2.sk:479 (0)
+  int _out_s624 = 0;
+  missIdx(s149, _out_s624);
+  assert (_out_s624 == 1); //Assert at skyl2.sk:480 (0)
+  int _out_s626 = 0;
+  missIdx(s150, _out_s626);
+  assert (_out_s626 == 3); //Assert at skyl2.sk:481 (0)
+  int _out_s628 = 0;
+  missIdx(s151, _out_s628);
+  assert (_out_s628 == 3); //Assert at skyl2.sk:482 (0)
+  int _out_s630 = 0;
+  missIdx(s152, _out_s630);
+  assert (_out_s630 == 1); //Assert at skyl2.sk:483 (0)
+  int _out_s632 = 0;
+  missIdx(s153, _out_s632);
+  assert (_out_s632 == 0); //Assert at skyl2.sk:484 (0)
+  int _out_s634 = 0;
+  missIdx(s154, _out_s634);
+  assert (_out_s634 == 1); //Assert at skyl2.sk:485 (0)
+  int _out_s636 = 0;
+  missIdx(s155, _out_s636);
+  assert (_out_s636 == 1); //Assert at skyl2.sk:486 (0)
+  int _out_s638 = 0;
+  missIdx(s156, _out_s638);
+  assert (_out_s638 == 2); //Assert at skyl2.sk:487 (0)
+  int _out_s640 = 0;
+  missIdx(s157, _out_s640);
+  assert (_out_s640 == 2); //Assert at skyl2.sk:488 (0)
+  int _out_s642 = 0;
+  missIdx(s158, _out_s642);
+  assert (_out_s642 == 1); //Assert at skyl2.sk:489 (0)
+  int _out_s644 = 0;
+  missIdx(s159, _out_s644);
+  assert (_out_s644 == 0); //Assert at skyl2.sk:490 (0)
+  int[4] _out_s646 = {0,0,0,0};
+  hitState(s0, 0, _out_s646);
+  assert (_out_s646 == s1); //Assert at skyl2.sk:493 (0)
+  int[4] _out_s648 = {0,0,0,0};
+  hitState(s0, 1, _out_s648);
+  assert (_out_s648 == s3); //Assert at skyl2.sk:494 (0)
+  int[4] _out_s650 = {0,0,0,0};
+  hitState(s0, 2, _out_s650);
+  assert (_out_s650 == s9); //Assert at skyl2.sk:495 (0)
+  int[4] _out_s652 = {0,0,0,0};
+  hitState(s0, 3, _out_s652);
+  assert (_out_s652 == s0); //Assert at skyl2.sk:496 (0)
+  int[4] _out_s654 = {0,0,0,0};
+  hitState(s1, 0, _out_s654);
+  assert (_out_s654 == s1); //Assert at skyl2.sk:497 (0)
+  int[4] _out_s656 = {0,0,0,0};
+  hitState(s1, 1, _out_s656);
+  assert (_out_s656 == s2); //Assert at skyl2.sk:498 (0)
+  int[4] _out_s658 = {0,0,0,0};
+  hitState(s1, 2, _out_s658);
+  assert (_out_s658 == s4); //Assert at skyl2.sk:499 (0)
+  int[4] _out_s660 = {0,0,0,0};
+  hitState(s1, 3, _out_s660);
+  assert (_out_s660 == s1); //Assert at skyl2.sk:500 (0)
+  int[4] _out_s662 = {0,0,0,0};
+  hitState(s2, 0, _out_s662);
+  assert (_out_s662 == s2); //Assert at skyl2.sk:501 (0)
+  int[4] _out_s664 = {0,0,0,0};
+  hitState(s2, 1, _out_s664);
+  assert (_out_s664 == s2); //Assert at skyl2.sk:502 (0)
+  int[4] _out_s666 = {0,0,0,0};
+  hitState(s2, 2, _out_s666);
+  assert (_out_s666 == s5); //Assert at skyl2.sk:503 (0)
+  int[4] _out_s668 = {0,0,0,0};
+  hitState(s2, 3, _out_s668);
+  assert (_out_s668 == s2); //Assert at skyl2.sk:504 (0)
+  int[4] _out_s670 = {0,0,0,0};
+  hitState(s3, 0, _out_s670);
+  assert (_out_s670 == s2); //Assert at skyl2.sk:505 (0)
+  int[4] _out_s672 = {0,0,0,0};
+  hitState(s3, 1, _out_s672);
+  assert (_out_s672 == s3); //Assert at skyl2.sk:506 (0)
+  int[4] _out_s674 = {0,0,0,0};
+  hitState(s3, 2, _out_s674);
+  assert (_out_s674 == s10); //Assert at skyl2.sk:507 (0)
+  int[4] _out_s676 = {0,0,0,0};
+  hitState(s3, 3, _out_s676);
+  assert (_out_s676 == s3); //Assert at skyl2.sk:508 (0)
+  int[4] _out_s678 = {0,0,0,0};
+  hitState(s4, 0, _out_s678);
+  assert (_out_s678 == s4); //Assert at skyl2.sk:509 (0)
+  int[4] _out_s680 = {0,0,0,0};
+  hitState(s4, 1, _out_s680);
+  assert (_out_s680 == s16); //Assert at skyl2.sk:510 (0)
+  int[4] _out_s682 = {0,0,0,0};
+  hitState(s4, 2, _out_s682);
+  assert (_out_s682 == s4); //Assert at skyl2.sk:511 (0)
+  int[4] _out_s684 = {0,0,0,0};
+  hitState(s4, 3, _out_s684);
+  assert (_out_s684 == s4); //Assert at skyl2.sk:512 (0)
+  int[4] _out_s686 = {0,0,0,0};
+  hitState(s5, 0, _out_s686);
+  assert (_out_s686 == s6); //Assert at skyl2.sk:513 (0)
+  int[4] _out_s688 = {0,0,0,0};
+  hitState(s5, 1, _out_s688);
+  assert (_out_s688 == s8); //Assert at skyl2.sk:514 (0)
+  int[4] _out_s690 = {0,0,0,0};
+  hitState(s5, 2, _out_s690);
+  assert (_out_s690 == s5); //Assert at skyl2.sk:515 (0)
+  int[4] _out_s692 = {0,0,0,0};
+  hitState(s5, 3, _out_s692);
+  assert (_out_s692 == s9); //Assert at skyl2.sk:516 (0)
+  int[4] _out_s694 = {0,0,0,0};
+  hitState(s6, 0, _out_s694);
+  assert (_out_s694 == s6); //Assert at skyl2.sk:517 (0)
+  int[4] _out_s696 = {0,0,0,0};
+  hitState(s6, 1, _out_s696);
+  assert (_out_s696 == s7); //Assert at skyl2.sk:518 (0)
+  int[4] _out_s698 = {0,0,0,0};
+  hitState(s6, 2, _out_s698);
+  assert (_out_s698 == s6); //Assert at skyl2.sk:519 (0)
+  int[4] _out_s700 = {0,0,0,0};
+  hitState(s6, 3, _out_s700);
+  assert (_out_s700 == s4); //Assert at skyl2.sk:520 (0)
+  int[4] _out_s702 = {0,0,0,0};
+  hitState(s7, 0, _out_s702);
+  assert (_out_s702 == s7); //Assert at skyl2.sk:521 (0)
+  int[4] _out_s704 = {0,0,0,0};
+  hitState(s7, 1, _out_s704);
+  assert (_out_s704 == s7); //Assert at skyl2.sk:522 (0)
+  int[4] _out_s706 = {0,0,0,0};
+  hitState(s7, 2, _out_s706);
+  assert (_out_s706 == s7); //Assert at skyl2.sk:523 (0)
+  int[4] _out_s708 = {0,0,0,0};
+  hitState(s7, 3, _out_s708);
+  assert (_out_s708 == s0); //Assert at skyl2.sk:524 (0)
+  int[4] _out_s710 = {0,0,0,0};
+  hitState(s8, 0, _out_s710);
+  assert (_out_s710 == s7); //Assert at skyl2.sk:525 (0)
+  int[4] _out_s712 = {0,0,0,0};
+  hitState(s8, 1, _out_s712);
+  assert (_out_s712 == s8); //Assert at skyl2.sk:526 (0)
+  int[4] _out_s714 = {0,0,0,0};
+  hitState(s8, 2, _out_s714);
+  assert (_out_s714 == s8); //Assert at skyl2.sk:527 (0)
+  int[4] _out_s716 = {0,0,0,0};
+  hitState(s8, 3, _out_s716);
+  assert (_out_s716 == s10); //Assert at skyl2.sk:528 (0)
+  int[4] _out_s718 = {0,0,0,0};
+  hitState(s9, 0, _out_s718);
+  assert (_out_s718 == s4); //Assert at skyl2.sk:529 (0)
+  int[4] _out_s720 = {0,0,0,0};
+  hitState(s9, 1, _out_s720);
+  assert (_out_s720 == s10); //Assert at skyl2.sk:530 (0)
+  int[4] _out_s722 = {0,0,0,0};
+  hitState(s9, 2, _out_s722);
+  assert (_out_s722 == s9); //Assert at skyl2.sk:531 (0)
+  int[4] _out_s724 = {0,0,0,0};
+  hitState(s9, 3, _out_s724);
+  assert (_out_s724 == s9); //Assert at skyl2.sk:532 (0)
+  int[4] _out_s726 = {0,0,0,0};
+  hitState(s10, 0, _out_s726);
+  assert (_out_s726 == s34); //Assert at skyl2.sk:533 (0)
+  int[4] _out_s728 = {0,0,0,0};
+  hitState(s10, 1, _out_s728);
+  assert (_out_s728 == s10); //Assert at skyl2.sk:534 (0)
+  int[4] _out_s730 = {0,0,0,0};
+  hitState(s10, 2, _out_s730);
+  assert (_out_s730 == s10); //Assert at skyl2.sk:535 (0)
+  int[4] _out_s732 = {0,0,0,0};
+  hitState(s10, 3, _out_s732);
+  assert (_out_s732 == s10); //Assert at skyl2.sk:536 (0)
+  int[4] _out_s734 = {0,0,0,0};
+  hitState(s11, 0, _out_s734);
+  assert (_out_s734 == s11); //Assert at skyl2.sk:537 (0)
+  int[4] _out_s736 = {0,0,0,0};
+  hitState(s11, 1, _out_s736);
+  assert (_out_s736 == s2); //Assert at skyl2.sk:538 (0)
+  int[4] _out_s738 = {0,0,0,0};
+  hitState(s11, 2, _out_s738);
+  assert (_out_s738 == s12); //Assert at skyl2.sk:539 (0)
+  int[4] _out_s740 = {0,0,0,0};
+  hitState(s11, 3, _out_s740);
+  assert (_out_s740 == s11); //Assert at skyl2.sk:540 (0)
+  int[4] _out_s742 = {0,0,0,0};
+  hitState(s12, 0, _out_s742);
+  assert (_out_s742 == s39); //Assert at skyl2.sk:541 (0)
+  int[4] _out_s744 = {0,0,0,0};
+  hitState(s12, 1, _out_s744);
+  assert (_out_s744 == s22); //Assert at skyl2.sk:542 (0)
+  int[4] _out_s746 = {0,0,0,0};
+  hitState(s12, 2, _out_s746);
+  assert (_out_s746 == s12); //Assert at skyl2.sk:543 (0)
+  int[4] _out_s748 = {0,0,0,0};
+  hitState(s12, 3, _out_s748);
+  assert (_out_s748 == s82); //Assert at skyl2.sk:544 (0)
+  int[4] _out_s750 = {0,0,0,0};
+  hitState(s13, 0, _out_s750);
+  assert (_out_s750 == s14); //Assert at skyl2.sk:545 (0)
+  int[4] _out_s752 = {0,0,0,0};
+  hitState(s13, 1, _out_s752);
+  assert (_out_s752 == s16); //Assert at skyl2.sk:546 (0)
+  int[4] _out_s754 = {0,0,0,0};
+  hitState(s13, 2, _out_s754);
+  assert (_out_s754 == s21); //Assert at skyl2.sk:547 (0)
+  int[4] _out_s756 = {0,0,0,0};
+  hitState(s13, 3, _out_s756);
+  assert (_out_s756 == s15); //Assert at skyl2.sk:548 (0)
+  int[4] _out_s758 = {0,0,0,0};
+  hitState(s14, 0, _out_s758);
+  assert (_out_s758 == s14); //Assert at skyl2.sk:549 (0)
+  int[4] _out_s760 = {0,0,0,0};
+  hitState(s14, 1, _out_s760);
+  assert (_out_s760 == s17); //Assert at skyl2.sk:550 (0)
+  int[4] _out_s762 = {0,0,0,0};
+  hitState(s14, 2, _out_s762);
+  assert (_out_s762 == s18); //Assert at skyl2.sk:551 (0)
+  int[4] _out_s764 = {0,0,0,0};
+  hitState(s14, 3, _out_s764);
+  assert (_out_s764 == s11); //Assert at skyl2.sk:552 (0)
+  int[4] _out_s766 = {0,0,0,0};
+  hitState(s15, 0, _out_s766);
+  assert (_out_s766 == s11); //Assert at skyl2.sk:553 (0)
+  int[4] _out_s768 = {0,0,0,0};
+  hitState(s15, 1, _out_s768);
+  assert (_out_s768 == s3); //Assert at skyl2.sk:554 (0)
+  int[4] _out_s770 = {0,0,0,0};
+  hitState(s15, 2, _out_s770);
+  assert (_out_s770 == s80); //Assert at skyl2.sk:555 (0)
+  int[4] _out_s772 = {0,0,0,0};
+  hitState(s15, 3, _out_s772);
+  assert (_out_s772 == s15); //Assert at skyl2.sk:556 (0)
+  int[4] _out_s774 = {0,0,0,0};
+  hitState(s16, 0, _out_s774);
+  assert (_out_s774 == s17); //Assert at skyl2.sk:557 (0)
+  int[4] _out_s776 = {0,0,0,0};
+  hitState(s16, 1, _out_s776);
+  assert (_out_s776 == s16); //Assert at skyl2.sk:558 (0)
+  int[4] _out_s778 = {0,0,0,0};
+  hitState(s16, 2, _out_s778);
+  assert (_out_s778 == s8); //Assert at skyl2.sk:559 (0)
+  int[4] _out_s780 = {0,0,0,0};
+  hitState(s16, 3, _out_s780);
+  assert (_out_s780 == s3); //Assert at skyl2.sk:560 (0)
+  int[4] _out_s782 = {0,0,0,0};
+  hitState(s17, 0, _out_s782);
+  assert (_out_s782 == s17); //Assert at skyl2.sk:561 (0)
+  int[4] _out_s784 = {0,0,0,0};
+  hitState(s17, 1, _out_s784);
+  assert (_out_s784 == s17); //Assert at skyl2.sk:562 (0)
+  int[4] _out_s786 = {0,0,0,0};
+  hitState(s17, 2, _out_s786);
+  assert (_out_s786 == s7); //Assert at skyl2.sk:563 (0)
+  int[4] _out_s788 = {0,0,0,0};
+  hitState(s17, 3, _out_s788);
+  assert (_out_s788 == s2); //Assert at skyl2.sk:564 (0)
+  int[4] _out_s790 = {0,0,0,0};
+  hitState(s18, 0, _out_s790);
+  assert (_out_s790 == s18); //Assert at skyl2.sk:565 (0)
+  int[4] _out_s792 = {0,0,0,0};
+  hitState(s18, 1, _out_s792);
+  assert (_out_s792 == s7); //Assert at skyl2.sk:566 (0)
+  int[4] _out_s794 = {0,0,0,0};
+  hitState(s18, 2, _out_s794);
+  assert (_out_s794 == s18); //Assert at skyl2.sk:567 (0)
+  int[4] _out_s796 = {0,0,0,0};
+  hitState(s18, 3, _out_s796);
+  assert (_out_s796 == s19); //Assert at skyl2.sk:568 (0)
+  int[4] _out_s798 = {0,0,0,0};
+  hitState(s19, 0, _out_s798);
+  assert (_out_s798 == s37); //Assert at skyl2.sk:569 (0)
+  int[4] _out_s800 = {0,0,0,0};
+  hitState(s19, 1, _out_s800);
+  assert (_out_s800 == s42); //Assert at skyl2.sk:570 (0)
+  int[4] _out_s802 = {0,0,0,0};
+  hitState(s19, 2, _out_s802);
+  assert (_out_s802 == s82); //Assert at skyl2.sk:571 (0)
+  int[4] _out_s804 = {0,0,0,0};
+  hitState(s19, 3, _out_s804);
+  assert (_out_s804 == s19); //Assert at skyl2.sk:572 (0)
+  int[4] _out_s806 = {0,0,0,0};
+  hitState(s20, 0, _out_s806);
+  assert (_out_s806 == s20); //Assert at skyl2.sk:573 (0)
+  int[4] _out_s808 = {0,0,0,0};
+  hitState(s20, 1, _out_s808);
+  assert (_out_s808 == s20); //Assert at skyl2.sk:574 (0)
+  int[4] _out_s810 = {0,0,0,0};
+  hitState(s20, 2, _out_s810);
+  assert (_out_s810 == s7); //Assert at skyl2.sk:575 (0)
+  int[4] _out_s812 = {0,0,0,0};
+  hitState(s20, 3, _out_s812);
+  assert (_out_s812 == s23); //Assert at skyl2.sk:576 (0)
+  int[4] _out_s814 = {0,0,0,0};
+  hitState(s21, 0, _out_s814);
+  assert (_out_s814 == s18); //Assert at skyl2.sk:577 (0)
+  int[4] _out_s816 = {0,0,0,0};
+  hitState(s21, 1, _out_s816);
+  assert (_out_s816 == s8); //Assert at skyl2.sk:578 (0)
+  int[4] _out_s818 = {0,0,0,0};
+  hitState(s21, 2, _out_s818);
+  assert (_out_s818 == s21); //Assert at skyl2.sk:579 (0)
+  int[4] _out_s820 = {0,0,0,0};
+  hitState(s21, 3, _out_s820);
+  assert (_out_s820 == s80); //Assert at skyl2.sk:580 (0)
+  int[4] _out_s822 = {0,0,0,0};
+  hitState(s22, 0, _out_s822);
+  assert (_out_s822 == s20); //Assert at skyl2.sk:581 (0)
+  int[4] _out_s824 = {0,0,0,0};
+  hitState(s22, 1, _out_s824);
+  assert (_out_s824 == s22); //Assert at skyl2.sk:582 (0)
+  int[4] _out_s826 = {0,0,0,0};
+  hitState(s22, 2, _out_s826);
+  assert (_out_s826 == s8); //Assert at skyl2.sk:583 (0)
+  int[4] _out_s828 = {0,0,0,0};
+  hitState(s22, 3, _out_s828);
+  assert (_out_s828 == s33); //Assert at skyl2.sk:584 (0)
+  int[4] _out_s830 = {0,0,0,0};
+  hitState(s23, 0, _out_s830);
+  assert (_out_s830 == s28); //Assert at skyl2.sk:585 (0)
+  int[4] _out_s832 = {0,0,0,0};
+  hitState(s23, 1, _out_s832);
+  assert (_out_s832 == s29); //Assert at skyl2.sk:586 (0)
+  int[4] _out_s834 = {0,0,0,0};
+  hitState(s23, 2, _out_s834);
+  assert (_out_s834 == s43); //Assert at skyl2.sk:587 (0)
+  int[4] _out_s836 = {0,0,0,0};
+  hitState(s23, 3, _out_s836);
+  assert (_out_s836 == s23); //Assert at skyl2.sk:588 (0)
+  int[4] _out_s838 = {0,0,0,0};
+  hitState(s24, 0, _out_s838);
+  assert (_out_s838 == s18); //Assert at skyl2.sk:589 (0)
+  int[4] _out_s840 = {0,0,0,0};
+  hitState(s24, 1, _out_s840);
+  assert (_out_s840 == s125); //Assert at skyl2.sk:590 (0)
+  int[4] _out_s842 = {0,0,0,0};
+  hitState(s24, 2, _out_s842);
+  assert (_out_s842 == s24); //Assert at skyl2.sk:591 (0)
+  int[4] _out_s844 = {0,0,0,0};
+  hitState(s24, 3, _out_s844);
+  assert (_out_s844 == s108); //Assert at skyl2.sk:592 (0)
+  int[4] _out_s846 = {0,0,0,0};
+  hitState(s25, 0, _out_s846);
+  assert (_out_s846 == s20); //Assert at skyl2.sk:593 (0)
+  int[4] _out_s848 = {0,0,0,0};
+  hitState(s25, 1, _out_s848);
+  assert (_out_s848 == s25); //Assert at skyl2.sk:594 (0)
+  int[4] _out_s850 = {0,0,0,0};
+  hitState(s25, 2, _out_s850);
+  assert (_out_s850 == s125); //Assert at skyl2.sk:595 (0)
+  int[4] _out_s852 = {0,0,0,0};
+  hitState(s25, 3, _out_s852);
+  assert (_out_s852 == s31); //Assert at skyl2.sk:596 (0)
+  int[4] _out_s854 = {0,0,0,0};
+  hitState(s26, 0, _out_s854);
+  assert (_out_s854 == s14); //Assert at skyl2.sk:597 (0)
+  int[4] _out_s856 = {0,0,0,0};
+  hitState(s26, 1, _out_s856);
+  assert (_out_s856 == s30); //Assert at skyl2.sk:598 (0)
+  int[4] _out_s858 = {0,0,0,0};
+  hitState(s26, 2, _out_s858);
+  assert (_out_s858 == s24); //Assert at skyl2.sk:599 (0)
+  int[4] _out_s860 = {0,0,0,0};
+  hitState(s26, 3, _out_s860);
+  assert (_out_s860 == s27); //Assert at skyl2.sk:600 (0)
+  int[4] _out_s862 = {0,0,0,0};
+  hitState(s27, 0, _out_s862);
+  assert (_out_s862 == s11); //Assert at skyl2.sk:601 (0)
+  int[4] _out_s864 = {0,0,0,0};
+  hitState(s27, 1, _out_s864);
+  assert (_out_s864 == s65); //Assert at skyl2.sk:602 (0)
+  int[4] _out_s866 = {0,0,0,0};
+  hitState(s27, 2, _out_s866);
+  assert (_out_s866 == s50); //Assert at skyl2.sk:603 (0)
+  int[4] _out_s868 = {0,0,0,0};
+  hitState(s27, 3, _out_s868);
+  assert (_out_s868 == s27); //Assert at skyl2.sk:604 (0)
+  int[4] _out_s870 = {0,0,0,0};
+  hitState(s28, 0, _out_s870);
+  assert (_out_s870 == s28); //Assert at skyl2.sk:605 (0)
+  int[4] _out_s872 = {0,0,0,0};
+  hitState(s28, 1, _out_s872);
+  assert (_out_s872 == s2); //Assert at skyl2.sk:606 (0)
+  int[4] _out_s874 = {0,0,0,0};
+  hitState(s28, 2, _out_s874);
+  assert (_out_s874 == s101); //Assert at skyl2.sk:607 (0)
+  int[4] _out_s876 = {0,0,0,0};
+  hitState(s28, 3, _out_s876);
+  assert (_out_s876 == s28); //Assert at skyl2.sk:608 (0)
+  int[4] _out_s878 = {0,0,0,0};
+  hitState(s29, 0, _out_s878);
+  assert (_out_s878 == s2); //Assert at skyl2.sk:609 (0)
+  int[4] _out_s880 = {0,0,0,0};
+  hitState(s29, 1, _out_s880);
+  assert (_out_s880 == s29); //Assert at skyl2.sk:610 (0)
+  int[4] _out_s882 = {0,0,0,0};
+  hitState(s29, 2, _out_s882);
+  assert (_out_s882 == s61); //Assert at skyl2.sk:611 (0)
+  int[4] _out_s884 = {0,0,0,0};
+  hitState(s29, 3, _out_s884);
+  assert (_out_s884 == s29); //Assert at skyl2.sk:612 (0)
+  int[4] _out_s886 = {0,0,0,0};
+  hitState(s30, 0, _out_s886);
+  assert (_out_s886 == s17); //Assert at skyl2.sk:613 (0)
+  int[4] _out_s888 = {0,0,0,0};
+  hitState(s30, 1, _out_s888);
+  assert (_out_s888 == s30); //Assert at skyl2.sk:614 (0)
+  int[4] _out_s890 = {0,0,0,0};
+  hitState(s30, 2, _out_s890);
+  assert (_out_s890 == s125); //Assert at skyl2.sk:615 (0)
+  int[4] _out_s892 = {0,0,0,0};
+  hitState(s30, 3, _out_s892);
+  assert (_out_s892 == s65); //Assert at skyl2.sk:616 (0)
+  int[4] _out_s894 = {0,0,0,0};
+  hitState(s31, 0, _out_s894);
+  assert (_out_s894 == s28); //Assert at skyl2.sk:617 (0)
+  int[4] _out_s896 = {0,0,0,0};
+  hitState(s31, 1, _out_s896);
+  assert (_out_s896 == s3); //Assert at skyl2.sk:618 (0)
+  int[4] _out_s898 = {0,0,0,0};
+  hitState(s31, 2, _out_s898);
+  assert (_out_s898 == s117); //Assert at skyl2.sk:619 (0)
+  int[4] _out_s900 = {0,0,0,0};
+  hitState(s31, 3, _out_s900);
+  assert (_out_s900 == s31); //Assert at skyl2.sk:620 (0)
+  int[4] _out_s902 = {0,0,0,0};
+  hitState(s32, 0, _out_s902);
+  assert (_out_s902 == s36); //Assert at skyl2.sk:621 (0)
+  int[4] _out_s904 = {0,0,0,0};
+  hitState(s32, 1, _out_s904);
+  assert (_out_s904 == s42); //Assert at skyl2.sk:622 (0)
+  int[4] _out_s906 = {0,0,0,0};
+  hitState(s32, 2, _out_s906);
+  assert (_out_s906 == s75); //Assert at skyl2.sk:623 (0)
+  int[4] _out_s908 = {0,0,0,0};
+  hitState(s32, 3, _out_s908);
+  assert (_out_s908 == s31); //Assert at skyl2.sk:624 (0)
+  int[4] _out_s910 = {0,0,0,0};
+  hitState(s33, 0, _out_s910);
+  assert (_out_s910 == s48); //Assert at skyl2.sk:625 (0)
+  int[4] _out_s912 = {0,0,0,0};
+  hitState(s33, 1, _out_s912);
+  assert (_out_s912 == s33); //Assert at skyl2.sk:626 (0)
+  int[4] _out_s914 = {0,0,0,0};
+  hitState(s33, 2, _out_s914);
+  assert (_out_s914 == s10); //Assert at skyl2.sk:627 (0)
+  int[4] _out_s916 = {0,0,0,0};
+  hitState(s33, 3, _out_s916);
+  assert (_out_s916 == s33); //Assert at skyl2.sk:628 (0)
+  int[4] _out_s918 = {0,0,0,0};
+  hitState(s34, 0, _out_s918);
+  assert (_out_s918 == s34); //Assert at skyl2.sk:629 (0)
+  int[4] _out_s920 = {0,0,0,0};
+  hitState(s34, 1, _out_s920);
+  assert (_out_s920 == s17); //Assert at skyl2.sk:630 (0)
+  int[4] _out_s922 = {0,0,0,0};
+  hitState(s34, 2, _out_s922);
+  assert (_out_s922 == s6); //Assert at skyl2.sk:631 (0)
+  int[4] _out_s924 = {0,0,0,0};
+  hitState(s34, 3, _out_s924);
+  assert (_out_s924 == s1); //Assert at skyl2.sk:632 (0)
+  int[4] _out_s926 = {0,0,0,0};
+  hitState(s35, 0, _out_s926);
+  assert (_out_s926 == s1); //Assert at skyl2.sk:633 (0)
+  int[4] _out_s928 = {0,0,0,0};
+  hitState(s35, 1, _out_s928);
+  assert (_out_s928 == s65); //Assert at skyl2.sk:634 (0)
+  int[4] _out_s930 = {0,0,0,0};
+  hitState(s35, 2, _out_s930);
+  assert (_out_s930 == s86); //Assert at skyl2.sk:635 (0)
+  int[4] _out_s932 = {0,0,0,0};
+  hitState(s35, 3, _out_s932);
+  assert (_out_s932 == s35); //Assert at skyl2.sk:636 (0)
+  int[4] _out_s934 = {0,0,0,0};
+  hitState(s36, 0, _out_s934);
+  assert (_out_s934 == s36); //Assert at skyl2.sk:637 (0)
+  int[4] _out_s936 = {0,0,0,0};
+  hitState(s36, 1, _out_s936);
+  assert (_out_s936 == s41); //Assert at skyl2.sk:638 (0)
+  int[4] _out_s938 = {0,0,0,0};
+  hitState(s36, 2, _out_s938);
+  assert (_out_s938 == s124); //Assert at skyl2.sk:639 (0)
+  int[4] _out_s940 = {0,0,0,0};
+  hitState(s36, 3, _out_s940);
+  assert (_out_s940 == s28); //Assert at skyl2.sk:640 (0)
+  int[4] _out_s942 = {0,0,0,0};
+  hitState(s37, 0, _out_s942);
+  assert (_out_s942 == s37); //Assert at skyl2.sk:641 (0)
+  int[4] _out_s944 = {0,0,0,0};
+  hitState(s37, 1, _out_s944);
+  assert (_out_s944 == s38); //Assert at skyl2.sk:642 (0)
+  int[4] _out_s946 = {0,0,0,0};
+  hitState(s37, 2, _out_s946);
+  assert (_out_s946 == s4); //Assert at skyl2.sk:643 (0)
+  int[4] _out_s948 = {0,0,0,0};
+  hitState(s37, 3, _out_s948);
+  assert (_out_s948 == s37); //Assert at skyl2.sk:644 (0)
+  int[4] _out_s950 = {0,0,0,0};
+  hitState(s38, 0, _out_s950);
+  assert (_out_s950 == s41); //Assert at skyl2.sk:645 (0)
+  int[4] _out_s952 = {0,0,0,0};
+  hitState(s38, 1, _out_s952);
+  assert (_out_s952 == s38); //Assert at skyl2.sk:646 (0)
+  int[4] _out_s954 = {0,0,0,0};
+  hitState(s38, 2, _out_s954);
+  assert (_out_s954 == s54); //Assert at skyl2.sk:647 (0)
+  int[4] _out_s956 = {0,0,0,0};
+  hitState(s38, 3, _out_s956);
+  assert (_out_s956 == s65); //Assert at skyl2.sk:648 (0)
+  int[4] _out_s958 = {0,0,0,0};
+  hitState(s39, 0, _out_s958);
+  assert (_out_s958 == s39); //Assert at skyl2.sk:649 (0)
+  int[4] _out_s960 = {0,0,0,0};
+  hitState(s39, 1, _out_s960);
+  assert (_out_s960 == s25); //Assert at skyl2.sk:650 (0)
+  int[4] _out_s962 = {0,0,0,0};
+  hitState(s39, 2, _out_s962);
+  assert (_out_s962 == s39); //Assert at skyl2.sk:651 (0)
+  int[4] _out_s964 = {0,0,0,0};
+  hitState(s39, 3, _out_s964);
+  assert (_out_s964 == s4); //Assert at skyl2.sk:652 (0)
+  int[4] _out_s966 = {0,0,0,0};
+  hitState(s40, 0, _out_s966);
+  assert (_out_s966 == s6); //Assert at skyl2.sk:653 (0)
+  int[4] _out_s968 = {0,0,0,0};
+  hitState(s40, 1, _out_s968);
+  assert (_out_s968 == s125); //Assert at skyl2.sk:654 (0)
+  int[4] _out_s970 = {0,0,0,0};
+  hitState(s40, 2, _out_s970);
+  assert (_out_s970 == s40); //Assert at skyl2.sk:655 (0)
+  int[4] _out_s972 = {0,0,0,0};
+  hitState(s40, 3, _out_s972);
+  assert (_out_s972 == s86); //Assert at skyl2.sk:656 (0)
+  int[4] _out_s974 = {0,0,0,0};
+  hitState(s41, 0, _out_s974);
+  assert (_out_s974 == s41); //Assert at skyl2.sk:657 (0)
+  int[4] _out_s976 = {0,0,0,0};
+  hitState(s41, 1, _out_s976);
+  assert (_out_s976 == s41); //Assert at skyl2.sk:658 (0)
+  int[4] _out_s978 = {0,0,0,0};
+  hitState(s41, 2, _out_s978);
+  assert (_out_s978 == s131); //Assert at skyl2.sk:659 (0)
+  int[4] _out_s980 = {0,0,0,0};
+  hitState(s41, 3, _out_s980);
+  assert (_out_s980 == s2); //Assert at skyl2.sk:660 (0)
+  int[4] _out_s982 = {0,0,0,0};
+  hitState(s42, 0, _out_s982);
+  assert (_out_s982 == s41); //Assert at skyl2.sk:661 (0)
+  int[4] _out_s984 = {0,0,0,0};
+  hitState(s42, 1, _out_s984);
+  assert (_out_s984 == s42); //Assert at skyl2.sk:662 (0)
+  int[4] _out_s986 = {0,0,0,0};
+  hitState(s42, 2, _out_s986);
+  assert (_out_s986 == s49); //Assert at skyl2.sk:663 (0)
+  int[4] _out_s988 = {0,0,0,0};
+  hitState(s42, 3, _out_s988);
+  assert (_out_s988 == s3); //Assert at skyl2.sk:664 (0)
+  int[4] _out_s990 = {0,0,0,0};
+  hitState(s43, 0, _out_s990);
+  assert (_out_s990 == s122); //Assert at skyl2.sk:665 (0)
+  int[4] _out_s992 = {0,0,0,0};
+  hitState(s43, 1, _out_s992);
+  assert (_out_s992 == s49); //Assert at skyl2.sk:666 (0)
+  int[4] _out_s994 = {0,0,0,0};
+  hitState(s43, 2, _out_s994);
+  assert (_out_s994 == s43); //Assert at skyl2.sk:667 (0)
+  int[4] _out_s996 = {0,0,0,0};
+  hitState(s43, 3, _out_s996);
+  assert (_out_s996 == s9); //Assert at skyl2.sk:668 (0)
+  int[4] _out_s998 = {0,0,0,0};
+  hitState(s44, 0, _out_s998);
+  assert (_out_s998 == s45); //Assert at skyl2.sk:669 (0)
+  int[4] _out_s1000 = {0,0,0,0};
+  hitState(s44, 1, _out_s1000);
+  assert (_out_s1000 == s46); //Assert at skyl2.sk:670 (0)
+  int[4] _out_s1002 = {0,0,0,0};
+  hitState(s44, 2, _out_s1002);
+  assert (_out_s1002 == s50); //Assert at skyl2.sk:671 (0)
+  int[4] _out_s1004 = {0,0,0,0};
+  hitState(s44, 3, _out_s1004);
+  assert (_out_s1004 == s88); //Assert at skyl2.sk:672 (0)
+  int[4] _out_s1006 = {0,0,0,0};
+  hitState(s45, 0, _out_s1006);
+  assert (_out_s1006 == s45); //Assert at skyl2.sk:673 (0)
+  int[4] _out_s1008 = {0,0,0,0};
+  hitState(s45, 1, _out_s1008);
+  assert (_out_s1008 == s118); //Assert at skyl2.sk:674 (0)
+  int[4] _out_s1010 = {0,0,0,0};
+  hitState(s45, 2, _out_s1010);
+  assert (_out_s1010 == s39); //Assert at skyl2.sk:675 (0)
+  int[4] _out_s1012 = {0,0,0,0};
+  hitState(s45, 3, _out_s1012);
+  assert (_out_s1012 == s52); //Assert at skyl2.sk:676 (0)
+  int[4] _out_s1014 = {0,0,0,0};
+  hitState(s46, 0, _out_s1014);
+  assert (_out_s1014 == s47); //Assert at skyl2.sk:677 (0)
+  int[4] _out_s1016 = {0,0,0,0};
+  hitState(s46, 1, _out_s1016);
+  assert (_out_s1016 == s46); //Assert at skyl2.sk:678 (0)
+  int[4] _out_s1018 = {0,0,0,0};
+  hitState(s46, 2, _out_s1018);
+  assert (_out_s1018 == s59); //Assert at skyl2.sk:679 (0)
+  int[4] _out_s1020 = {0,0,0,0};
+  hitState(s46, 3, _out_s1020);
+  assert (_out_s1020 == s33); //Assert at skyl2.sk:680 (0)
+  int[4] _out_s1022 = {0,0,0,0};
+  hitState(s47, 0, _out_s1022);
+  assert (_out_s1022 == s47); //Assert at skyl2.sk:681 (0)
+  int[4] _out_s1024 = {0,0,0,0};
+  hitState(s47, 1, _out_s1024);
+  assert (_out_s1024 == s99); //Assert at skyl2.sk:682 (0)
+  int[4] _out_s1026 = {0,0,0,0};
+  hitState(s47, 2, _out_s1026);
+  assert (_out_s1026 == s18); //Assert at skyl2.sk:683 (0)
+  int[4] _out_s1028 = {0,0,0,0};
+  hitState(s47, 3, _out_s1028);
+  assert (_out_s1028 == s66); //Assert at skyl2.sk:684 (0)
+  int[4] _out_s1030 = {0,0,0,0};
+  hitState(s48, 0, _out_s1030);
+  assert (_out_s1030 == s48); //Assert at skyl2.sk:685 (0)
+  int[4] _out_s1032 = {0,0,0,0};
+  hitState(s48, 1, _out_s1032);
+  assert (_out_s1032 == s156); //Assert at skyl2.sk:686 (0)
+  int[4] _out_s1034 = {0,0,0,0};
+  hitState(s48, 2, _out_s1034);
+  assert (_out_s1034 == s40); //Assert at skyl2.sk:687 (0)
+  int[4] _out_s1036 = {0,0,0,0};
+  hitState(s48, 3, _out_s1036);
+  assert (_out_s1036 == s28); //Assert at skyl2.sk:688 (0)
+  int[4] _out_s1038 = {0,0,0,0};
+  hitState(s49, 0, _out_s1038);
+  assert (_out_s1038 == s56); //Assert at skyl2.sk:689 (0)
+  int[4] _out_s1040 = {0,0,0,0};
+  hitState(s49, 1, _out_s1040);
+  assert (_out_s1040 == s49); //Assert at skyl2.sk:690 (0)
+  int[4] _out_s1042 = {0,0,0,0};
+  hitState(s49, 2, _out_s1042);
+  assert (_out_s1042 == s49); //Assert at skyl2.sk:691 (0)
+  int[4] _out_s1044 = {0,0,0,0};
+  hitState(s49, 3, _out_s1044);
+  assert (_out_s1044 == s10); //Assert at skyl2.sk:692 (0)
+  int[4] _out_s1046 = {0,0,0,0};
+  hitState(s50, 0, _out_s1046);
+  assert (_out_s1046 == s39); //Assert at skyl2.sk:693 (0)
+  int[4] _out_s1048 = {0,0,0,0};
+  hitState(s50, 1, _out_s1048);
+  assert (_out_s1048 == s59); //Assert at skyl2.sk:694 (0)
+  int[4] _out_s1050 = {0,0,0,0};
+  hitState(s50, 2, _out_s1050);
+  assert (_out_s1050 == s50); //Assert at skyl2.sk:695 (0)
+  int[4] _out_s1052 = {0,0,0,0};
+  hitState(s50, 3, _out_s1052);
+  assert (_out_s1052 == s9); //Assert at skyl2.sk:696 (0)
+  int[4] _out_s1054 = {0,0,0,0};
+  hitState(s51, 0, _out_s1054);
+  assert (_out_s1054 == s156); //Assert at skyl2.sk:697 (0)
+  int[4] _out_s1056 = {0,0,0,0};
+  hitState(s51, 1, _out_s1056);
+  assert (_out_s1056 == s51); //Assert at skyl2.sk:698 (0)
+  int[4] _out_s1058 = {0,0,0,0};
+  hitState(s51, 2, _out_s1058);
+  assert (_out_s1058 == s21); //Assert at skyl2.sk:699 (0)
+  int[4] _out_s1060 = {0,0,0,0};
+  hitState(s51, 3, _out_s1060);
+  assert (_out_s1060 == s29); //Assert at skyl2.sk:700 (0)
+  int[4] _out_s1062 = {0,0,0,0};
+  hitState(s52, 0, _out_s1062);
+  assert (_out_s1062 == s52); //Assert at skyl2.sk:701 (0)
+  int[4] _out_s1064 = {0,0,0,0};
+  hitState(s52, 1, _out_s1064);
+  assert (_out_s1064 == s51); //Assert at skyl2.sk:702 (0)
+  int[4] _out_s1066 = {0,0,0,0};
+  hitState(s52, 2, _out_s1066);
+  assert (_out_s1066 == s4); //Assert at skyl2.sk:703 (0)
+  int[4] _out_s1068 = {0,0,0,0};
+  hitState(s52, 3, _out_s1068);
+  assert (_out_s1068 == s52); //Assert at skyl2.sk:704 (0)
+  int[4] _out_s1070 = {0,0,0,0};
+  hitState(s53, 0, _out_s1070);
+  assert (_out_s1070 == s76); //Assert at skyl2.sk:705 (0)
+  int[4] _out_s1072 = {0,0,0,0};
+  hitState(s53, 1, _out_s1072);
+  assert (_out_s1072 == s51); //Assert at skyl2.sk:706 (0)
+  int[4] _out_s1074 = {0,0,0,0};
+  hitState(s53, 2, _out_s1074);
+  assert (_out_s1074 == s54); //Assert at skyl2.sk:707 (0)
+  int[4] _out_s1076 = {0,0,0,0};
+  hitState(s53, 3, _out_s1076);
+  assert (_out_s1076 == s107); //Assert at skyl2.sk:708 (0)
+  int[4] _out_s1078 = {0,0,0,0};
+  hitState(s54, 0, _out_s1078);
+  assert (_out_s1078 == s151); //Assert at skyl2.sk:709 (0)
+  int[4] _out_s1080 = {0,0,0,0};
+  hitState(s54, 1, _out_s1080);
+  assert (_out_s1080 == s8); //Assert at skyl2.sk:710 (0)
+  int[4] _out_s1082 = {0,0,0,0};
+  hitState(s54, 2, _out_s1082);
+  assert (_out_s1082 == s54); //Assert at skyl2.sk:711 (0)
+  int[4] _out_s1084 = {0,0,0,0};
+  hitState(s54, 3, _out_s1084);
+  assert (_out_s1084 == s117); //Assert at skyl2.sk:712 (0)
+  int[4] _out_s1086 = {0,0,0,0};
+  hitState(s55, 0, _out_s1086);
+  assert (_out_s1086 == s150); //Assert at skyl2.sk:713 (0)
+  int[4] _out_s1088 = {0,0,0,0};
+  hitState(s55, 1, _out_s1088);
+  assert (_out_s1088 == s22); //Assert at skyl2.sk:714 (0)
+  int[4] _out_s1090 = {0,0,0,0};
+  hitState(s55, 2, _out_s1090);
+  assert (_out_s1090 == s54); //Assert at skyl2.sk:715 (0)
+  int[4] _out_s1092 = {0,0,0,0};
+  hitState(s55, 3, _out_s1092);
+  assert (_out_s1092 == s84); //Assert at skyl2.sk:716 (0)
+  int[4] _out_s1094 = {0,0,0,0};
+  hitState(s56, 0, _out_s1094);
+  assert (_out_s1094 == s56); //Assert at skyl2.sk:717 (0)
+  int[4] _out_s1096 = {0,0,0,0};
+  hitState(s56, 1, _out_s1096);
+  assert (_out_s1096 == s99); //Assert at skyl2.sk:718 (0)
+  int[4] _out_s1098 = {0,0,0,0};
+  hitState(s56, 2, _out_s1098);
+  assert (_out_s1098 == s151); //Assert at skyl2.sk:719 (0)
+  int[4] _out_s1100 = {0,0,0,0};
+  hitState(s56, 3, _out_s1100);
+  assert (_out_s1100 == s35); //Assert at skyl2.sk:720 (0)
+  int[4] _out_s1102 = {0,0,0,0};
+  hitState(s57, 0, _out_s1102);
+  assert (_out_s1102 == s58); //Assert at skyl2.sk:721 (0)
+  int[4] _out_s1104 = {0,0,0,0};
+  hitState(s57, 1, _out_s1104);
+  assert (_out_s1104 == s62); //Assert at skyl2.sk:722 (0)
+  int[4] _out_s1106 = {0,0,0,0};
+  hitState(s57, 2, _out_s1106);
+  assert (_out_s1106 == s129); //Assert at skyl2.sk:723 (0)
+  int[4] _out_s1108 = {0,0,0,0};
+  hitState(s57, 3, _out_s1108);
+  assert (_out_s1108 == s149); //Assert at skyl2.sk:724 (0)
+  int[4] _out_s1110 = {0,0,0,0};
+  hitState(s58, 0, _out_s1110);
+  assert (_out_s1110 == s58); //Assert at skyl2.sk:725 (0)
+  int[4] _out_s1112 = {0,0,0,0};
+  hitState(s58, 1, _out_s1112);
+  assert (_out_s1112 == s41); //Assert at skyl2.sk:726 (0)
+  int[4] _out_s1114 = {0,0,0,0};
+  hitState(s58, 2, _out_s1114);
+  assert (_out_s1114 == s122); //Assert at skyl2.sk:727 (0)
+  int[4] _out_s1116 = {0,0,0,0};
+  hitState(s58, 3, _out_s1116);
+  assert (_out_s1116 == s1); //Assert at skyl2.sk:728 (0)
+  int[4] _out_s1118 = {0,0,0,0};
+  hitState(s59, 0, _out_s1118);
+  assert (_out_s1118 == s100); //Assert at skyl2.sk:729 (0)
+  int[4] _out_s1120 = {0,0,0,0};
+  hitState(s59, 1, _out_s1120);
+  assert (_out_s1120 == s59); //Assert at skyl2.sk:730 (0)
+  int[4] _out_s1122 = {0,0,0,0};
+  hitState(s59, 2, _out_s1122);
+  assert (_out_s1122 == s59); //Assert at skyl2.sk:731 (0)
+  int[4] _out_s1124 = {0,0,0,0};
+  hitState(s59, 3, _out_s1124);
+  assert (_out_s1124 == s10); //Assert at skyl2.sk:732 (0)
+  int[4] _out_s1126 = {0,0,0,0};
+  hitState(s60, 0, _out_s1126);
+  assert (_out_s1126 == s100); //Assert at skyl2.sk:733 (0)
+  int[4] _out_s1128 = {0,0,0,0};
+  hitState(s60, 1, _out_s1128);
+  assert (_out_s1128 == s22); //Assert at skyl2.sk:734 (0)
+  int[4] _out_s1130 = {0,0,0,0};
+  hitState(s60, 2, _out_s1130);
+  assert (_out_s1130 == s21); //Assert at skyl2.sk:735 (0)
+  int[4] _out_s1132 = {0,0,0,0};
+  hitState(s60, 3, _out_s1132);
+  assert (_out_s1132 == s119); //Assert at skyl2.sk:736 (0)
+  int[4] _out_s1134 = {0,0,0,0};
+  hitState(s61, 0, _out_s1134);
+  assert (_out_s1134 == s73); //Assert at skyl2.sk:737 (0)
+  int[4] _out_s1136 = {0,0,0,0};
+  hitState(s61, 1, _out_s1136);
+  assert (_out_s1136 == s49); //Assert at skyl2.sk:738 (0)
+  int[4] _out_s1138 = {0,0,0,0};
+  hitState(s61, 2, _out_s1138);
+  assert (_out_s1138 == s61); //Assert at skyl2.sk:739 (0)
+  int[4] _out_s1140 = {0,0,0,0};
+  hitState(s61, 3, _out_s1140);
+  assert (_out_s1140 == s80); //Assert at skyl2.sk:740 (0)
+  int[4] _out_s1142 = {0,0,0,0};
+  hitState(s62, 0, _out_s1142);
+  assert (_out_s1142 == s41); //Assert at skyl2.sk:741 (0)
+  int[4] _out_s1144 = {0,0,0,0};
+  hitState(s62, 1, _out_s1144);
+  assert (_out_s1144 == s62); //Assert at skyl2.sk:742 (0)
+  int[4] _out_s1146 = {0,0,0,0};
+  hitState(s62, 2, _out_s1146);
+  assert (_out_s1146 == s91); //Assert at skyl2.sk:743 (0)
+  int[4] _out_s1148 = {0,0,0,0};
+  hitState(s62, 3, _out_s1148);
+  assert (_out_s1148 == s29); //Assert at skyl2.sk:744 (0)
+  int[4] _out_s1150 = {0,0,0,0};
+  hitState(s63, 0, _out_s1150);
+  assert (_out_s1150 == s63); //Assert at skyl2.sk:745 (0)
+  int[4] _out_s1152 = {0,0,0,0};
+  hitState(s63, 1, _out_s1152);
+  assert (_out_s1152 == s20); //Assert at skyl2.sk:746 (0)
+  int[4] _out_s1154 = {0,0,0,0};
+  hitState(s63, 2, _out_s1154);
+  assert (_out_s1154 == s6); //Assert at skyl2.sk:747 (0)
+  int[4] _out_s1156 = {0,0,0,0};
+  hitState(s63, 3, _out_s1156);
+  assert (_out_s1156 == s52); //Assert at skyl2.sk:748 (0)
+  int[4] _out_s1158 = {0,0,0,0};
+  hitState(s64, 0, _out_s1158);
+  assert (_out_s1158 == s63); //Assert at skyl2.sk:749 (0)
+  int[4] _out_s1160 = {0,0,0,0};
+  hitState(s64, 1, _out_s1160);
+  assert (_out_s1160 == s59); //Assert at skyl2.sk:750 (0)
+  int[4] _out_s1162 = {0,0,0,0};
+  hitState(s64, 2, _out_s1162);
+  assert (_out_s1162 == s64); //Assert at skyl2.sk:751 (0)
+  int[4] _out_s1164 = {0,0,0,0};
+  hitState(s64, 3, _out_s1164);
+  assert (_out_s1164 == s117); //Assert at skyl2.sk:752 (0)
+  int[4] _out_s1166 = {0,0,0,0};
+  hitState(s65, 0, _out_s1166);
+  assert (_out_s1166 == s2); //Assert at skyl2.sk:753 (0)
+  int[4] _out_s1168 = {0,0,0,0};
+  hitState(s65, 1, _out_s1168);
+  assert (_out_s1168 == s65); //Assert at skyl2.sk:754 (0)
+  int[4] _out_s1170 = {0,0,0,0};
+  hitState(s65, 2, _out_s1170);
+  assert (_out_s1170 == s64); //Assert at skyl2.sk:755 (0)
+  int[4] _out_s1172 = {0,0,0,0};
+  hitState(s65, 3, _out_s1172);
+  assert (_out_s1172 == s65); //Assert at skyl2.sk:756 (0)
+  int[4] _out_s1174 = {0,0,0,0};
+  hitState(s66, 0, _out_s1174);
+  assert (_out_s1174 == s28); //Assert at skyl2.sk:757 (0)
+  int[4] _out_s1176 = {0,0,0,0};
+  hitState(s66, 1, _out_s1176);
+  assert (_out_s1176 == s65); //Assert at skyl2.sk:758 (0)
+  int[4] _out_s1178 = {0,0,0,0};
+  hitState(s66, 2, _out_s1178);
+  assert (_out_s1178 == s129); //Assert at skyl2.sk:759 (0)
+  int[4] _out_s1180 = {0,0,0,0};
+  hitState(s66, 3, _out_s1180);
+  assert (_out_s1180 == s66); //Assert at skyl2.sk:760 (0)
+  int[4] _out_s1182 = {0,0,0,0};
+  hitState(s67, 0, _out_s1182);
+  assert (_out_s1182 == s73); //Assert at skyl2.sk:761 (0)
+  int[4] _out_s1184 = {0,0,0,0};
+  hitState(s67, 1, _out_s1184);
+  assert (_out_s1184 == s46); //Assert at skyl2.sk:762 (0)
+  int[4] _out_s1186 = {0,0,0,0};
+  hitState(s67, 2, _out_s1186);
+  assert (_out_s1186 == s64); //Assert at skyl2.sk:763 (0)
+  int[4] _out_s1188 = {0,0,0,0};
+  hitState(s67, 3, _out_s1188);
+  assert (_out_s1188 == s84); //Assert at skyl2.sk:764 (0)
+  int[4] _out_s1190 = {0,0,0,0};
+  hitState(s68, 0, _out_s1190);
+  assert (_out_s1190 == s63); //Assert at skyl2.sk:765 (0)
+  int[4] _out_s1192 = {0,0,0,0};
+  hitState(s68, 1, _out_s1192);
+  assert (_out_s1192 == s25); //Assert at skyl2.sk:766 (0)
+  int[4] _out_s1194 = {0,0,0,0};
+  hitState(s68, 2, _out_s1194);
+  assert (_out_s1194 == s40); //Assert at skyl2.sk:767 (0)
+  int[4] _out_s1196 = {0,0,0,0};
+  hitState(s68, 3, _out_s1196);
+  assert (_out_s1196 == s70); //Assert at skyl2.sk:768 (0)
+  int[4] _out_s1198 = {0,0,0,0};
+  hitState(s69, 0, _out_s1198);
+  assert (_out_s1198 == s45); //Assert at skyl2.sk:769 (0)
+  int[4] _out_s1200 = {0,0,0,0};
+  hitState(s69, 1, _out_s1200);
+  assert (_out_s1200 == s120); //Assert at skyl2.sk:770 (0)
+  int[4] _out_s1202 = {0,0,0,0};
+  hitState(s69, 2, _out_s1202);
+  assert (_out_s1202 == s124); //Assert at skyl2.sk:771 (0)
+  int[4] _out_s1204 = {0,0,0,0};
+  hitState(s69, 3, _out_s1204);
+  assert (_out_s1204 == s70); //Assert at skyl2.sk:772 (0)
+  int[4] _out_s1206 = {0,0,0,0};
+  hitState(s70, 0, _out_s1206);
+  assert (_out_s1206 == s52); //Assert at skyl2.sk:773 (0)
+  int[4] _out_s1208 = {0,0,0,0};
+  hitState(s70, 1, _out_s1208);
+  assert (_out_s1208 == s74); //Assert at skyl2.sk:774 (0)
+  int[4] _out_s1210 = {0,0,0,0};
+  hitState(s70, 2, _out_s1210);
+  assert (_out_s1210 == s86); //Assert at skyl2.sk:775 (0)
+  int[4] _out_s1212 = {0,0,0,0};
+  hitState(s70, 3, _out_s1212);
+  assert (_out_s1212 == s70); //Assert at skyl2.sk:776 (0)
+  int[4] _out_s1214 = {0,0,0,0};
+  hitState(s71, 0, _out_s1214);
+  assert (_out_s1214 == s78); //Assert at skyl2.sk:777 (0)
+  int[4] _out_s1216 = {0,0,0,0};
+  hitState(s71, 1, _out_s1216);
+  assert (_out_s1216 == s74); //Assert at skyl2.sk:778 (0)
+  int[4] _out_s1218 = {0,0,0,0};
+  hitState(s71, 2, _out_s1218);
+  assert (_out_s1218 == s129); //Assert at skyl2.sk:779 (0)
+  int[4] _out_s1220 = {0,0,0,0};
+  hitState(s71, 3, _out_s1220);
+  assert (_out_s1220 == s19); //Assert at skyl2.sk:780 (0)
+  int[4] _out_s1222 = {0,0,0,0};
+  hitState(s72, 0, _out_s1222);
+  assert (_out_s1222 == s63); //Assert at skyl2.sk:781 (0)
+  int[4] _out_s1224 = {0,0,0,0};
+  hitState(s72, 1, _out_s1224);
+  assert (_out_s1224 == s22); //Assert at skyl2.sk:782 (0)
+  int[4] _out_s1226 = {0,0,0,0};
+  hitState(s72, 2, _out_s1226);
+  assert (_out_s1226 == s5); //Assert at skyl2.sk:783 (0)
+  int[4] _out_s1228 = {0,0,0,0};
+  hitState(s72, 3, _out_s1228);
+  assert (_out_s1228 == s88); //Assert at skyl2.sk:784 (0)
+  int[4] _out_s1230 = {0,0,0,0};
+  hitState(s73, 0, _out_s1230);
+  assert (_out_s1230 == s73); //Assert at skyl2.sk:785 (0)
+  int[4] _out_s1232 = {0,0,0,0};
+  hitState(s73, 1, _out_s1232);
+  assert (_out_s1232 == s99); //Assert at skyl2.sk:786 (0)
+  int[4] _out_s1234 = {0,0,0,0};
+  hitState(s73, 2, _out_s1234);
+  assert (_out_s1234 == s6); //Assert at skyl2.sk:787 (0)
+  int[4] _out_s1236 = {0,0,0,0};
+  hitState(s73, 3, _out_s1236);
+  assert (_out_s1236 == s37); //Assert at skyl2.sk:788 (0)
+  int[4] _out_s1238 = {0,0,0,0};
+  hitState(s74, 0, _out_s1238);
+  assert (_out_s1238 == s156); //Assert at skyl2.sk:789 (0)
+  int[4] _out_s1240 = {0,0,0,0};
+  hitState(s74, 1, _out_s1240);
+  assert (_out_s1240 == s74); //Assert at skyl2.sk:790 (0)
+  int[4] _out_s1242 = {0,0,0,0};
+  hitState(s74, 2, _out_s1242);
+  assert (_out_s1242 == s59); //Assert at skyl2.sk:791 (0)
+  int[4] _out_s1244 = {0,0,0,0};
+  hitState(s74, 3, _out_s1244);
+  assert (_out_s1244 == s3); //Assert at skyl2.sk:792 (0)
+  int[4] _out_s1246 = {0,0,0,0};
+  hitState(s75, 0, _out_s1246);
+  assert (_out_s1246 == s45); //Assert at skyl2.sk:793 (0)
+  int[4] _out_s1248 = {0,0,0,0};
+  hitState(s75, 1, _out_s1248);
+  assert (_out_s1248 == s49); //Assert at skyl2.sk:794 (0)
+  int[4] _out_s1250 = {0,0,0,0};
+  hitState(s75, 2, _out_s1250);
+  assert (_out_s1250 == s75); //Assert at skyl2.sk:795 (0)
+  int[4] _out_s1252 = {0,0,0,0};
+  hitState(s75, 3, _out_s1252);
+  assert (_out_s1252 == s117); //Assert at skyl2.sk:796 (0)
+  int[4] _out_s1254 = {0,0,0,0};
+  hitState(s76, 0, _out_s1254);
+  assert (_out_s1254 == s76); //Assert at skyl2.sk:797 (0)
+  int[4] _out_s1256 = {0,0,0,0};
+  hitState(s76, 1, _out_s1256);
+  assert (_out_s1256 == s156); //Assert at skyl2.sk:798 (0)
+  int[4] _out_s1258 = {0,0,0,0};
+  hitState(s76, 2, _out_s1258);
+  assert (_out_s1258 == s130); //Assert at skyl2.sk:799 (0)
+  int[4] _out_s1260 = {0,0,0,0};
+  hitState(s76, 3, _out_s1260);
+  assert (_out_s1260 == s11); //Assert at skyl2.sk:800 (0)
+  int[4] _out_s1262 = {0,0,0,0};
+  hitState(s77, 0, _out_s1262);
+  assert (_out_s1262 == s73); //Assert at skyl2.sk:801 (0)
+  int[4] _out_s1264 = {0,0,0,0};
+  hitState(s77, 1, _out_s1264);
+  assert (_out_s1264 == s118); //Assert at skyl2.sk:802 (0)
+  int[4] _out_s1266 = {0,0,0,0};
+  hitState(s77, 2, _out_s1266);
+  assert (_out_s1266 == s40); //Assert at skyl2.sk:803 (0)
+  int[4] _out_s1268 = {0,0,0,0};
+  hitState(s77, 3, _out_s1268);
+  assert (_out_s1268 == s148); //Assert at skyl2.sk:804 (0)
+  int[4] _out_s1270 = {0,0,0,0};
+  hitState(s78, 0, _out_s1270);
+  assert (_out_s1270 == s78); //Assert at skyl2.sk:805 (0)
+  int[4] _out_s1272 = {0,0,0,0};
+  hitState(s78, 1, _out_s1272);
+  assert (_out_s1272 == s109); //Assert at skyl2.sk:806 (0)
+  int[4] _out_s1274 = {0,0,0,0};
+  hitState(s78, 2, _out_s1274);
+  assert (_out_s1274 == s122); //Assert at skyl2.sk:807 (0)
+  int[4] _out_s1276 = {0,0,0,0};
+  hitState(s78, 3, _out_s1276);
+  assert (_out_s1276 == s37); //Assert at skyl2.sk:808 (0)
+  int[4] _out_s1278 = {0,0,0,0};
+  hitState(s79, 0, _out_s1278);
+  assert (_out_s1278 == s34); //Assert at skyl2.sk:809 (0)
+  int[4] _out_s1280 = {0,0,0,0};
+  hitState(s79, 1, _out_s1280);
+  assert (_out_s1280 == s30); //Assert at skyl2.sk:810 (0)
+  int[4] _out_s1282 = {0,0,0,0};
+  hitState(s79, 2, _out_s1282);
+  assert (_out_s1282 == s40); //Assert at skyl2.sk:811 (0)
+  int[4] _out_s1284 = {0,0,0,0};
+  hitState(s79, 3, _out_s1284);
+  assert (_out_s1284 == s35); //Assert at skyl2.sk:812 (0)
+  int[4] _out_s1286 = {0,0,0,0};
+  hitState(s80, 0, _out_s1286);
+  assert (_out_s1286 == s147); //Assert at skyl2.sk:813 (0)
+  int[4] _out_s1288 = {0,0,0,0};
+  hitState(s80, 1, _out_s1288);
+  assert (_out_s1288 == s10); //Assert at skyl2.sk:814 (0)
+  int[4] _out_s1290 = {0,0,0,0};
+  hitState(s80, 2, _out_s1290);
+  assert (_out_s1290 == s80); //Assert at skyl2.sk:815 (0)
+  int[4] _out_s1292 = {0,0,0,0};
+  hitState(s80, 3, _out_s1292);
+  assert (_out_s1292 == s80); //Assert at skyl2.sk:816 (0)
+  int[4] _out_s1294 = {0,0,0,0};
+  hitState(s81, 0, _out_s1294);
+  assert (_out_s1294 == s81); //Assert at skyl2.sk:817 (0)
+  int[4] _out_s1296 = {0,0,0,0};
+  hitState(s81, 1, _out_s1296);
+  assert (_out_s1296 == s98); //Assert at skyl2.sk:818 (0)
+  int[4] _out_s1298 = {0,0,0,0};
+  hitState(s81, 2, _out_s1298);
+  assert (_out_s1298 == s122); //Assert at skyl2.sk:819 (0)
+  int[4] _out_s1300 = {0,0,0,0};
+  hitState(s81, 3, _out_s1300);
+  assert (_out_s1300 == s52); //Assert at skyl2.sk:820 (0)
+  int[4] _out_s1302 = {0,0,0,0};
+  hitState(s82, 0, _out_s1302);
+  assert (_out_s1302 == s4); //Assert at skyl2.sk:821 (0)
+  int[4] _out_s1304 = {0,0,0,0};
+  hitState(s82, 1, _out_s1304);
+  assert (_out_s1304 == s89); //Assert at skyl2.sk:822 (0)
+  int[4] _out_s1306 = {0,0,0,0};
+  hitState(s82, 2, _out_s1306);
+  assert (_out_s1306 == s82); //Assert at skyl2.sk:823 (0)
+  int[4] _out_s1308 = {0,0,0,0};
+  hitState(s82, 3, _out_s1308);
+  assert (_out_s1308 == s82); //Assert at skyl2.sk:824 (0)
+  int[4] _out_s1310 = {0,0,0,0};
+  hitState(s83, 0, _out_s1310);
+  assert (_out_s1310 == s14); //Assert at skyl2.sk:825 (0)
+  int[4] _out_s1312 = {0,0,0,0};
+  hitState(s83, 1, _out_s1312);
+  assert (_out_s1312 == s83); //Assert at skyl2.sk:826 (0)
+  int[4] _out_s1314 = {0,0,0,0};
+  hitState(s83, 2, _out_s1314);
+  assert (_out_s1314 == s59); //Assert at skyl2.sk:827 (0)
+  int[4] _out_s1316 = {0,0,0,0};
+  hitState(s83, 3, _out_s1316);
+  assert (_out_s1316 == s94); //Assert at skyl2.sk:828 (0)
+  int[4] _out_s1318 = {0,0,0,0};
+  hitState(s84, 0, _out_s1318);
+  assert (_out_s1318 == s78); //Assert at skyl2.sk:829 (0)
+  int[4] _out_s1320 = {0,0,0,0};
+  hitState(s84, 1, _out_s1320);
+  assert (_out_s1320 == s33); //Assert at skyl2.sk:830 (0)
+  int[4] _out_s1322 = {0,0,0,0};
+  hitState(s84, 2, _out_s1322);
+  assert (_out_s1322 == s117); //Assert at skyl2.sk:831 (0)
+  int[4] _out_s1324 = {0,0,0,0};
+  hitState(s84, 3, _out_s1324);
+  assert (_out_s1324 == s84); //Assert at skyl2.sk:832 (0)
+  int[4] _out_s1326 = {0,0,0,0};
+  hitState(s85, 0, _out_s1326);
+  assert (_out_s1326 == s58); //Assert at skyl2.sk:833 (0)
+  int[4] _out_s1328 = {0,0,0,0};
+  hitState(s85, 1, _out_s1328);
+  assert (_out_s1328 == s42); //Assert at skyl2.sk:834 (0)
+  int[4] _out_s1330 = {0,0,0,0};
+  hitState(s85, 2, _out_s1330);
+  assert (_out_s1330 == s43); //Assert at skyl2.sk:835 (0)
+  int[4] _out_s1332 = {0,0,0,0};
+  hitState(s85, 3, _out_s1332);
+  assert (_out_s1332 == s0); //Assert at skyl2.sk:836 (0)
+  int[4] _out_s1334 = {0,0,0,0};
+  hitState(s86, 0, _out_s1334);
+  assert (_out_s1334 == s4); //Assert at skyl2.sk:837 (0)
+  int[4] _out_s1336 = {0,0,0,0};
+  hitState(s86, 1, _out_s1336);
+  assert (_out_s1336 == s83); //Assert at skyl2.sk:838 (0)
+  int[4] _out_s1338 = {0,0,0,0};
+  hitState(s86, 2, _out_s1338);
+  assert (_out_s1338 == s86); //Assert at skyl2.sk:839 (0)
+  int[4] _out_s1340 = {0,0,0,0};
+  hitState(s86, 3, _out_s1340);
+  assert (_out_s1340 == s86); //Assert at skyl2.sk:840 (0)
+  int[4] _out_s1342 = {0,0,0,0};
+  hitState(s87, 0, _out_s1342);
+  assert (_out_s1342 == s34); //Assert at skyl2.sk:841 (0)
+  int[4] _out_s1344 = {0,0,0,0};
+  hitState(s87, 1, _out_s1344);
+  assert (_out_s1344 == s89); //Assert at skyl2.sk:842 (0)
+  int[4] _out_s1346 = {0,0,0,0};
+  hitState(s87, 2, _out_s1346);
+  assert (_out_s1346 == s61); //Assert at skyl2.sk:843 (0)
+  int[4] _out_s1348 = {0,0,0,0};
+  hitState(s87, 3, _out_s1348);
+  assert (_out_s1348 == s119); //Assert at skyl2.sk:844 (0)
+  int[4] _out_s1350 = {0,0,0,0};
+  hitState(s88, 0, _out_s1350);
+  assert (_out_s1350 == s52); //Assert at skyl2.sk:845 (0)
+  int[4] _out_s1352 = {0,0,0,0};
+  hitState(s88, 1, _out_s1352);
+  assert (_out_s1352 == s33); //Assert at skyl2.sk:846 (0)
+  int[4] _out_s1354 = {0,0,0,0};
+  hitState(s88, 2, _out_s1354);
+  assert (_out_s1354 == s9); //Assert at skyl2.sk:847 (0)
+  int[4] _out_s1356 = {0,0,0,0};
+  hitState(s88, 3, _out_s1356);
+  assert (_out_s1356 == s88); //Assert at skyl2.sk:848 (0)
+  int[4] _out_s1358 = {0,0,0,0};
+  hitState(s89, 0, _out_s1358);
+  assert (_out_s1358 == s97); //Assert at skyl2.sk:849 (0)
+  int[4] _out_s1360 = {0,0,0,0};
+  hitState(s89, 1, _out_s1360);
+  assert (_out_s1360 == s89); //Assert at skyl2.sk:850 (0)
+  int[4] _out_s1362 = {0,0,0,0};
+  hitState(s89, 2, _out_s1362);
+  assert (_out_s1362 == s49); //Assert at skyl2.sk:851 (0)
+  int[4] _out_s1364 = {0,0,0,0};
+  hitState(s89, 3, _out_s1364);
+  assert (_out_s1364 == s33); //Assert at skyl2.sk:852 (0)
+  int[4] _out_s1366 = {0,0,0,0};
+  hitState(s90, 0, _out_s1366);
+  assert (_out_s1366 == s97); //Assert at skyl2.sk:853 (0)
+  int[4] _out_s1368 = {0,0,0,0};
+  hitState(s90, 1, _out_s1368);
+  assert (_out_s1368 == s30); //Assert at skyl2.sk:854 (0)
+  int[4] _out_s1370 = {0,0,0,0};
+  hitState(s90, 2, _out_s1370);
+  assert (_out_s1370 == s130); //Assert at skyl2.sk:855 (0)
+  int[4] _out_s1372 = {0,0,0,0};
+  hitState(s90, 3, _out_s1372);
+  assert (_out_s1372 == s66); //Assert at skyl2.sk:856 (0)
+  int[4] _out_s1374 = {0,0,0,0};
+  hitState(s91, 0, _out_s1374);
+  assert (_out_s1374 == s150); //Assert at skyl2.sk:857 (0)
+  int[4] _out_s1376 = {0,0,0,0};
+  hitState(s91, 1, _out_s1376);
+  assert (_out_s1376 == s59); //Assert at skyl2.sk:858 (0)
+  int[4] _out_s1378 = {0,0,0,0};
+  hitState(s91, 2, _out_s1378);
+  assert (_out_s1378 == s91); //Assert at skyl2.sk:859 (0)
+  int[4] _out_s1380 = {0,0,0,0};
+  hitState(s91, 3, _out_s1380);
+  assert (_out_s1380 == s80); //Assert at skyl2.sk:860 (0)
+  int[4] _out_s1382 = {0,0,0,0};
+  hitState(s92, 0, _out_s1382);
+  assert (_out_s1382 == s97); //Assert at skyl2.sk:861 (0)
+  int[4] _out_s1384 = {0,0,0,0};
+  hitState(s92, 1, _out_s1384);
+  assert (_out_s1384 == s83); //Assert at skyl2.sk:862 (0)
+  int[4] _out_s1386 = {0,0,0,0};
+  hitState(s92, 2, _out_s1386);
+  assert (_out_s1386 == s91); //Assert at skyl2.sk:863 (0)
+  int[4] _out_s1388 = {0,0,0,0};
+  hitState(s92, 3, _out_s1388);
+  assert (_out_s1388 == s93); //Assert at skyl2.sk:864 (0)
+  int[4] _out_s1390 = {0,0,0,0};
+  hitState(s93, 0, _out_s1390);
+  assert (_out_s1390 == s36); //Assert at skyl2.sk:865 (0)
+  int[4] _out_s1392 = {0,0,0,0};
+  hitState(s93, 1, _out_s1392);
+  assert (_out_s1392 == s94); //Assert at skyl2.sk:866 (0)
+  int[4] _out_s1394 = {0,0,0,0};
+  hitState(s93, 2, _out_s1394);
+  assert (_out_s1394 == s80); //Assert at skyl2.sk:867 (0)
+  int[4] _out_s1396 = {0,0,0,0};
+  hitState(s93, 3, _out_s1396);
+  assert (_out_s1396 == s93); //Assert at skyl2.sk:868 (0)
+  int[4] _out_s1398 = {0,0,0,0};
+  hitState(s94, 0, _out_s1398);
+  assert (_out_s1398 == s96); //Assert at skyl2.sk:869 (0)
+  int[4] _out_s1400 = {0,0,0,0};
+  hitState(s94, 1, _out_s1400);
+  assert (_out_s1400 == s94); //Assert at skyl2.sk:870 (0)
+  int[4] _out_s1402 = {0,0,0,0};
+  hitState(s94, 2, _out_s1402);
+  assert (_out_s1402 == s10); //Assert at skyl2.sk:871 (0)
+  int[4] _out_s1404 = {0,0,0,0};
+  hitState(s94, 3, _out_s1404);
+  assert (_out_s1404 == s94); //Assert at skyl2.sk:872 (0)
+  int[4] _out_s1406 = {0,0,0,0};
+  hitState(s95, 0, _out_s1406);
+  assert (_out_s1406 == s96); //Assert at skyl2.sk:873 (0)
+  int[4] _out_s1408 = {0,0,0,0};
+  hitState(s95, 1, _out_s1408);
+  assert (_out_s1408 == s42); //Assert at skyl2.sk:874 (0)
+  int[4] _out_s1410 = {0,0,0,0};
+  hitState(s95, 2, _out_s1410);
+  assert (_out_s1410 == s61); //Assert at skyl2.sk:875 (0)
+  int[4] _out_s1412 = {0,0,0,0};
+  hitState(s95, 3, _out_s1412);
+  assert (_out_s1412 == s15); //Assert at skyl2.sk:876 (0)
+  int[4] _out_s1414 = {0,0,0,0};
+  hitState(s96, 0, _out_s1414);
+  assert (_out_s1414 == s96); //Assert at skyl2.sk:877 (0)
+  int[4] _out_s1416 = {0,0,0,0};
+  hitState(s96, 1, _out_s1416);
+  assert (_out_s1416 == s41); //Assert at skyl2.sk:878 (0)
+  int[4] _out_s1418 = {0,0,0,0};
+  hitState(s96, 2, _out_s1418);
+  assert (_out_s1418 == s132); //Assert at skyl2.sk:879 (0)
+  int[4] _out_s1420 = {0,0,0,0};
+  hitState(s96, 3, _out_s1420);
+  assert (_out_s1420 == s11); //Assert at skyl2.sk:880 (0)
+  int[4] _out_s1422 = {0,0,0,0};
+  hitState(s97, 0, _out_s1422);
+  assert (_out_s1422 == s97); //Assert at skyl2.sk:881 (0)
+  int[4] _out_s1424 = {0,0,0,0};
+  hitState(s97, 1, _out_s1424);
+  assert (_out_s1424 == s17); //Assert at skyl2.sk:882 (0)
+  int[4] _out_s1426 = {0,0,0,0};
+  hitState(s97, 2, _out_s1426);
+  assert (_out_s1426 == s151); //Assert at skyl2.sk:883 (0)
+  int[4] _out_s1428 = {0,0,0,0};
+  hitState(s97, 3, _out_s1428);
+  assert (_out_s1428 == s28); //Assert at skyl2.sk:884 (0)
+  int[4] _out_s1430 = {0,0,0,0};
+  hitState(s98, 0, _out_s1430);
+  assert (_out_s1430 == s17); //Assert at skyl2.sk:885 (0)
+  int[4] _out_s1432 = {0,0,0,0};
+  hitState(s98, 1, _out_s1432);
+  assert (_out_s1432 == s98); //Assert at skyl2.sk:886 (0)
+  int[4] _out_s1434 = {0,0,0,0};
+  hitState(s98, 2, _out_s1434);
+  assert (_out_s1434 == s128); //Assert at skyl2.sk:887 (0)
+  int[4] _out_s1436 = {0,0,0,0};
+  hitState(s98, 3, _out_s1436);
+  assert (_out_s1436 == s29); //Assert at skyl2.sk:888 (0)
+  int[4] _out_s1438 = {0,0,0,0};
+  hitState(s99, 0, _out_s1438);
+  assert (_out_s1438 == s99); //Assert at skyl2.sk:889 (0)
+  int[4] _out_s1440 = {0,0,0,0};
+  hitState(s99, 1, _out_s1440);
+  assert (_out_s1440 == s99); //Assert at skyl2.sk:890 (0)
+  int[4] _out_s1442 = {0,0,0,0};
+  hitState(s99, 2, _out_s1442);
+  assert (_out_s1442 == s7); //Assert at skyl2.sk:891 (0)
+  int[4] _out_s1444 = {0,0,0,0};
+  hitState(s99, 3, _out_s1444);
+  assert (_out_s1444 == s27); //Assert at skyl2.sk:892 (0)
+  int[4] _out_s1446 = {0,0,0,0};
+  hitState(s100, 0, _out_s1446);
+  assert (_out_s1446 == s100); //Assert at skyl2.sk:893 (0)
+  int[4] _out_s1448 = {0,0,0,0};
+  hitState(s100, 1, _out_s1448);
+  assert (_out_s1448 == s20); //Assert at skyl2.sk:894 (0)
+  int[4] _out_s1450 = {0,0,0,0};
+  hitState(s100, 2, _out_s1450);
+  assert (_out_s1450 == s18); //Assert at skyl2.sk:895 (0)
+  int[4] _out_s1452 = {0,0,0,0};
+  hitState(s100, 3, _out_s1452);
+  assert (_out_s1452 == s149); //Assert at skyl2.sk:896 (0)
+  int[4] _out_s1454 = {0,0,0,0};
+  hitState(s101, 0, _out_s1454);
+  assert (_out_s1454 == s122); //Assert at skyl2.sk:897 (0)
+  int[4] _out_s1456 = {0,0,0,0};
+  hitState(s101, 1, _out_s1456);
+  assert (_out_s1456 == s104); //Assert at skyl2.sk:898 (0)
+  int[4] _out_s1458 = {0,0,0,0};
+  hitState(s101, 2, _out_s1458);
+  assert (_out_s1458 == s101); //Assert at skyl2.sk:899 (0)
+  int[4] _out_s1460 = {0,0,0,0};
+  hitState(s101, 3, _out_s1460);
+  assert (_out_s1460 == s86); //Assert at skyl2.sk:900 (0)
+  int[4] _out_s1462 = {0,0,0,0};
+  hitState(s102, 0, _out_s1462);
+  assert (_out_s1462 == s45); //Assert at skyl2.sk:901 (0)
+  int[4] _out_s1464 = {0,0,0,0};
+  hitState(s102, 1, _out_s1464);
+  assert (_out_s1464 == s104); //Assert at skyl2.sk:902 (0)
+  int[4] _out_s1466 = {0,0,0,0};
+  hitState(s102, 2, _out_s1466);
+  assert (_out_s1466 == s12); //Assert at skyl2.sk:903 (0)
+  int[4] _out_s1468 = {0,0,0,0};
+  hitState(s102, 3, _out_s1468);
+  assert (_out_s1468 == s103); //Assert at skyl2.sk:904 (0)
+  int[4] _out_s1470 = {0,0,0,0};
+  hitState(s103, 0, _out_s1470);
+  assert (_out_s1470 == s52); //Assert at skyl2.sk:905 (0)
+  int[4] _out_s1472 = {0,0,0,0};
+  hitState(s103, 1, _out_s1472);
+  assert (_out_s1472 == s127); //Assert at skyl2.sk:906 (0)
+  int[4] _out_s1474 = {0,0,0,0};
+  hitState(s103, 2, _out_s1474);
+  assert (_out_s1474 == s82); //Assert at skyl2.sk:907 (0)
+  int[4] _out_s1476 = {0,0,0,0};
+  hitState(s103, 3, _out_s1476);
+  assert (_out_s1476 == s103); //Assert at skyl2.sk:908 (0)
+  int[4] _out_s1478 = {0,0,0,0};
+  hitState(s104, 0, _out_s1478);
+  assert (_out_s1478 == s99); //Assert at skyl2.sk:909 (0)
+  int[4] _out_s1480 = {0,0,0,0};
+  hitState(s104, 1, _out_s1480);
+  assert (_out_s1480 == s104); //Assert at skyl2.sk:910 (0)
+  int[4] _out_s1482 = {0,0,0,0};
+  hitState(s104, 2, _out_s1482);
+  assert (_out_s1482 == s8); //Assert at skyl2.sk:911 (0)
+  int[4] _out_s1484 = {0,0,0,0};
+  hitState(s104, 3, _out_s1484);
+  assert (_out_s1484 == s94); //Assert at skyl2.sk:912 (0)
+  int[4] _out_s1486 = {0,0,0,0};
+  hitState(s105, 0, _out_s1486);
+  assert (_out_s1486 == s47); //Assert at skyl2.sk:913 (0)
+  int[4] _out_s1488 = {0,0,0,0};
+  hitState(s105, 1, _out_s1488);
+  assert (_out_s1488 == s104); //Assert at skyl2.sk:914 (0)
+  int[4] _out_s1490 = {0,0,0,0};
+  hitState(s105, 2, _out_s1490);
+  assert (_out_s1490 == s21); //Assert at skyl2.sk:915 (0)
+  int[4] _out_s1492 = {0,0,0,0};
+  hitState(s105, 3, _out_s1492);
+  assert (_out_s1492 == s93); //Assert at skyl2.sk:916 (0)
+  int[4] _out_s1494 = {0,0,0,0};
+  hitState(s106, 0, _out_s1494);
+  assert (_out_s1494 == s48); //Assert at skyl2.sk:917 (0)
+  int[4] _out_s1496 = {0,0,0,0};
+  hitState(s106, 1, _out_s1496);
+  assert (_out_s1496 == s127); //Assert at skyl2.sk:918 (0)
+  int[4] _out_s1498 = {0,0,0,0};
+  hitState(s106, 2, _out_s1498);
+  assert (_out_s1498 == s61); //Assert at skyl2.sk:919 (0)
+  int[4] _out_s1500 = {0,0,0,0};
+  hitState(s106, 3, _out_s1500);
+  assert (_out_s1500 == s93); //Assert at skyl2.sk:920 (0)
+  int[4] _out_s1502 = {0,0,0,0};
+  hitState(s107, 0, _out_s1502);
+  assert (_out_s1502 == s11); //Assert at skyl2.sk:921 (0)
+  int[4] _out_s1504 = {0,0,0,0};
+  hitState(s107, 1, _out_s1504);
+  assert (_out_s1504 == s29); //Assert at skyl2.sk:922 (0)
+  int[4] _out_s1506 = {0,0,0,0};
+  hitState(s107, 2, _out_s1506);
+  assert (_out_s1506 == s75); //Assert at skyl2.sk:923 (0)
+  int[4] _out_s1508 = {0,0,0,0};
+  hitState(s107, 3, _out_s1508);
+  assert (_out_s1508 == s107); //Assert at skyl2.sk:924 (0)
+  int[4] _out_s1510 = {0,0,0,0};
+  hitState(s108, 0, _out_s1510);
+  assert (_out_s1510 == s37); //Assert at skyl2.sk:925 (0)
+  int[4] _out_s1512 = {0,0,0,0};
+  hitState(s108, 1, _out_s1512);
+  assert (_out_s1512 == s94); //Assert at skyl2.sk:926 (0)
+  int[4] _out_s1514 = {0,0,0,0};
+  hitState(s108, 2, _out_s1514);
+  assert (_out_s1514 == s9); //Assert at skyl2.sk:927 (0)
+  int[4] _out_s1516 = {0,0,0,0};
+  hitState(s108, 3, _out_s1516);
+  assert (_out_s1516 == s108); //Assert at skyl2.sk:928 (0)
+  int[4] _out_s1518 = {0,0,0,0};
+  hitState(s109, 0, _out_s1518);
+  assert (_out_s1518 == s156); //Assert at skyl2.sk:929 (0)
+  int[4] _out_s1520 = {0,0,0,0};
+  hitState(s109, 1, _out_s1520);
+  assert (_out_s1520 == s109); //Assert at skyl2.sk:930 (0)
+  int[4] _out_s1522 = {0,0,0,0};
+  hitState(s109, 2, _out_s1522);
+  assert (_out_s1522 == s133); //Assert at skyl2.sk:931 (0)
+  int[4] _out_s1524 = {0,0,0,0};
+  hitState(s109, 3, _out_s1524);
+  assert (_out_s1524 == s65); //Assert at skyl2.sk:932 (0)
+  int[4] _out_s1526 = {0,0,0,0};
+  hitState(s110, 0, _out_s1526);
+  assert (_out_s1526 == s47); //Assert at skyl2.sk:933 (0)
+  int[4] _out_s1528 = {0,0,0,0};
+  hitState(s110, 1, _out_s1528);
+  assert (_out_s1528 == s118); //Assert at skyl2.sk:934 (0)
+  int[4] _out_s1530 = {0,0,0,0};
+  hitState(s110, 2, _out_s1530);
+  assert (_out_s1530 == s24); //Assert at skyl2.sk:935 (0)
+  int[4] _out_s1532 = {0,0,0,0};
+  hitState(s110, 3, _out_s1532);
+  assert (_out_s1532 == s23); //Assert at skyl2.sk:936 (0)
+  int[4] _out_s1534 = {0,0,0,0};
+  hitState(s111, 0, _out_s1534);
+  assert (_out_s1534 == s96); //Assert at skyl2.sk:937 (0)
+  int[4] _out_s1536 = {0,0,0,0};
+  hitState(s111, 1, _out_s1536);
+  assert (_out_s1536 == s38); //Assert at skyl2.sk:938 (0)
+  int[4] _out_s1538 = {0,0,0,0};
+  hitState(s111, 2, _out_s1538);
+  assert (_out_s1538 == s5); //Assert at skyl2.sk:939 (0)
+  int[4] _out_s1540 = {0,0,0,0};
+  hitState(s111, 3, _out_s1540);
+  assert (_out_s1540 == s27); //Assert at skyl2.sk:940 (0)
+  int[4] _out_s1542 = {0,0,0,0};
+  hitState(s112, 0, _out_s1542);
+  assert (_out_s1542 == s14); //Assert at skyl2.sk:941 (0)
+  int[4] _out_s1544 = {0,0,0,0};
+  hitState(s112, 1, _out_s1544);
+  assert (_out_s1544 == s98); //Assert at skyl2.sk:942 (0)
+  int[4] _out_s1546 = {0,0,0,0};
+  hitState(s112, 2, _out_s1546);
+  assert (_out_s1546 == s133); //Assert at skyl2.sk:943 (0)
+  int[4] _out_s1548 = {0,0,0,0};
+  hitState(s112, 3, _out_s1548);
+  assert (_out_s1548 == s107); //Assert at skyl2.sk:944 (0)
+  int[4] _out_s1550 = {0,0,0,0};
+  hitState(s113, 0, _out_s1550);
+  assert (_out_s1550 == s100); //Assert at skyl2.sk:945 (0)
+  int[4] _out_s1552 = {0,0,0,0};
+  hitState(s113, 1, _out_s1552);
+  assert (_out_s1552 == s25); //Assert at skyl2.sk:946 (0)
+  int[4] _out_s1554 = {0,0,0,0};
+  hitState(s113, 2, _out_s1554);
+  assert (_out_s1554 == s24); //Assert at skyl2.sk:947 (0)
+  int[4] _out_s1556 = {0,0,0,0};
+  hitState(s113, 3, _out_s1556);
+  assert (_out_s1556 == s0); //Assert at skyl2.sk:948 (0)
+  int[4] _out_s1558 = {0,0,0,0};
+  hitState(s114, 0, _out_s1558);
+  assert (_out_s1558 == s81); //Assert at skyl2.sk:949 (0)
+  int[4] _out_s1560 = {0,0,0,0};
+  hitState(s114, 1, _out_s1560);
+  assert (_out_s1560 == s16); //Assert at skyl2.sk:950 (0)
+  int[4] _out_s1562 = {0,0,0,0};
+  hitState(s114, 2, _out_s1562);
+  assert (_out_s1562 == s101); //Assert at skyl2.sk:951 (0)
+  int[4] _out_s1564 = {0,0,0,0};
+  hitState(s114, 3, _out_s1564);
+  assert (_out_s1564 == s70); //Assert at skyl2.sk:952 (0)
+  int[4] _out_s1566 = {0,0,0,0};
+  hitState(s115, 0, _out_s1566);
+  assert (_out_s1566 == s81); //Assert at skyl2.sk:953 (0)
+  int[4] _out_s1568 = {0,0,0,0};
+  hitState(s115, 1, _out_s1568);
+  assert (_out_s1568 == s83); //Assert at skyl2.sk:954 (0)
+  int[4] _out_s1570 = {0,0,0,0};
+  hitState(s115, 2, _out_s1570);
+  assert (_out_s1570 == s129); //Assert at skyl2.sk:955 (0)
+  int[4] _out_s1572 = {0,0,0,0};
+  hitState(s115, 3, _out_s1572);
+  assert (_out_s1572 == s103); //Assert at skyl2.sk:956 (0)
+  int[4] _out_s1574 = {0,0,0,0};
+  hitState(s116, 0, _out_s1574);
+  assert (_out_s1574 == s150); //Assert at skyl2.sk:957 (0)
+  int[4] _out_s1576 = {0,0,0,0};
+  hitState(s116, 1, _out_s1576);
+  assert (_out_s1576 == s25); //Assert at skyl2.sk:958 (0)
+  int[4] _out_s1578 = {0,0,0,0};
+  hitState(s116, 2, _out_s1578);
+  assert (_out_s1578 == s130); //Assert at skyl2.sk:959 (0)
+  int[4] _out_s1580 = {0,0,0,0};
+  hitState(s116, 3, _out_s1580);
+  assert (_out_s1580 == s19); //Assert at skyl2.sk:960 (0)
+  int[4] _out_s1582 = {0,0,0,0};
+  hitState(s117, 0, _out_s1582);
+  assert (_out_s1582 == s81); //Assert at skyl2.sk:961 (0)
+  int[4] _out_s1584 = {0,0,0,0};
+  hitState(s117, 1, _out_s1584);
+  assert (_out_s1584 == s10); //Assert at skyl2.sk:962 (0)
+  int[4] _out_s1586 = {0,0,0,0};
+  hitState(s117, 2, _out_s1586);
+  assert (_out_s1586 == s117); //Assert at skyl2.sk:963 (0)
+  int[4] _out_s1588 = {0,0,0,0};
+  hitState(s117, 3, _out_s1588);
+  assert (_out_s1588 == s117); //Assert at skyl2.sk:964 (0)
+  int[4] _out_s1590 = {0,0,0,0};
+  hitState(s118, 0, _out_s1590);
+  assert (_out_s1590 == s99); //Assert at skyl2.sk:965 (0)
+  int[4] _out_s1592 = {0,0,0,0};
+  hitState(s118, 1, _out_s1592);
+  assert (_out_s1592 == s118); //Assert at skyl2.sk:966 (0)
+  int[4] _out_s1594 = {0,0,0,0};
+  hitState(s118, 2, _out_s1594);
+  assert (_out_s1594 == s125); //Assert at skyl2.sk:967 (0)
+  int[4] _out_s1596 = {0,0,0,0};
+  hitState(s118, 3, _out_s1596);
+  assert (_out_s1596 == s107); //Assert at skyl2.sk:968 (0)
+  int[4] _out_s1598 = {0,0,0,0};
+  hitState(s119, 0, _out_s1598);
+  assert (_out_s1598 == s121); //Assert at skyl2.sk:969 (0)
+  int[4] _out_s1600 = {0,0,0,0};
+  hitState(s119, 1, _out_s1600);
+  assert (_out_s1600 == s33); //Assert at skyl2.sk:970 (0)
+  int[4] _out_s1602 = {0,0,0,0};
+  hitState(s119, 2, _out_s1602);
+  assert (_out_s1602 == s80); //Assert at skyl2.sk:971 (0)
+  int[4] _out_s1604 = {0,0,0,0};
+  hitState(s119, 3, _out_s1604);
+  assert (_out_s1604 == s119); //Assert at skyl2.sk:972 (0)
+  int[4] _out_s1606 = {0,0,0,0};
+  hitState(s120, 0, _out_s1606);
+  assert (_out_s1606 == s99); //Assert at skyl2.sk:973 (0)
+  int[4] _out_s1608 = {0,0,0,0};
+  hitState(s120, 1, _out_s1608);
+  assert (_out_s1608 == s120); //Assert at skyl2.sk:974 (0)
+  int[4] _out_s1610 = {0,0,0,0};
+  hitState(s120, 2, _out_s1610);
+  assert (_out_s1610 == s128); //Assert at skyl2.sk:975 (0)
+  int[4] _out_s1612 = {0,0,0,0};
+  hitState(s120, 3, _out_s1612);
+  assert (_out_s1612 == s15); //Assert at skyl2.sk:976 (0)
+  int[4] _out_s1614 = {0,0,0,0};
+  hitState(s121, 0, _out_s1614);
+  assert (_out_s1614 == s121); //Assert at skyl2.sk:977 (0)
+  int[4] _out_s1616 = {0,0,0,0};
+  hitState(s121, 1, _out_s1616);
+  assert (_out_s1616 == s156); //Assert at skyl2.sk:978 (0)
+  int[4] _out_s1618 = {0,0,0,0};
+  hitState(s121, 2, _out_s1618);
+  assert (_out_s1618 == s39); //Assert at skyl2.sk:979 (0)
+  int[4] _out_s1620 = {0,0,0,0};
+  hitState(s121, 3, _out_s1620);
+  assert (_out_s1620 == s1); //Assert at skyl2.sk:980 (0)
+  int[4] _out_s1622 = {0,0,0,0};
+  hitState(s122, 0, _out_s1622);
+  assert (_out_s1622 == s122); //Assert at skyl2.sk:981 (0)
+  int[4] _out_s1624 = {0,0,0,0};
+  hitState(s122, 1, _out_s1624);
+  assert (_out_s1624 == s120); //Assert at skyl2.sk:982 (0)
+  int[4] _out_s1626 = {0,0,0,0};
+  hitState(s122, 2, _out_s1626);
+  assert (_out_s1626 == s122); //Assert at skyl2.sk:983 (0)
+  int[4] _out_s1628 = {0,0,0,0};
+  hitState(s122, 3, _out_s1628);
+  assert (_out_s1628 == s4); //Assert at skyl2.sk:984 (0)
+  int[4] _out_s1630 = {0,0,0,0};
+  hitState(s123, 0, _out_s1630);
+  assert (_out_s1630 == s20); //Assert at skyl2.sk:985 (0)
+  int[4] _out_s1632 = {0,0,0,0};
+  hitState(s123, 1, _out_s1632);
+  assert (_out_s1632 == s123); //Assert at skyl2.sk:986 (0)
+  int[4] _out_s1634 = {0,0,0,0};
+  hitState(s123, 2, _out_s1634);
+  assert (_out_s1634 == s128); //Assert at skyl2.sk:987 (0)
+  int[4] _out_s1636 = {0,0,0,0};
+  hitState(s123, 3, _out_s1636);
+  assert (_out_s1636 == s93); //Assert at skyl2.sk:988 (0)
+  int[4] _out_s1638 = {0,0,0,0};
+  hitState(s124, 0, _out_s1638);
+  assert (_out_s1638 == s39); //Assert at skyl2.sk:989 (0)
+  int[4] _out_s1640 = {0,0,0,0};
+  hitState(s124, 1, _out_s1640);
+  assert (_out_s1640 == s123); //Assert at skyl2.sk:990 (0)
+  int[4] _out_s1642 = {0,0,0,0};
+  hitState(s124, 2, _out_s1642);
+  assert (_out_s1642 == s124); //Assert at skyl2.sk:991 (0)
+  int[4] _out_s1644 = {0,0,0,0};
+  hitState(s124, 3, _out_s1644);
+  assert (_out_s1644 == s86); //Assert at skyl2.sk:992 (0)
+  int[4] _out_s1646 = {0,0,0,0};
+  hitState(s125, 0, _out_s1646);
+  assert (_out_s1646 == s7); //Assert at skyl2.sk:993 (0)
+  int[4] _out_s1648 = {0,0,0,0};
+  hitState(s125, 1, _out_s1648);
+  assert (_out_s1648 == s125); //Assert at skyl2.sk:994 (0)
+  int[4] _out_s1650 = {0,0,0,0};
+  hitState(s125, 2, _out_s1650);
+  assert (_out_s1650 == s125); //Assert at skyl2.sk:995 (0)
+  int[4] _out_s1652 = {0,0,0,0};
+  hitState(s125, 3, _out_s1652);
+  assert (_out_s1652 == s126); //Assert at skyl2.sk:996 (0)
+  int[4] _out_s1654 = {0,0,0,0};
+  hitState(s126, 0, _out_s1654);
+  assert (_out_s1654 == s58); //Assert at skyl2.sk:997 (0)
+  int[4] _out_s1656 = {0,0,0,0};
+  hitState(s126, 1, _out_s1656);
+  assert (_out_s1656 == s94); //Assert at skyl2.sk:998 (0)
+  int[4] _out_s1658 = {0,0,0,0};
+  hitState(s126, 2, _out_s1658);
+  assert (_out_s1658 == s117); //Assert at skyl2.sk:999 (0)
+  int[4] _out_s1660 = {0,0,0,0};
+  hitState(s126, 3, _out_s1660);
+  assert (_out_s1660 == s126); //Assert at skyl2.sk:1000 (0)
+  int[4] _out_s1662 = {0,0,0,0};
+  hitState(s127, 0, _out_s1662);
+  assert (_out_s1662 == s76); //Assert at skyl2.sk:1001 (0)
+  int[4] _out_s1664 = {0,0,0,0};
+  hitState(s127, 1, _out_s1664);
+  assert (_out_s1664 == s127); //Assert at skyl2.sk:1002 (0)
+  int[4] _out_s1666 = {0,0,0,0};
+  hitState(s127, 2, _out_s1666);
+  assert (_out_s1666 == s49); //Assert at skyl2.sk:1003 (0)
+  int[4] _out_s1668 = {0,0,0,0};
+  hitState(s127, 3, _out_s1668);
+  assert (_out_s1668 == s94); //Assert at skyl2.sk:1004 (0)
+  int[4] _out_s1670 = {0,0,0,0};
+  hitState(s128, 0, _out_s1670);
+  assert (_out_s1670 == s7); //Assert at skyl2.sk:1005 (0)
+  int[4] _out_s1672 = {0,0,0,0};
+  hitState(s128, 1, _out_s1672);
+  assert (_out_s1672 == s128); //Assert at skyl2.sk:1006 (0)
+  int[4] _out_s1674 = {0,0,0,0};
+  hitState(s128, 2, _out_s1674);
+  assert (_out_s1674 == s128); //Assert at skyl2.sk:1007 (0)
+  int[4] _out_s1676 = {0,0,0,0};
+  hitState(s128, 3, _out_s1676);
+  assert (_out_s1676 == s119); //Assert at skyl2.sk:1008 (0)
+  int[4] _out_s1678 = {0,0,0,0};
+  hitState(s129, 0, _out_s1678);
+  assert (_out_s1678 == s122); //Assert at skyl2.sk:1009 (0)
+  int[4] _out_s1680 = {0,0,0,0};
+  hitState(s129, 1, _out_s1680);
+  assert (_out_s1680 == s46); //Assert at skyl2.sk:1010 (0)
+  int[4] _out_s1682 = {0,0,0,0};
+  hitState(s129, 2, _out_s1682);
+  assert (_out_s1682 == s129); //Assert at skyl2.sk:1011 (0)
+  int[4] _out_s1684 = {0,0,0,0};
+  hitState(s129, 3, _out_s1684);
+  assert (_out_s1684 == s82); //Assert at skyl2.sk:1012 (0)
+  int[4] _out_s1686 = {0,0,0,0};
+  hitState(s130, 0, _out_s1686);
+  assert (_out_s1686 == s151); //Assert at skyl2.sk:1013 (0)
+  int[4] _out_s1688 = {0,0,0,0};
+  hitState(s130, 1, _out_s1688);
+  assert (_out_s1688 == s125); //Assert at skyl2.sk:1014 (0)
+  int[4] _out_s1690 = {0,0,0,0};
+  hitState(s130, 2, _out_s1690);
+  assert (_out_s1690 == s130); //Assert at skyl2.sk:1015 (0)
+  int[4] _out_s1692 = {0,0,0,0};
+  hitState(s130, 3, _out_s1692);
+  assert (_out_s1692 == s103); //Assert at skyl2.sk:1016 (0)
+  int[4] _out_s1694 = {0,0,0,0};
+  hitState(s131, 0, _out_s1694);
+  assert (_out_s1694 == s151); //Assert at skyl2.sk:1017 (0)
+  int[4] _out_s1696 = {0,0,0,0};
+  hitState(s131, 1, _out_s1696);
+  assert (_out_s1696 == s128); //Assert at skyl2.sk:1018 (0)
+  int[4] _out_s1698 = {0,0,0,0};
+  hitState(s131, 2, _out_s1698);
+  assert (_out_s1698 == s131); //Assert at skyl2.sk:1019 (0)
+  int[4] _out_s1700 = {0,0,0,0};
+  hitState(s131, 3, _out_s1700);
+  assert (_out_s1700 == s88); //Assert at skyl2.sk:1020 (0)
+  int[4] _out_s1702 = {0,0,0,0};
+  hitState(s132, 0, _out_s1702);
+  assert (_out_s1702 == s6); //Assert at skyl2.sk:1021 (0)
+  int[4] _out_s1704 = {0,0,0,0};
+  hitState(s132, 1, _out_s1704);
+  assert (_out_s1704 == s128); //Assert at skyl2.sk:1022 (0)
+  int[4] _out_s1706 = {0,0,0,0};
+  hitState(s132, 2, _out_s1706);
+  assert (_out_s1706 == s132); //Assert at skyl2.sk:1023 (0)
+  int[4] _out_s1708 = {0,0,0,0};
+  hitState(s132, 3, _out_s1708);
+  assert (_out_s1708 == s82); //Assert at skyl2.sk:1024 (0)
+  int[4] _out_s1710 = {0,0,0,0};
+  hitState(s133, 0, _out_s1710);
+  assert (_out_s1710 == s18); //Assert at skyl2.sk:1025 (0)
+  int[4] _out_s1712 = {0,0,0,0};
+  hitState(s133, 1, _out_s1712);
+  assert (_out_s1712 == s128); //Assert at skyl2.sk:1026 (0)
+  int[4] _out_s1714 = {0,0,0,0};
+  hitState(s133, 2, _out_s1714);
+  assert (_out_s1714 == s133); //Assert at skyl2.sk:1027 (0)
+  int[4] _out_s1716 = {0,0,0,0};
+  hitState(s133, 3, _out_s1716);
+  assert (_out_s1716 == s84); //Assert at skyl2.sk:1028 (0)
+  int[4] _out_s1718 = {0,0,0,0};
+  hitState(s134, 0, _out_s1718);
+  assert (_out_s1718 == s96); //Assert at skyl2.sk:1029 (0)
+  int[4] _out_s1720 = {0,0,0,0};
+  hitState(s134, 1, _out_s1720);
+  assert (_out_s1720 == s62); //Assert at skyl2.sk:1030 (0)
+  int[4] _out_s1722 = {0,0,0,0};
+  hitState(s134, 2, _out_s1722);
+  assert (_out_s1722 == s64); //Assert at skyl2.sk:1031 (0)
+  int[4] _out_s1724 = {0,0,0,0};
+  hitState(s134, 3, _out_s1724);
+  assert (_out_s1724 == s107); //Assert at skyl2.sk:1032 (0)
+  int[4] _out_s1726 = {0,0,0,0};
+  hitState(s135, 0, _out_s1726);
+  assert (_out_s1726 == s36); //Assert at skyl2.sk:1033 (0)
+  int[4] _out_s1728 = {0,0,0,0};
+  hitState(s135, 1, _out_s1728);
+  assert (_out_s1728 == s62); //Assert at skyl2.sk:1034 (0)
+  int[4] _out_s1730 = {0,0,0,0};
+  hitState(s135, 2, _out_s1730);
+  assert (_out_s1730 == s50); //Assert at skyl2.sk:1035 (0)
+  int[4] _out_s1732 = {0,0,0,0};
+  hitState(s135, 3, _out_s1732);
+  assert (_out_s1732 == s23); //Assert at skyl2.sk:1036 (0)
+  int[4] _out_s1734 = {0,0,0,0};
+  hitState(s136, 0, _out_s1734);
+  assert (_out_s1734 == s147); //Assert at skyl2.sk:1037 (0)
+  int[4] _out_s1736 = {0,0,0,0};
+  hitState(s136, 1, _out_s1736);
+  assert (_out_s1736 == s89); //Assert at skyl2.sk:1038 (0)
+  int[4] _out_s1738 = {0,0,0,0};
+  hitState(s136, 2, _out_s1738);
+  assert (_out_s1738 == s75); //Assert at skyl2.sk:1039 (0)
+  int[4] _out_s1740 = {0,0,0,0};
+  hitState(s136, 3, _out_s1740);
+  assert (_out_s1740 == s84); //Assert at skyl2.sk:1040 (0)
+  int[4] _out_s1742 = {0,0,0,0};
+  hitState(s137, 0, _out_s1742);
+  assert (_out_s1742 == s121); //Assert at skyl2.sk:1041 (0)
+  int[4] _out_s1744 = {0,0,0,0};
+  hitState(s137, 1, _out_s1744);
+  assert (_out_s1744 == s127); //Assert at skyl2.sk:1042 (0)
+  int[4] _out_s1746 = {0,0,0,0};
+  hitState(s137, 2, _out_s1746);
+  assert (_out_s1746 == s75); //Assert at skyl2.sk:1043 (0)
+  int[4] _out_s1748 = {0,0,0,0};
+  hitState(s137, 3, _out_s1748);
+  assert (_out_s1748 == s126); //Assert at skyl2.sk:1044 (0)
+  int[4] _out_s1750 = {0,0,0,0};
+  hitState(s138, 0, _out_s1750);
+  assert (_out_s1750 == s76); //Assert at skyl2.sk:1045 (0)
+  int[4] _out_s1752 = {0,0,0,0};
+  hitState(s138, 1, _out_s1752);
+  assert (_out_s1752 == s74); //Assert at skyl2.sk:1046 (0)
+  int[4] _out_s1754 = {0,0,0,0};
+  hitState(s138, 2, _out_s1754);
+  assert (_out_s1754 == s91); //Assert at skyl2.sk:1047 (0)
+  int[4] _out_s1756 = {0,0,0,0};
+  hitState(s138, 3, _out_s1756);
+  assert (_out_s1756 == s15); //Assert at skyl2.sk:1048 (0)
+  int[4] _out_s1758 = {0,0,0,0};
+  hitState(s139, 0, _out_s1758);
+  assert (_out_s1758 == s76); //Assert at skyl2.sk:1049 (0)
+  int[4] _out_s1760 = {0,0,0,0};
+  hitState(s139, 1, _out_s1760);
+  assert (_out_s1760 == s109); //Assert at skyl2.sk:1050 (0)
+  int[4] _out_s1762 = {0,0,0,0};
+  hitState(s139, 2, _out_s1762);
+  assert (_out_s1762 == s131); //Assert at skyl2.sk:1051 (0)
+  int[4] _out_s1764 = {0,0,0,0};
+  hitState(s139, 3, _out_s1764);
+  assert (_out_s1764 == s27); //Assert at skyl2.sk:1052 (0)
+  int[4] _out_s1766 = {0,0,0,0};
+  hitState(s140, 0, _out_s1766);
+  assert (_out_s1766 == s150); //Assert at skyl2.sk:1053 (0)
+  int[4] _out_s1768 = {0,0,0,0};
+  hitState(s140, 1, _out_s1768);
+  assert (_out_s1768 == s123); //Assert at skyl2.sk:1054 (0)
+  int[4] _out_s1770 = {0,0,0,0};
+  hitState(s140, 2, _out_s1770);
+  assert (_out_s1770 == s131); //Assert at skyl2.sk:1055 (0)
+  int[4] _out_s1772 = {0,0,0,0};
+  hitState(s140, 3, _out_s1772);
+  assert (_out_s1772 == s108); //Assert at skyl2.sk:1056 (0)
+  int[4] _out_s1774 = {0,0,0,0};
+  hitState(s141, 0, _out_s1774);
+  assert (_out_s1774 == s100); //Assert at skyl2.sk:1057 (0)
+  int[4] _out_s1776 = {0,0,0,0};
+  hitState(s141, 1, _out_s1776);
+  assert (_out_s1776 == s123); //Assert at skyl2.sk:1058 (0)
+  int[4] _out_s1778 = {0,0,0,0};
+  hitState(s141, 2, _out_s1778);
+  assert (_out_s1778 == s133); //Assert at skyl2.sk:1059 (0)
+  int[4] _out_s1780 = {0,0,0,0};
+  hitState(s141, 3, _out_s1780);
+  assert (_out_s1780 == s126); //Assert at skyl2.sk:1060 (0)
+  int[4] _out_s1782 = {0,0,0,0};
+  hitState(s142, 0, _out_s1782);
+  assert (_out_s1782 == s47); //Assert at skyl2.sk:1061 (0)
+  int[4] _out_s1784 = {0,0,0,0};
+  hitState(s142, 1, _out_s1784);
+  assert (_out_s1784 == s120); //Assert at skyl2.sk:1062 (0)
+  int[4] _out_s1786 = {0,0,0,0};
+  hitState(s142, 2, _out_s1786);
+  assert (_out_s1786 == s133); //Assert at skyl2.sk:1063 (0)
+  int[4] _out_s1788 = {0,0,0,0};
+  hitState(s142, 3, _out_s1788);
+  assert (_out_s1788 == s31); //Assert at skyl2.sk:1064 (0)
+  int[4] _out_s1790 = {0,0,0,0};
+  hitState(s143, 0, _out_s1790);
+  assert (_out_s1790 == s78); //Assert at skyl2.sk:1065 (0)
+  int[4] _out_s1792 = {0,0,0,0};
+  hitState(s143, 1, _out_s1792);
+  assert (_out_s1792 == s127); //Assert at skyl2.sk:1066 (0)
+  int[4] _out_s1794 = {0,0,0,0};
+  hitState(s143, 2, _out_s1794);
+  assert (_out_s1794 == s43); //Assert at skyl2.sk:1067 (0)
+  int[4] _out_s1796 = {0,0,0,0};
+  hitState(s143, 3, _out_s1796);
+  assert (_out_s1796 == s108); //Assert at skyl2.sk:1068 (0)
+  int[4] _out_s1798 = {0,0,0,0};
+  hitState(s144, 0, _out_s1798);
+  assert (_out_s1798 == s78); //Assert at skyl2.sk:1069 (0)
+  int[4] _out_s1800 = {0,0,0,0};
+  hitState(s144, 1, _out_s1800);
+  assert (_out_s1800 == s51); //Assert at skyl2.sk:1070 (0)
+  int[4] _out_s1802 = {0,0,0,0};
+  hitState(s144, 2, _out_s1802);
+  assert (_out_s1802 == s101); //Assert at skyl2.sk:1071 (0)
+  int[4] _out_s1804 = {0,0,0,0};
+  hitState(s144, 3, _out_s1804);
+  assert (_out_s1804 == s148); //Assert at skyl2.sk:1072 (0)
+  int[4] _out_s1806 = {0,0,0,0};
+  hitState(s145, 0, _out_s1806);
+  assert (_out_s1806 == s36); //Assert at skyl2.sk:1073 (0)
+  int[4] _out_s1808 = {0,0,0,0};
+  hitState(s145, 1, _out_s1808);
+  assert (_out_s1808 == s38); //Assert at skyl2.sk:1074 (0)
+  int[4] _out_s1810 = {0,0,0,0};
+  hitState(s145, 2, _out_s1810);
+  assert (_out_s1810 == s12); //Assert at skyl2.sk:1075 (0)
+  int[4] _out_s1812 = {0,0,0,0};
+  hitState(s145, 3, _out_s1812);
+  assert (_out_s1812 == s66); //Assert at skyl2.sk:1076 (0)
+  int[4] _out_s1814 = {0,0,0,0};
+  hitState(s146, 0, _out_s1814);
+  assert (_out_s1814 == s56); //Assert at skyl2.sk:1077 (0)
+  int[4] _out_s1816 = {0,0,0,0};
+  hitState(s146, 1, _out_s1816);
+  assert (_out_s1816 == s118); //Assert at skyl2.sk:1078 (0)
+  int[4] _out_s1818 = {0,0,0,0};
+  hitState(s146, 2, _out_s1818);
+  assert (_out_s1818 == s130); //Assert at skyl2.sk:1079 (0)
+  int[4] _out_s1820 = {0,0,0,0};
+  hitState(s146, 3, _out_s1820);
+  assert (_out_s1820 == s149); //Assert at skyl2.sk:1080 (0)
+  int[4] _out_s1822 = {0,0,0,0};
+  hitState(s147, 0, _out_s1822);
+  assert (_out_s1822 == s147); //Assert at skyl2.sk:1081 (0)
+  int[4] _out_s1824 = {0,0,0,0};
+  hitState(s147, 1, _out_s1824);
+  assert (_out_s1824 == s30); //Assert at skyl2.sk:1082 (0)
+  int[4] _out_s1826 = {0,0,0,0};
+  hitState(s147, 2, _out_s1826);
+  assert (_out_s1826 == s39); //Assert at skyl2.sk:1083 (0)
+  int[4] _out_s1828 = {0,0,0,0};
+  hitState(s147, 3, _out_s1828);
+  assert (_out_s1828 == s37); //Assert at skyl2.sk:1084 (0)
+  int[4] _out_s1830 = {0,0,0,0};
+  hitState(s148, 0, _out_s1830);
+  assert (_out_s1830 == s37); //Assert at skyl2.sk:1085 (0)
+  int[4] _out_s1832 = {0,0,0,0};
+  hitState(s148, 1, _out_s1832);
+  assert (_out_s1832 == s62); //Assert at skyl2.sk:1086 (0)
+  int[4] _out_s1834 = {0,0,0,0};
+  hitState(s148, 2, _out_s1834);
+  assert (_out_s1834 == s86); //Assert at skyl2.sk:1087 (0)
+  int[4] _out_s1836 = {0,0,0,0};
+  hitState(s148, 3, _out_s1836);
+  assert (_out_s1836 == s148); //Assert at skyl2.sk:1088 (0)
+  int[4] _out_s1838 = {0,0,0,0};
+  hitState(s149, 0, _out_s1838);
+  assert (_out_s1838 == s1); //Assert at skyl2.sk:1089 (0)
+  int[4] _out_s1840 = {0,0,0,0};
+  hitState(s149, 1, _out_s1840);
+  assert (_out_s1840 == s29); //Assert at skyl2.sk:1090 (0)
+  int[4] _out_s1842 = {0,0,0,0};
+  hitState(s149, 2, _out_s1842);
+  assert (_out_s1842 == s82); //Assert at skyl2.sk:1091 (0)
+  int[4] _out_s1844 = {0,0,0,0};
+  hitState(s149, 3, _out_s1844);
+  assert (_out_s1844 == s149); //Assert at skyl2.sk:1092 (0)
+  int[4] _out_s1846 = {0,0,0,0};
+  hitState(s150, 0, _out_s1846);
+  assert (_out_s1846 == s150); //Assert at skyl2.sk:1093 (0)
+  int[4] _out_s1848 = {0,0,0,0};
+  hitState(s150, 1, _out_s1848);
+  assert (_out_s1848 == s20); //Assert at skyl2.sk:1094 (0)
+  int[4] _out_s1850 = {0,0,0,0};
+  hitState(s150, 2, _out_s1850);
+  assert (_out_s1850 == s151); //Assert at skyl2.sk:1095 (0)
+  int[4] _out_s1852 = {0,0,0,0};
+  hitState(s150, 3, _out_s1852);
+  assert (_out_s1852 == s148); //Assert at skyl2.sk:1096 (0)
+  int[4] _out_s1854 = {0,0,0,0};
+  hitState(s151, 0, _out_s1854);
+  assert (_out_s1854 == s151); //Assert at skyl2.sk:1097 (0)
+  int[4] _out_s1856 = {0,0,0,0};
+  hitState(s151, 1, _out_s1856);
+  assert (_out_s1856 == s7); //Assert at skyl2.sk:1098 (0)
+  int[4] _out_s1858 = {0,0,0,0};
+  hitState(s151, 2, _out_s1858);
+  assert (_out_s1858 == s151); //Assert at skyl2.sk:1099 (0)
+  int[4] _out_s1860 = {0,0,0,0};
+  hitState(s151, 3, _out_s1860);
+  assert (_out_s1860 == s70); //Assert at skyl2.sk:1100 (0)
+  int[4] _out_s1862 = {0,0,0,0};
+  hitState(s152, 0, _out_s1862);
+  assert (_out_s1862 == s58); //Assert at skyl2.sk:1101 (0)
+  int[4] _out_s1864 = {0,0,0,0};
+  hitState(s152, 1, _out_s1864);
+  assert (_out_s1864 == s38); //Assert at skyl2.sk:1102 (0)
+  int[4] _out_s1866 = {0,0,0,0};
+  hitState(s152, 2, _out_s1866);
+  assert (_out_s1866 == s101); //Assert at skyl2.sk:1103 (0)
+  int[4] _out_s1868 = {0,0,0,0};
+  hitState(s152, 3, _out_s1868);
+  assert (_out_s1868 == s35); //Assert at skyl2.sk:1104 (0)
+  int[4] _out_s1870 = {0,0,0,0};
+  hitState(s153, 0, _out_s1870);
+  assert (_out_s1870 == s56); //Assert at skyl2.sk:1105 (0)
+  int[4] _out_s1872 = {0,0,0,0};
+  hitState(s153, 1, _out_s1872);
+  assert (_out_s1872 == s46); //Assert at skyl2.sk:1106 (0)
+  int[4] _out_s1874 = {0,0,0,0};
+  hitState(s153, 2, _out_s1874);
+  assert (_out_s1874 == s91); //Assert at skyl2.sk:1107 (0)
+  int[4] _out_s1876 = {0,0,0,0};
+  hitState(s153, 3, _out_s1876);
+  assert (_out_s1876 == s119); //Assert at skyl2.sk:1108 (0)
+  int[4] _out_s1878 = {0,0,0,0};
+  hitState(s154, 0, _out_s1878);
+  assert (_out_s1878 == s121); //Assert at skyl2.sk:1109 (0)
+  int[4] _out_s1880 = {0,0,0,0};
+  hitState(s154, 1, _out_s1880);
+  assert (_out_s1880 == s109); //Assert at skyl2.sk:1110 (0)
+  int[4] _out_s1882 = {0,0,0,0};
+  hitState(s154, 2, _out_s1882);
+  assert (_out_s1882 == s124); //Assert at skyl2.sk:1111 (0)
+  int[4] _out_s1884 = {0,0,0,0};
+  hitState(s154, 3, _out_s1884);
+  assert (_out_s1884 == s35); //Assert at skyl2.sk:1112 (0)
+  int[4] _out_s1886 = {0,0,0,0};
+  hitState(s155, 0, _out_s1886);
+  assert (_out_s1886 == s63); //Assert at skyl2.sk:1113 (0)
+  int[4] _out_s1888 = {0,0,0,0};
+  hitState(s155, 1, _out_s1888);
+  assert (_out_s1888 == s123); //Assert at skyl2.sk:1114 (0)
+  int[4] _out_s1890 = {0,0,0,0};
+  hitState(s155, 2, _out_s1890);
+  assert (_out_s1890 == s132); //Assert at skyl2.sk:1115 (0)
+  int[4] _out_s1892 = {0,0,0,0};
+  hitState(s155, 3, _out_s1892);
+  assert (_out_s1892 == s103); //Assert at skyl2.sk:1116 (0)
+  int[4] _out_s1894 = {0,0,0,0};
+  hitState(s156, 0, _out_s1894);
+  assert (_out_s1894 == s156); //Assert at skyl2.sk:1117 (0)
+  int[4] _out_s1896 = {0,0,0,0};
+  hitState(s156, 1, _out_s1896);
+  assert (_out_s1896 == s156); //Assert at skyl2.sk:1118 (0)
+  int[4] _out_s1898 = {0,0,0,0};
+  hitState(s156, 2, _out_s1898);
+  assert (_out_s1898 == s24); //Assert at skyl2.sk:1119 (0)
+  int[4] _out_s1900 = {0,0,0,0};
+  hitState(s156, 3, _out_s1900);
+  assert (_out_s1900 == s2); //Assert at skyl2.sk:1120 (0)
+  int[4] _out_s1902 = {0,0,0,0};
+  hitState(s157, 0, _out_s1902);
+  assert (_out_s1902 == s48); //Assert at skyl2.sk:1121 (0)
+  int[4] _out_s1904 = {0,0,0,0};
+  hitState(s157, 1, _out_s1904);
+  assert (_out_s1904 == s109); //Assert at skyl2.sk:1122 (0)
+  int[4] _out_s1906 = {0,0,0,0};
+  hitState(s157, 2, _out_s1906);
+  assert (_out_s1906 == s132); //Assert at skyl2.sk:1123 (0)
+  int[4] _out_s1908 = {0,0,0,0};
+  hitState(s157, 3, _out_s1908);
+  assert (_out_s1908 == s66); //Assert at skyl2.sk:1124 (0)
+  int[4] _out_s1910 = {0,0,0,0};
+  hitState(s158, 0, _out_s1910);
+  assert (_out_s1910 == s147); //Assert at skyl2.sk:1125 (0)
+  int[4] _out_s1912 = {0,0,0,0};
+  hitState(s158, 1, _out_s1912);
+  assert (_out_s1912 == s98); //Assert at skyl2.sk:1126 (0)
+  int[4] _out_s1914 = {0,0,0,0};
+  hitState(s158, 2, _out_s1914);
+  assert (_out_s1914 == s124); //Assert at skyl2.sk:1127 (0)
+  int[4] _out_s1916 = {0,0,0,0};
+  hitState(s158, 3, _out_s1916);
+  assert (_out_s1916 == s148); //Assert at skyl2.sk:1128 (0)
+  int[4] _out_s1918 = {0,0,0,0};
+  hitState(s159, 0, _out_s1918);
+  assert (_out_s1918 == s81); //Assert at skyl2.sk:1129 (0)
+  int[4] _out_s1920 = {0,0,0,0};
+  hitState(s159, 1, _out_s1920);
+  assert (_out_s1920 == s89); //Assert at skyl2.sk:1130 (0)
+  int[4] _out_s1922 = {0,0,0,0};
+  hitState(s159, 2, _out_s1922);
+  assert (_out_s1922 == s43); //Assert at skyl2.sk:1131 (0)
+  int[4] _out_s1924 = {0,0,0,0};
+  hitState(s159, 3, _out_s1924);
+  assert (_out_s1924 == s88); //Assert at skyl2.sk:1132 (0)
+}
+/*extra.sk:6*/
+
+void hitState (int[4] state, int pos, ref int[4] _out)/*extra.sk:6*/
+{
+  int[4] final = state;
+  final[pos] = 0;
+  int[4] _out_s1934 = final;
+  bit _has_out_ = 0;
+  for(int j = 0; j < 4; j = j + 1)/*Canonical*/
+  {
+    if(_has_out_ == 0)/*extra.sk:99*/
+    {
+      for(int i = 0; i < 4; i = i + 1)/*Canonical*/
+      {
+        if(_has_out_ == 0)/*extra.sk:101*/
+        {
+          if((_out_s1934[i]) == 3)/*extra.sk:101*/
+          {
+            _has_out_ = 1;
+          }
+        }
+      }
+    }
+    if(_has_out_ == 0)/*extra.sk:106*/
+    {
+      for(int i_0 = 0; i_0 < 4; i_0 = i_0 + 1)/*Canonical*/
+      {
+        if(i_0 != pos)/*extra.sk:108*/
+        {
+          int val = _out_s1934[i_0];
+          _out_s1934[i_0] = 1 + val;
+        }
+      }
+    }
+  }
+  _out = _out_s1934;
+  return;
+}
+/*skyl2.sk:5*/
+
+void main__Wrapper ()  implements main__WrapperNospec/*skyl2.sk:5*/
+{
+  _main();
+}
+/*skyl2.sk:5*/
+
+void main__WrapperNospec ()/*skyl2.sk:5*/
+{ }
+/*extra.sk:16*/
+
+void missIdx (int[4] state, ref int _out)/*extra.sk:16*/
+{
+  _out = 0;
+  for(int i = 0; i < 4; i = i + 1)/*Canonical*/
+  {
+    if((state[i]) == 3)/*extra.sk:19*/
+    {
+      _out = i;
+      return;
+    }
+  }
+}
+/*extra.sk:11*/
+
+void missState (int[4] state, ref int[4] _out)/*extra.sk:11*/
+{
+  int[4] final = state;
+  int replace_s1973 = 0;
+  missIdx(state, replace_s1973);
+  final[replace_s1973] = 1;
+  int[4] _out_s1975 = final;
+  bit _has_out_ = 0;
+  for(int j = 0; j < 4; j = j + 1)/*Canonical*/
+  {
+    if(_has_out_ == 0)/*extra.sk:99*/
+    {
+      for(int i = 0; i < 4; i = i + 1)/*Canonical*/
+      {
+        if(_has_out_ == 0)/*extra.sk:101*/
+        {
+          if((_out_s1975[i]) == 3)/*extra.sk:101*/
+          {
+            _has_out_ = 1;
+          }
+        }
+      }
+    }
+    if(_has_out_ == 0)/*extra.sk:106*/
+    {
+      for(int i_0 = 0; i_0 < 4; i_0 = i_0 + 1)/*Canonical*/
+      {
+        if(replace_s1973 != i_0)/*extra.sk:108*/
+        {
+          int val = _out_s1975[i_0];
+          _out_s1975[i_0] = 1 + val;
+        }
+      }
+    }
+  }
+  _out = _out_s1975;
+  return;
+}
+/* END PACKAGE ANONYMOUS*/
+[SKETCH] DONE
+Total time = 34569665

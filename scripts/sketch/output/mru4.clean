@@ -1,0 +1,79 @@
+void _main () {
+  int[4] s0 = {1,1,1,0};
+  int[4] s1 = {0,1,1,0};
+  int[4] s2 = {0,0,1,0};
+  int[4] s3 = {1,0,1,0};
+  int[4] s4 = {0,1,0,0};
+  int[4] s5 = {1,1,0,1};
+  int[4] s6 = {0,1,0,1};
+  int[4] s7 = {1,0,0,1};
+  int[4] s8 = {0,0,0,1};
+  int[4] s9 = {1,1,0,0};
+  int[4] s10 = {1,0,0,0};
+  int[4] s11 = {1,0,1,1};
+  int[4] s12 = {0,0,1,1};
+  int[4] s13 = {0,1,1,1};
+}
+
+int[4] hitState (int[4] state, int pos) {
+{
+  int[4] final = state;
+  // Promotion
+  final[pos] = 0;
+  // Check if there is a block to replace
+  bit found = 0;
+  for(int j = 0; j < 4; j = j + 1) {
+    if(found == 0) {
+      for(int i = 0; i < 4; i = i + 1) {
+        if(found == 0 && final[i]) == 1) {
+          found = 1;
+        }
+      }
+    }
+    if (found == 0) {
+      // If after promotion all blocks are 0, incrase all except promoted
+      for(int i = 0; i < 4; i = i + 1) {
+        if((final[i] < 1) && (i != pos)) {
+          final[i] = 1;
+        }
+      }
+    }
+  }
+  return final;
+}
+
+// Replace first block with age=1 starting from the left
+int missIdx (int[4] state) {
+  for(int i = 0; i < 4; i = i + 1) {
+    if((state[i]) == 1) {
+      return i;
+    }
+  }
+}
+
+int[4] missState (int[4] state) {
+  int[4] final = state;
+  // Insertion
+  int replace = missIdx(state, replace_s221);
+  final[replace ] = 0;
+  // Check if there is a block to replace
+  bit found = 0;
+  for(int j = 0; j < 4; j = j + 1) {
+    if(found == 0) {
+      for(int i = 0; i < 4; i = i + 1) {
+        if(found == 0 && final[i] == 1) {
+          found = 1;
+        }
+      }
+    }
+    if(found == 0) {
+      // If after promotion all blocks are 0, incrase all except replaced
+      for(int i = 0; i < 4; i = i + 1) {
+        if(replace != i) {
+          final[i] = final[i] + 1;
+        }
+      }
+    }
+  }
+  return final;
+}

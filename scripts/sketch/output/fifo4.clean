@@ -1,0 +1,36 @@
+void _main ()
+{
+  int[4] s0 = {3,2,1,0};
+  int[4] s1 = {0,3,2,1};
+  int[4] s2 = {1,0,3,2};
+  int[4] s3 = {2,1,0,3};
+}
+
+// No promotion rule
+int[4] hitState (int[4] state, int pos) {
+  return state;
+}
+
+// Replace element with age=3
+int missIdx (int[4] state) {
+  for (int i = 0; i < 4; i = i + 1) {
+    if (state[i] == 3) {
+      return i;
+    }
+  }
+  return -1;
+}
+
+// Insert new value with age=0
+// Increase all other younger ages 
+int[4] missState (int[4] state) {
+  int[4] out = state;
+  int replace = missIdx(state);
+  out[replace] = 0;
+  for(int i = 0; i < 4; i = i + 1) {
+    if (i != replace ** state[i] < state[replace]) {
+      out[i] = state[i] + 1;
+    }
+  }
+  return out;
+}

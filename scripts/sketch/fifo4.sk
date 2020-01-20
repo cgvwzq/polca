@@ -1,0 +1,43 @@
+pragma options "--be:nosim --beopt:simplifycex NOSIM --bnd-inbits 2 --bnd-cbits 2 --bnd-angelicbits 2 --bnd-unroll-amnt 1 --bnd-inline-amnt 2 --slv-seed 1337";
+
+int ASSOC = 4;
+include "templates/simple.sk";
+harness void main() {
+	// define states
+	// for permutation based policies we can assume one state
+	//int[ASSOC] s0 = {3, 2, 1, 0}; // assumption for permutation-based
+	int[ASSOC] s0 = {??, ??, ??, ??};
+	int[ASSOC] s1 = {??, ??, ??, ??};
+	int[ASSOC] s2 = {??, ??, ??, ??};
+	int[ASSOC] s3 = {??, ??, ??, ??};
+
+	// miss transitions
+	assert missState(s0) == s1;
+	assert missState(s1) == s2;
+	assert missState(s2) == s3;
+	assert missState(s3) == s0;
+
+	// miss index
+	assert missIdx(s0) == 0;
+	assert missIdx(s1) == 1;
+	assert missIdx(s2) == 2;
+	assert missIdx(s3) == 3;
+
+	// hit state
+	assert hitState(s0, 0) == s0;
+	assert hitState(s0, 1) == s0;
+	assert hitState(s0, 2) == s0;
+	assert hitState(s0, 3) == s0;
+	assert hitState(s1, 0) == s1;
+	assert hitState(s1, 1) == s1;
+	assert hitState(s1, 2) == s1;
+	assert hitState(s1, 3) == s1;
+	assert hitState(s2, 0) == s2;
+	assert hitState(s2, 1) == s2;
+	assert hitState(s2, 2) == s2;
+	assert hitState(s2, 3) == s2;
+	assert hitState(s3, 0) == s3;
+	assert hitState(s3, 1) == s3;
+	assert hitState(s3, 2) == s3;
+	assert hitState(s3, 3) == s3;
+}

@@ -1,0 +1,128 @@
+// Template for QLRU-like policies
+// Tested on: SRRIP-HP, SRRIP-FP, Skylake's L2, Skylake's L3
+
+int BOUND = 1;
+
+// Templates
+int[ASSOC] hitState (int[ASSOC] state, int pos){
+    return promotion(state, pos);
+}
+
+int[ASSOC] missState (int[ASSOC] state){
+	int replace = missIdx(state);
+	return insertion(state, replace);
+}
+
+int missIdx (int[ASSOC] state) {
+	return eviction(state);
+}
+
+// Expression generators
+generator int getValue(int[ASSOC] state, int pos, int idx) {
+    return {| ?? | state[pos] | state[idx] | pos | idx |};
+}
+
+generator bit boolExpr(int[ASSOC] state, int pos, int idx, int bound) {
+    int t = ??(2); // log of number of options
+    if (t==0) { return 0; }
+    if (t==1) { return 1; }
+    if (t==2) {
+       return {| getValue(state, pos, idx) (==|!=|>|<) getValue(state, pos, idx) |};
+    }
+	assert bound > 0;
+    bit a = boolExpr(state, pos, idx, bound-1);
+    bit b = boolExpr(state, pos, idx, bound-1);
+    if (t==3) {
+        return {| a && b |};
+    }
+}
+
+generator int natExpr(int val, int bound) {
+    int t = ??(1);
+	if (t==0) { return {|??|val|}; }
+	assert bound > 0;
+    int a = natExpr(val, bound-1);
+    int b = natExpr(val, bound-1);
+    if (t==1) { return {|a (+|-) b|}; }
+}
+
+// Semantic rules generators
+generator int[ASSOC] promotion(int[ASSOC] state, int pos) {
+    int[ASSOC] ret = state;
+	// promotion
+	if (boolExpr(state, pos, 0, BOUND)) {
+		ret[pos] = natExpr(ret[pos], BOUND);
+	} else if (boolExpr(state, pos, 0, BOUND)) {
+		ret[pos] = natExpr(ret[pos], BOUND);
+	}
+    // normalize
+    return normalize(ret, pos);
+}
+
+/*
+generator int eviction(int[ASSOC] state) {
+    int[ASSOC] ret = state;
+    // victim selection can occur before or after normalization
+    // we require this condition because logic separation: missIdx/missState
+    ret = normalize(state, 0);
+    for (int i=0; i<ASSOC; i++) {
+        if (boolExpr(ret, i, 0, BOUND)) {
+            return i;
+        }
+    }
+}
+*/
+
+generator int eviction(int[ASSOC] state) {
+    int idx = 0;
+    for (int i=0; i<ASSOC; i++) {
+        if (boolExpr(state, i, idx, BOUND)) {
+            if (??(1)) {
+                idx = i;
+            } else {
+                return i;
+            }
+        }
+    }
+    return idx;
+}
+
+generator int[ASSOC] insertion(int[ASSOC] state, int replace) {
+    int[ASSOC] ret = state;
+    if (??(1)) {
+        // insert and normalize
+        ret[replace] = ??;
+        ret = normalize(ret, replace);
+    } else {
+        // normalize and insert
+        ret = normalize(ret, 0);
+        ret[replace] = ??;
+    }
+    return ret;
+}
+
+// re-normalize state after hit/miss
+// it's a generator, different call produce different solutions
+generator int[ASSOC] normalize(int[ASSOC] state, int last) {
+    int[ASSOC] ret = state;
+    if (??) {
+        for (int j=0; j<4; j++) {
+            // check if need to update
+            for (int i=0; i<ASSOC; i++)
+            {
+                // we should reuse missIdx
+                if (ret[i] == ??) {
+                    return ret;
+                }
+            }
+            // update  values
+            for (int i=0; i<ASSOC; i++)
+            {
+                if (boolExpr(ret, last, i, BOUND)) {
+                    ret[i] = natExpr(ret[i], BOUND);
+                }
+            }
+        }
+    }
+    return ret;
+}

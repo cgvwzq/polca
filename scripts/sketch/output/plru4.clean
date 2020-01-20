@@ -1,0 +1,73 @@
+void _main () {
+  bit[3] s0 = {0,0,0};
+  bit[3] s1 = {1,1,0};
+  bit[3] s2 = {0,1,1};
+  bit[3] s3 = {1,1,1};
+  bit[3] s4 = {0,1,0};
+  bit[3] s5 = {0,0,1};
+  bit[3] s6 = {1,0,0};
+  bit[3] s7 = {1,0,1};
+}
+
+bit[3] hitState (bit[3] state, int pos) {
+  bit[3] ret = state;
+  int b = 0;
+  for(int lvl = 2; lvl > 0; lvl = lvl - 1) {
+    int step = 1;
+    // Power operation
+    for(int i = 0; i < (lvl - 1); i = i + 1) {
+      step = step * 2;
+    }
+    if(pos_0 < step) {
+      ret[b] = 1;
+      b = b + 1;
+    } else {
+      ret[b] = 0;
+      b = b + step;
+      pos = pos - step;
+    }
+  }
+  return ret;
+}
+
+int missIdx (bit[3] state) {
+  int idx = 0;
+  int b = 0;
+  for(int lvl = 2; lvl > 0; lvl = lvl - 1)
+  {
+    int step = 1;
+    // Power operation
+    for(int i = 0; i < (lvl - 1); i = i + 1) {
+      step = step * 2;
+    }
+    if((state[b]) == 0) {
+      b = b + 1;
+    } else {
+      b = b + step;
+      idx = idx + step;
+    }
+  }
+  return idx;
+}
+
+bit[3] missState (bit[3] state) {
+  bit[3] ret = state;
+  int replace = missIdx(state, replace_s101);
+  int b = 0;
+  for(int lvl = 2; lvl > 0; lvl = lvl - 1) {
+    int step = 1;
+    // Power operation
+    for(int i = 0; i < (lvl - 1); i = i + 1) {
+      step = step * 2;
+    }
+    if(replace < step) {
+      ret[b] = 1;
+      b = b + 1;
+    } else {
+      ret[b] = 0;
+      b = b + step;
+      replace = replace - step;
+    }
+  }
+  return ret;
+}

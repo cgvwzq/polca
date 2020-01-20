@@ -1,0 +1,106 @@
+void hitState (int[4] state, int pos, ref int[4] _out)/*extra.sk:7*/
+{
+  int[4] ret = state;
+  ret[pos] = 0;
+  int[4] _out_s1935 = ret;
+  bit _has_out_ = 0;
+  for(int j = 0; j < 4; j = j + 1)/*Canonical*/
+  {
+    if(_has_out_ == 0)/*extra.sk:111*/
+    {
+      for(int i = 0; i < 4; i = i + 1)/*Canonical*/
+      {
+        if(_has_out_ == 0)/*extra.sk:114*/
+        {
+          if((_out_s1935[i]) == 3)/*extra.sk:114*/
+          {
+            _has_out_ = 1;
+          }
+        }
+      }
+    }
+    if(_has_out_ == 0)/*extra.sk:119*/
+    {
+      for(int i_0 = 0; i_0 < 4; i_0 = i_0 + 1)/*Canonical*/
+      {
+        if(pos != i_0)/*extra.sk:121*/
+        {
+          int val = _out_s1935[i_0];
+          _out_s1935[i_0] = val + 1;
+        }
+      }
+    }
+  }
+  _out = _out_s1935;
+  return;
+}
+/*skyl2.sk:5*/
+
+void main__Wrapper ()  implements main__WrapperNospec/*skyl2.sk:5*/
+{
+  _main();
+}
+/*skyl2.sk:5*/
+
+void main__WrapperNospec ()/*skyl2.sk:5*/
+{ }
+/*extra.sk:16*/
+
+void missIdx (int[4] state, ref int _out)/*extra.sk:16*/
+{
+  int idx = 0;
+  for(int i = 0; i < 4; i = i + 1)/*Canonical*/
+  {
+    int _out_s1956 = state[idx];
+    if(_out_s1956 < 3)/*extra.sk:79*/
+    {
+      idx = i;
+    }
+  }
+  _out = idx;
+  return;
+}
+/*extra.sk:11*/
+
+void missState (int[4] state, ref int[4] _out)/*extra.sk:11*/
+{
+  int replace_s1972 = 0;
+  missIdx(state, replace_s1972);
+  int[4] _out_s1974 = state;
+  _out_s1974[replace_s1972] = 1;
+  int[4] ret_s1976 = _out_s1974;
+  bit _has_out_ = 0;
+  for(int j = 0; j < 4; j = j + 1)/*Canonical*/
+  {
+    if(_has_out_ == 0)/*extra.sk:111*/
+    {
+      for(int i = 0; i < 4; i = i + 1)/*Canonical*/
+      {
+        if(_has_out_ == 0)/*extra.sk:114*/
+        {
+          if((ret_s1976[i]) == 3)/*extra.sk:114*/
+          {
+            _has_out_ = 1;
+          }
+        }
+      }
+    }
+    if(_has_out_ == 0)/*extra.sk:119*/
+    {
+      for(int i_0 = 0; i_0 < 4; i_0 = i_0 + 1)/*Canonical*/
+      {
+        if(i_0 != replace_s1972)/*extra.sk:121*/
+        {
+          int val = ret_s1976[i_0];
+          ret_s1976[i_0] = 1 + val;
+        }
+      }
+    }
+  }
+  _out = ret_s1976;
+  return;
+}
+/* END PACKAGE ANONYMOUS*/
+[SKETCH] DONE
+Total time = 6797050
+

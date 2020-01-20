@@ -1,0 +1,92 @@
+pragma options "--be:nosim --beopt:simplifycex NOSIM --bnd-inbits 2 --bnd-cbits 2 --bnd-angelicbits 2 --bnd-unroll-amnt 4 --bnd-inline-amnt 2 --slv-seed 1337";
+int ASSOC = 2;
+include "templates/extra.sk";
+harness void main() {
+	// define states
+	int[ASSOC] s0 = {??, ??};
+	int[ASSOC] s1 = {??, ??};
+	int[ASSOC] s2 = {??, ??};
+	int[ASSOC] s3 = {??, ??};
+	int[ASSOC] s4 = {??, ??};
+	int[ASSOC] s5 = {??, ??};
+	int[ASSOC] s6 = {??, ??};
+	int[ASSOC] s7 = {??, ??};
+	int[ASSOC] s8 = {??, ??};
+	int[ASSOC] s9 = {??, ??};
+	int[ASSOC] s10 = {??, ??};
+	int[ASSOC] s11 = {??, ??};
+	int[ASSOC] s12 = {??, ??};
+	int[ASSOC] s13 = {??, ??};
+	int[ASSOC] s14 = {??, ??};
+	int[ASSOC] s15 = {??, ??};
+
+	// miss transitions
+	assert missState(s0) == s1;
+	assert missState(s1) == s6;
+	assert missState(s2) == s6;
+	assert missState(s3) == s5;
+	assert missState(s4) == s13;
+	assert missState(s5) == s6;
+	assert missState(s6) == s1;
+	assert missState(s7) == s1;
+	assert missState(s8) == s6;
+	assert missState(s9) == s6;
+	assert missState(s10) == s8;
+	assert missState(s11) == s8;
+	assert missState(s12) == s11;
+	assert missState(s13) == s5;
+	assert missState(s14) == s1;
+	assert missState(s15) == s6;
+
+	// miss index
+	assert missIdx(s0) == 0;
+	assert missIdx(s1) == 1;
+	assert missIdx(s2) == 0;
+	assert missIdx(s3) == 0;
+	assert missIdx(s4) == 0;
+	assert missIdx(s5) == 0;
+	assert missIdx(s6) == 0;
+	assert missIdx(s7) == 0;
+	assert missIdx(s8) == 1;
+	assert missIdx(s9) == 1;
+	assert missIdx(s10) == 1;
+	assert missIdx(s11) == 1;
+	assert missIdx(s12) == 1;
+	assert missIdx(s13) == 0;
+	assert missIdx(s14) == 0;
+	assert missIdx(s15) == 0;
+
+	// hit state
+	assert hitState(s0, 0) == s1;
+	assert hitState(s0, 1) == s2;
+	assert hitState(s1, 0) == s10;
+	assert hitState(s1, 1) == s6;
+	assert hitState(s2, 0) == s6;
+	assert hitState(s2, 1) == s3;
+	assert hitState(s3, 0) == s5;
+	assert hitState(s3, 1) == s4;
+	assert hitState(s4, 0) == s13;
+	assert hitState(s4, 1) == s4;
+	assert hitState(s5, 0) == s7;
+	assert hitState(s5, 1) == s13;
+	assert hitState(s6, 0) == s8;
+	assert hitState(s6, 1) == s5;
+	assert hitState(s7, 0) == s9;
+	assert hitState(s7, 1) == s15;
+	assert hitState(s8, 0) == s11;
+	assert hitState(s8, 1) == s7;
+	assert hitState(s9, 0) == s9;
+	assert hitState(s9, 1) == s14;
+	assert hitState(s10, 0) == s12;
+	assert hitState(s10, 1) == s8;
+	assert hitState(s11, 0) == s11;
+	assert hitState(s11, 1) == s9;
+	assert hitState(s12, 0) == s12;
+	assert hitState(s12, 1) == s11;
+	assert hitState(s13, 0) == s15;
+	assert hitState(s13, 1) == s13;
+	assert hitState(s14, 0) == s14;
+	assert hitState(s14, 1) == s14;
+	assert hitState(s15, 0) == s14;
+	assert hitState(s15, 1) == s15;
+}

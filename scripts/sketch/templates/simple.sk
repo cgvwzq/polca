@@ -1,0 +1,92 @@
+// Template for simple policies
+// Tested on: FIFO, LRU, and LIP
+
+int BOUND = 2;
+
+// Templates
+int[ASSOC] hitState (int[ASSOC] state, int pos){
+	return promotion(state, pos);
+}
+
+int[ASSOC] missState (int[ASSOC] state){
+	int replace = missIdx(state);
+	return insertion(state, replace);
+}
+
+int missIdx (int[ASSOC] state) {
+	return eviction(state);
+}
+
+// Expression generators
+generator bit boolExpr(int val, int tmp, int bound) {
+    int t = ??(2); // log of number of options
+    if (t==0) { return {|0|1|}; }
+    if (t==1) {
+       return {| val (==|>|<) tmp |};
+    }
+    if (t==2) {
+       return {| val (==|>|<) ?? |};
+    }
+	assert bound > 0;
+    bit a = boolExpr(val, tmp, bound-1);
+    bit b = boolExpr(val, tmp, bound-1);
+    if (t==3) {
+        return {| a && b |};
+    }
+}
+
+generator int natExpr(int val, int bound) {
+    int t = ??(1);
+	if (t==0) { return {|??|val|}; }
+	assert bound > 0;
+    int a = natExpr(val, bound-1);
+    int b = natExpr(val, bound-1);
+    if (t==1) { return {|a (+|-) b|}; }
+}
+
+// Semantic rules generators
+generator int[ASSOC] promotion(int[ASSOC] state, int pos) {
+    int[ASSOC] ret = state;
+	// promotion
+	if (boolExpr(state[pos], 0, BOUND)) {
+		ret[pos] = natExpr(state[pos], BOUND);
+	}
+	if (??(1)) {
+		// update rest of elements
+		for (int i=0; i<ASSOC; i++) {
+			if (i != pos && boolExpr(state[pos], state[i], BOUND)) {
+				ret[i] = natExpr(state[i], BOUND);
+			}
+		}
+	}
+    return ret;
+}
+
+generator int eviction(int[ASSOC] state) {
+    int idx = 0;
+    for (int i=0; i<ASSOC; i++) {
+        if (boolExpr(state[i], state[idx], BOUND)) {
+            if (??(1)) {
+                idx = i;
+            } else {
+                return i;
+            }
+        }
+    }
+    return idx;
+}
+
+generator int[ASSOC] insertion(int[ASSOC] state, int replace) {
+    int[ASSOC] ret = state;
+	// insertion
+	ret[replace] = natExpr(state[replace], BOUND);
+	// update rest of elements
+    if (??(1)) {
+        for (int i=0; i<ASSOC; i++) {
+            if (i != replace && boolExpr(state[replace], state[i], BOUND)) {
+                ret[i] = natExpr(state[i], BOUND);
+            }
+        }
+    }
+    return ret;
+}

@@ -1,0 +1,548 @@
+SKETCH version 1.7.5
+Benchmark = lip4.sk
+/* BEGIN PACKAGE ANONYMOUS*/
+/*lip4.sk:4*/
+
+void _main ()/*lip4.sk:4*/
+{
+  int[4] s0 = {3,2,1,0};
+  int[4] s1 = {0,3,2,1};
+  int[4] s2 = {1,0,3,2};
+  int[4] s3 = {2,1,0,3};
+  int[4] s4 = {3,0,2,1};
+  int[4] s5 = {3,1,0,2};
+  int[4] s6 = {3,2,0,1};
+  int[4] s7 = {0,3,1,2};
+  int[4] s8 = {1,3,0,2};
+  int[4] s9 = {2,3,1,0};
+  int[4] s10 = {0,2,1,3};
+  int[4] s11 = {1,0,2,3};
+  int[4] s12 = {1,2,0,3};
+  int[4] s13 = {2,3,0,1};
+  int[4] s14 = {2,0,1,3};
+  int[4] s15 = {3,0,1,2};
+  int[4] s16 = {0,1,2,3};
+  int[4] s17 = {0,1,3,2};
+  int[4] s18 = {1,2,3,0};
+  int[4] s19 = {2,0,3,1};
+  int[4] s20 = {2,1,3,0};
+  int[4] s21 = {3,1,2,0};
+  int[4] s22 = {0,2,3,1};
+  int[4] s23 = {1,3,2,0};
+  int[4] _out_s8 = {0,0,0,0};
+  missState(s0, _out_s8);
+  assert (_out_s8 == s0); //Assert at lip4.sk:32 (0)
+  int[4] _out_s10 = {0,0,0,0};
+  missState(s1, _out_s10);
+  assert (_out_s10 == s1); //Assert at lip4.sk:33 (0)
+  int[4] _out_s12 = {0,0,0,0};
+  missState(s2, _out_s12);
+  assert (_out_s12 == s2); //Assert at lip4.sk:34 (0)
+  int[4] _out_s14 = {0,0,0,0};
+  missState(s3, _out_s14);
+  assert (_out_s14 == s3); //Assert at lip4.sk:35 (0)
+  int[4] _out_s16 = {0,0,0,0};
+  missState(s4, _out_s16);
+  assert (_out_s16 == s4); //Assert at lip4.sk:36 (0)
+  int[4] _out_s18 = {0,0,0,0};
+  missState(s5, _out_s18);
+  assert (_out_s18 == s5); //Assert at lip4.sk:37 (0)
+  int[4] _out_s20 = {0,0,0,0};
+  missState(s6, _out_s20);
+  assert (_out_s20 == s6); //Assert at lip4.sk:38 (0)
+  int[4] _out_s22 = {0,0,0,0};
+  missState(s7, _out_s22);
+  assert (_out_s22 == s7); //Assert at lip4.sk:39 (0)
+  int[4] _out_s24 = {0,0,0,0};
+  missState(s8, _out_s24);
+  assert (_out_s24 == s8); //Assert at lip4.sk:40 (0)
+  int[4] _out_s26 = {0,0,0,0};
+  missState(s9, _out_s26);
+  assert (_out_s26 == s9); //Assert at lip4.sk:41 (0)
+  int[4] _out_s28 = {0,0,0,0};
+  missState(s10, _out_s28);
+  assert (_out_s28 == s10); //Assert at lip4.sk:42 (0)
+  int[4] _out_s30 = {0,0,0,0};
+  missState(s11, _out_s30);
+  assert (_out_s30 == s11); //Assert at lip4.sk:43 (0)
+  int[4] _out_s32 = {0,0,0,0};
+  missState(s12, _out_s32);
+  assert (_out_s32 == s12); //Assert at lip4.sk:44 (0)
+  int[4] _out_s34 = {0,0,0,0};
+  missState(s13, _out_s34);
+  assert (_out_s34 == s13); //Assert at lip4.sk:45 (0)
+  int[4] _out_s36 = {0,0,0,0};
+  missState(s14, _out_s36);
+  assert (_out_s36 == s14); //Assert at lip4.sk:46 (0)
+  int[4] _out_s38 = {0,0,0,0};
+  missState(s15, _out_s38);
+  assert (_out_s38 == s15); //Assert at lip4.sk:47 (0)
+  int[4] _out_s40 = {0,0,0,0};
+  missState(s16, _out_s40);
+  assert (_out_s40 == s16); //Assert at lip4.sk:48 (0)
+  int[4] _out_s42 = {0,0,0,0};
+  missState(s17, _out_s42);
+  assert (_out_s42 == s17); //Assert at lip4.sk:49 (0)
+  int[4] _out_s44 = {0,0,0,0};
+  missState(s18, _out_s44);
+  assert (_out_s44 == s18); //Assert at lip4.sk:50 (0)
+  int[4] _out_s46 = {0,0,0,0};
+  missState(s19, _out_s46);
+  assert (_out_s46 == s19); //Assert at lip4.sk:51 (0)
+  int[4] _out_s48 = {0,0,0,0};
+  missState(s20, _out_s48);
+  assert (_out_s48 == s20); //Assert at lip4.sk:52 (0)
+  int[4] _out_s50 = {0,0,0,0};
+  missState(s21, _out_s50);
+  assert (_out_s50 == s21); //Assert at lip4.sk:53 (0)
+  int[4] _out_s52 = {0,0,0,0};
+  missState(s22, _out_s52);
+  assert (_out_s52 == s22); //Assert at lip4.sk:54 (0)
+  int[4] _out_s54 = {0,0,0,0};
+  missState(s23, _out_s54);
+  assert (_out_s54 == s23); //Assert at lip4.sk:55 (0)
+  int _out_s56 = 0;
+  missIdx(s0, _out_s56);
+  assert (_out_s56 == 0); //Assert at lip4.sk:58 (0)
+  int _out_s58 = 0;
+  missIdx(s1, _out_s58);
+  assert (_out_s58 == 1); //Assert at lip4.sk:59 (0)
+  int _out_s60 = 0;
+  missIdx(s2, _out_s60);
+  assert (_out_s60 == 2); //Assert at lip4.sk:60 (0)
+  int _out_s62 = 0;
+  missIdx(s3, _out_s62);
+  assert (_out_s62 == 3); //Assert at lip4.sk:61 (0)
+  int _out_s64 = 0;
+  missIdx(s4, _out_s64);
+  assert (_out_s64 == 0); //Assert at lip4.sk:62 (0)
+  int _out_s66 = 0;
+  missIdx(s5, _out_s66);
+  assert (_out_s66 == 0); //Assert at lip4.sk:63 (0)
+  int _out_s68 = 0;
+  missIdx(s6, _out_s68);
+  assert (_out_s68 == 0); //Assert at lip4.sk:64 (0)
+  int _out_s70 = 0;
+  missIdx(s7, _out_s70);
+  assert (_out_s70 == 1); //Assert at lip4.sk:65 (0)
+  int _out_s72 = 0;
+  missIdx(s8, _out_s72);
+  assert (_out_s72 == 1); //Assert at lip4.sk:66 (0)
+  int _out_s74 = 0;
+  missIdx(s9, _out_s74);
+  assert (_out_s74 == 1); //Assert at lip4.sk:67 (0)
+  int _out_s76 = 0;
+  missIdx(s10, _out_s76);
+  assert (_out_s76 == 3); //Assert at lip4.sk:68 (0)
+  int _out_s78 = 0;
+  missIdx(s11, _out_s78);
+  assert (_out_s78 == 3); //Assert at lip4.sk:69 (0)
+  int _out_s80 = 0;
+  missIdx(s12, _out_s80);
+  assert (_out_s80 == 3); //Assert at lip4.sk:70 (0)
+  int _out_s82 = 0;
+  missIdx(s13, _out_s82);
+  assert (_out_s82 == 1); //Assert at lip4.sk:71 (0)
+  int _out_s84 = 0;
+  missIdx(s14, _out_s84);
+  assert (_out_s84 == 3); //Assert at lip4.sk:72 (0)
+  int _out_s86 = 0;
+  missIdx(s15, _out_s86);
+  assert (_out_s86 == 0); //Assert at lip4.sk:73 (0)
+  int _out_s88 = 0;
+  missIdx(s16, _out_s88);
+  assert (_out_s88 == 3); //Assert at lip4.sk:74 (0)
+  int _out_s90 = 0;
+  missIdx(s17, _out_s90);
+  assert (_out_s90 == 2); //Assert at lip4.sk:75 (0)
+  int _out_s92 = 0;
+  missIdx(s18, _out_s92);
+  assert (_out_s92 == 2); //Assert at lip4.sk:76 (0)
+  int _out_s94 = 0;
+  missIdx(s19, _out_s94);
+  assert (_out_s94 == 2); //Assert at lip4.sk:77 (0)
+  int _out_s96 = 0;
+  missIdx(s20, _out_s96);
+  assert (_out_s96 == 2); //Assert at lip4.sk:78 (0)
+  int _out_s98 = 0;
+  missIdx(s21, _out_s98);
+  assert (_out_s98 == 0); //Assert at lip4.sk:79 (0)
+  int _out_s100 = 0;
+  missIdx(s22, _out_s100);
+  assert (_out_s100 == 2); //Assert at lip4.sk:80 (0)
+  int _out_s102 = 0;
+  missIdx(s23, _out_s102);
+  assert (_out_s102 == 1); //Assert at lip4.sk:81 (0)
+  int[4] _out_s104 = {0,0,0,0};
+  hitState(s0, 0, _out_s104);
+  assert (_out_s104 == s1); //Assert at lip4.sk:84 (0)
+  int[4] _out_s106 = {0,0,0,0};
+  hitState(s0, 1, _out_s106);
+  assert (_out_s106 == s4); //Assert at lip4.sk:85 (0)
+  int[4] _out_s108 = {0,0,0,0};
+  hitState(s0, 2, _out_s108);
+  assert (_out_s108 == s6); //Assert at lip4.sk:86 (0)
+  int[4] _out_s110 = {0,0,0,0};
+  hitState(s0, 3, _out_s110);
+  assert (_out_s110 == s0); //Assert at lip4.sk:87 (0)
+  int[4] _out_s112 = {0,0,0,0};
+  hitState(s1, 0, _out_s112);
+  assert (_out_s112 == s1); //Assert at lip4.sk:88 (0)
+  int[4] _out_s114 = {0,0,0,0};
+  hitState(s1, 1, _out_s114);
+  assert (_out_s114 == s2); //Assert at lip4.sk:89 (0)
+  int[4] _out_s116 = {0,0,0,0};
+  hitState(s1, 2, _out_s116);
+  assert (_out_s116 == s8); //Assert at lip4.sk:90 (0)
+  int[4] _out_s118 = {0,0,0,0};
+  hitState(s1, 3, _out_s118);
+  assert (_out_s118 == s23); //Assert at lip4.sk:91 (0)
+  int[4] _out_s120 = {0,0,0,0};
+  hitState(s2, 0, _out_s120);
+  assert (_out_s120 == s17); //Assert at lip4.sk:92 (0)
+  int[4] _out_s122 = {0,0,0,0};
+  hitState(s2, 1, _out_s122);
+  assert (_out_s122 == s2); //Assert at lip4.sk:93 (0)
+  int[4] _out_s124 = {0,0,0,0};
+  hitState(s2, 2, _out_s124);
+  assert (_out_s124 == s3); //Assert at lip4.sk:94 (0)
+  int[4] _out_s126 = {0,0,0,0};
+  hitState(s2, 3, _out_s126);
+  assert (_out_s126 == s20); //Assert at lip4.sk:95 (0)
+  int[4] _out_s128 = {0,0,0,0};
+  hitState(s3, 0, _out_s128);
+  assert (_out_s128 == s10); //Assert at lip4.sk:96 (0)
+  int[4] _out_s130 = {0,0,0,0};
+  hitState(s3, 1, _out_s130);
+  assert (_out_s130 == s14); //Assert at lip4.sk:97 (0)
+  int[4] _out_s132 = {0,0,0,0};
+  hitState(s3, 2, _out_s132);
+  assert (_out_s132 == s3); //Assert at lip4.sk:98 (0)
+  int[4] _out_s134 = {0,0,0,0};
+  hitState(s3, 3, _out_s134);
+  assert (_out_s134 == s0); //Assert at lip4.sk:99 (0)
+  int[4] _out_s136 = {0,0,0,0};
+  hitState(s4, 0, _out_s136);
+  assert (_out_s136 == s17); //Assert at lip4.sk:100 (0)
+  int[4] _out_s138 = {0,0,0,0};
+  hitState(s4, 1, _out_s138);
+  assert (_out_s138 == s4); //Assert at lip4.sk:101 (0)
+  int[4] _out_s140 = {0,0,0,0};
+  hitState(s4, 2, _out_s140);
+  assert (_out_s140 == s5); //Assert at lip4.sk:102 (0)
+  int[4] _out_s142 = {0,0,0,0};
+  hitState(s4, 3, _out_s142);
+  assert (_out_s142 == s21); //Assert at lip4.sk:103 (0)
+  int[4] _out_s144 = {0,0,0,0};
+  hitState(s5, 0, _out_s144);
+  assert (_out_s144 == s10); //Assert at lip4.sk:104 (0)
+  int[4] _out_s146 = {0,0,0,0};
+  hitState(s5, 1, _out_s146);
+  assert (_out_s146 == s15); //Assert at lip4.sk:105 (0)
+  int[4] _out_s148 = {0,0,0,0};
+  hitState(s5, 2, _out_s148);
+  assert (_out_s148 == s5); //Assert at lip4.sk:106 (0)
+  int[4] _out_s150 = {0,0,0,0};
+  hitState(s5, 3, _out_s150);
+  assert (_out_s150 == s0); //Assert at lip4.sk:107 (0)
+  int[4] _out_s152 = {0,0,0,0};
+  hitState(s6, 0, _out_s152);
+  assert (_out_s152 == s7); //Assert at lip4.sk:108 (0)
+  int[4] _out_s154 = {0,0,0,0};
+  hitState(s6, 1, _out_s154);
+  assert (_out_s154 == s15); //Assert at lip4.sk:109 (0)
+  int[4] _out_s156 = {0,0,0,0};
+  hitState(s6, 2, _out_s156);
+  assert (_out_s156 == s6); //Assert at lip4.sk:110 (0)
+  int[4] _out_s158 = {0,0,0,0};
+  hitState(s6, 3, _out_s158);
+  assert (_out_s158 == s0); //Assert at lip4.sk:111 (0)
+  int[4] _out_s160 = {0,0,0,0};
+  hitState(s7, 0, _out_s160);
+  assert (_out_s160 == s7); //Assert at lip4.sk:112 (0)
+  int[4] _out_s162 = {0,0,0,0};
+  hitState(s7, 1, _out_s162);
+  assert (_out_s162 == s11); //Assert at lip4.sk:113 (0)
+  int[4] _out_s164 = {0,0,0,0};
+  hitState(s7, 2, _out_s164);
+  assert (_out_s164 == s8); //Assert at lip4.sk:114 (0)
+  int[4] _out_s166 = {0,0,0,0};
+  hitState(s7, 3, _out_s166);
+  assert (_out_s166 == s23); //Assert at lip4.sk:115 (0)
+  int[4] _out_s168 = {0,0,0,0};
+  hitState(s8, 0, _out_s168);
+  assert (_out_s168 == s7); //Assert at lip4.sk:116 (0)
+  int[4] _out_s170 = {0,0,0,0};
+  hitState(s8, 1, _out_s170);
+  assert (_out_s170 == s14); //Assert at lip4.sk:117 (0)
+  int[4] _out_s172 = {0,0,0,0};
+  hitState(s8, 2, _out_s172);
+  assert (_out_s172 == s8); //Assert at lip4.sk:118 (0)
+  int[4] _out_s174 = {0,0,0,0};
+  hitState(s8, 3, _out_s174);
+  assert (_out_s174 == s9); //Assert at lip4.sk:119 (0)
+  int[4] _out_s176 = {0,0,0,0};
+  hitState(s9, 0, _out_s176);
+  assert (_out_s176 == s1); //Assert at lip4.sk:120 (0)
+  int[4] _out_s178 = {0,0,0,0};
+  hitState(s9, 1, _out_s178);
+  assert (_out_s178 == s4); //Assert at lip4.sk:121 (0)
+  int[4] _out_s180 = {0,0,0,0};
+  hitState(s9, 2, _out_s180);
+  assert (_out_s180 == s13); //Assert at lip4.sk:122 (0)
+  int[4] _out_s182 = {0,0,0,0};
+  hitState(s9, 3, _out_s182);
+  assert (_out_s182 == s9); //Assert at lip4.sk:123 (0)
+  int[4] _out_s184 = {0,0,0,0};
+  hitState(s10, 0, _out_s184);
+  assert (_out_s184 == s10); //Assert at lip4.sk:124 (0)
+  int[4] _out_s186 = {0,0,0,0};
+  hitState(s10, 1, _out_s186);
+  assert (_out_s186 == s11); //Assert at lip4.sk:125 (0)
+  int[4] _out_s188 = {0,0,0,0};
+  hitState(s10, 2, _out_s188);
+  assert (_out_s188 == s12); //Assert at lip4.sk:126 (0)
+  int[4] _out_s190 = {0,0,0,0};
+  hitState(s10, 3, _out_s190);
+  assert (_out_s190 == s23); //Assert at lip4.sk:127 (0)
+  int[4] _out_s192 = {0,0,0,0};
+  hitState(s11, 0, _out_s192);
+  assert (_out_s192 == s16); //Assert at lip4.sk:128 (0)
+  int[4] _out_s194 = {0,0,0,0};
+  hitState(s11, 1, _out_s194);
+  assert (_out_s194 == s11); //Assert at lip4.sk:129 (0)
+  int[4] _out_s196 = {0,0,0,0};
+  hitState(s11, 2, _out_s196);
+  assert (_out_s196 == s3); //Assert at lip4.sk:130 (0)
+  int[4] _out_s198 = {0,0,0,0};
+  hitState(s11, 3, _out_s198);
+  assert (_out_s198 == s20); //Assert at lip4.sk:131 (0)
+  int[4] _out_s200 = {0,0,0,0};
+  hitState(s12, 0, _out_s200);
+  assert (_out_s200 == s10); //Assert at lip4.sk:132 (0)
+  int[4] _out_s202 = {0,0,0,0};
+  hitState(s12, 1, _out_s202);
+  assert (_out_s202 == s14); //Assert at lip4.sk:133 (0)
+  int[4] _out_s204 = {0,0,0,0};
+  hitState(s12, 2, _out_s204);
+  assert (_out_s204 == s12); //Assert at lip4.sk:134 (0)
+  int[4] _out_s206 = {0,0,0,0};
+  hitState(s12, 3, _out_s206);
+  assert (_out_s206 == s9); //Assert at lip4.sk:135 (0)
+  int[4] _out_s208 = {0,0,0,0};
+  hitState(s13, 0, _out_s208);
+  assert (_out_s208 == s7); //Assert at lip4.sk:136 (0)
+  int[4] _out_s210 = {0,0,0,0};
+  hitState(s13, 1, _out_s210);
+  assert (_out_s210 == s15); //Assert at lip4.sk:137 (0)
+  int[4] _out_s212 = {0,0,0,0};
+  hitState(s13, 2, _out_s212);
+  assert (_out_s212 == s13); //Assert at lip4.sk:138 (0)
+  int[4] _out_s214 = {0,0,0,0};
+  hitState(s13, 3, _out_s214);
+  assert (_out_s214 == s9); //Assert at lip4.sk:139 (0)
+  int[4] _out_s216 = {0,0,0,0};
+  hitState(s14, 0, _out_s216);
+  assert (_out_s216 == s16); //Assert at lip4.sk:140 (0)
+  int[4] _out_s218 = {0,0,0,0};
+  hitState(s14, 1, _out_s218);
+  assert (_out_s218 == s14); //Assert at lip4.sk:141 (0)
+  int[4] _out_s220 = {0,0,0,0};
+  hitState(s14, 2, _out_s220);
+  assert (_out_s220 == s3); //Assert at lip4.sk:142 (0)
+  int[4] _out_s222 = {0,0,0,0};
+  hitState(s14, 3, _out_s222);
+  assert (_out_s222 == s21); //Assert at lip4.sk:143 (0)
+  int[4] _out_s224 = {0,0,0,0};
+  hitState(s15, 0, _out_s224);
+  assert (_out_s224 == s16); //Assert at lip4.sk:144 (0)
+  int[4] _out_s226 = {0,0,0,0};
+  hitState(s15, 1, _out_s226);
+  assert (_out_s226 == s15); //Assert at lip4.sk:145 (0)
+  int[4] _out_s228 = {0,0,0,0};
+  hitState(s15, 2, _out_s228);
+  assert (_out_s228 == s5); //Assert at lip4.sk:146 (0)
+  int[4] _out_s230 = {0,0,0,0};
+  hitState(s15, 3, _out_s230);
+  assert (_out_s230 == s21); //Assert at lip4.sk:147 (0)
+  int[4] _out_s232 = {0,0,0,0};
+  hitState(s16, 0, _out_s232);
+  assert (_out_s232 == s16); //Assert at lip4.sk:148 (0)
+  int[4] _out_s234 = {0,0,0,0};
+  hitState(s16, 1, _out_s234);
+  assert (_out_s234 == s11); //Assert at lip4.sk:149 (0)
+  int[4] _out_s236 = {0,0,0,0};
+  hitState(s16, 2, _out_s236);
+  assert (_out_s236 == s12); //Assert at lip4.sk:150 (0)
+  int[4] _out_s238 = {0,0,0,0};
+  hitState(s16, 3, _out_s238);
+  assert (_out_s238 == s18); //Assert at lip4.sk:151 (0)
+  int[4] _out_s240 = {0,0,0,0};
+  hitState(s17, 0, _out_s240);
+  assert (_out_s240 == s17); //Assert at lip4.sk:152 (0)
+  int[4] _out_s242 = {0,0,0,0};
+  hitState(s17, 1, _out_s242);
+  assert (_out_s242 == s2); //Assert at lip4.sk:153 (0)
+  int[4] _out_s244 = {0,0,0,0};
+  hitState(s17, 2, _out_s244);
+  assert (_out_s244 == s12); //Assert at lip4.sk:154 (0)
+  int[4] _out_s246 = {0,0,0,0};
+  hitState(s17, 3, _out_s246);
+  assert (_out_s246 == s18); //Assert at lip4.sk:155 (0)
+  int[4] _out_s248 = {0,0,0,0};
+  hitState(s18, 0, _out_s248);
+  assert (_out_s248 == s22); //Assert at lip4.sk:156 (0)
+  int[4] _out_s250 = {0,0,0,0};
+  hitState(s18, 1, _out_s250);
+  assert (_out_s250 == s19); //Assert at lip4.sk:157 (0)
+  int[4] _out_s252 = {0,0,0,0};
+  hitState(s18, 2, _out_s252);
+  assert (_out_s252 == s13); //Assert at lip4.sk:158 (0)
+  int[4] _out_s254 = {0,0,0,0};
+  hitState(s18, 3, _out_s254);
+  assert (_out_s254 == s18); //Assert at lip4.sk:159 (0)
+  int[4] _out_s256 = {0,0,0,0};
+  hitState(s19, 0, _out_s256);
+  assert (_out_s256 == s17); //Assert at lip4.sk:160 (0)
+  int[4] _out_s258 = {0,0,0,0};
+  hitState(s19, 1, _out_s258);
+  assert (_out_s258 == s19); //Assert at lip4.sk:161 (0)
+  int[4] _out_s260 = {0,0,0,0};
+  hitState(s19, 2, _out_s260);
+  assert (_out_s260 == s5); //Assert at lip4.sk:162 (0)
+  int[4] _out_s262 = {0,0,0,0};
+  hitState(s19, 3, _out_s262);
+  assert (_out_s262 == s20); //Assert at lip4.sk:163 (0)
+  int[4] _out_s264 = {0,0,0,0};
+  hitState(s20, 0, _out_s264);
+  assert (_out_s264 == s22); //Assert at lip4.sk:164 (0)
+  int[4] _out_s266 = {0,0,0,0};
+  hitState(s20, 1, _out_s266);
+  assert (_out_s266 == s19); //Assert at lip4.sk:165 (0)
+  int[4] _out_s268 = {0,0,0,0};
+  hitState(s20, 2, _out_s268);
+  assert (_out_s268 == s6); //Assert at lip4.sk:166 (0)
+  int[4] _out_s270 = {0,0,0,0};
+  hitState(s20, 3, _out_s270);
+  assert (_out_s270 == s20); //Assert at lip4.sk:167 (0)
+  int[4] _out_s272 = {0,0,0,0};
+  hitState(s21, 0, _out_s272);
+  assert (_out_s272 == s22); //Assert at lip4.sk:168 (0)
+  int[4] _out_s274 = {0,0,0,0};
+  hitState(s21, 1, _out_s274);
+  assert (_out_s274 == s4); //Assert at lip4.sk:169 (0)
+  int[4] _out_s276 = {0,0,0,0};
+  hitState(s21, 2, _out_s276);
+  assert (_out_s276 == s6); //Assert at lip4.sk:170 (0)
+  int[4] _out_s278 = {0,0,0,0};
+  hitState(s21, 3, _out_s278);
+  assert (_out_s278 == s21); //Assert at lip4.sk:171 (0)
+  int[4] _out_s280 = {0,0,0,0};
+  hitState(s22, 0, _out_s280);
+  assert (_out_s280 == s22); //Assert at lip4.sk:172 (0)
+  int[4] _out_s282 = {0,0,0,0};
+  hitState(s22, 1, _out_s282);
+  assert (_out_s282 == s2); //Assert at lip4.sk:173 (0)
+  int[4] _out_s284 = {0,0,0,0};
+  hitState(s22, 2, _out_s284);
+  assert (_out_s284 == s8); //Assert at lip4.sk:174 (0)
+  int[4] _out_s286 = {0,0,0,0};
+  hitState(s22, 3, _out_s286);
+  assert (_out_s286 == s18); //Assert at lip4.sk:175 (0)
+  int[4] _out_s288 = {0,0,0,0};
+  hitState(s23, 0, _out_s288);
+  assert (_out_s288 == s1); //Assert at lip4.sk:176 (0)
+  int[4] _out_s290 = {0,0,0,0};
+  hitState(s23, 1, _out_s290);
+  assert (_out_s290 == s19); //Assert at lip4.sk:177 (0)
+  int[4] _out_s292 = {0,0,0,0};
+  hitState(s23, 2, _out_s292);
+  assert (_out_s292 == s13); //Assert at lip4.sk:178 (0)
+  int[4] _out_s294 = {0,0,0,0};
+  hitState(s23, 3, _out_s294);
+  assert (_out_s294 == s23); //Assert at lip4.sk:179 (0)
+}
+/*simple.sk:4*/
+
+void hitState (int[4] state, int pos, ref int[4] _out)/*simple.sk:4*/
+{
+  int[4] _out_s297 = state;
+  int val = state[pos];
+  if((val > 0) && (val > 0))/*simple.sk:74*/
+  {
+    _out_s297[pos] = 0;
+  }
+  for(int i = 0; i < 4; i = i + 1)/*Canonical*/
+  {
+    bit _pac_sc_s302 = i != pos;
+    if(_pac_sc_s302)/*simple.sk:80*/
+    {
+      int _out_s318 = state[i];
+      int _out_s320 = state[pos];
+      int _out_s322 = state[pos];
+      int _out_s324 = state[i];
+      _pac_sc_s302 = (_out_s318 < _out_s320) && (_out_s322 > _out_s324);
+    }
+    if(_pac_sc_s302)/*simple.sk:80*/
+    {
+      int val_0 = state[i];
+      _out_s297[i] = val_0 + 1;
+    }
+  }
+  _out = _out_s297;
+  return;
+}
+/*lip4.sk:4*/
+
+void main__Wrapper ()  implements main__WrapperNospec/*lip4.sk:4*/
+{
+  _main();
+}
+/*lip4.sk:4*/
+
+void main__WrapperNospec ()/*lip4.sk:4*/
+{ }
+/*simple.sk:14*/
+
+void missIdx (int[4] state, ref int _out)/*simple.sk:14*/
+{
+  for(int i = 0; i < 4; i = i + 1)/*Canonical*/
+  {
+    int val = state[i];
+    if(val > 2)/*simple.sk:18*/
+    {
+      _out = i;
+      return;
+    }
+  }
+  _out = -1;
+  return;
+}
+/*simple.sk:9*/
+
+void missState (int[4] state, ref int[4] _out)/*simple.sk:9*/
+{
+  int[4] _out_s337 = state;
+  int replace_s339 = 0;
+  missIdx(state, replace_s339);
+  assert (replace_s339 > -1); //Assert at simple.sk:90 (0)
+  int val = state[replace_s339];
+  _out_s337[replace_s339] = val;
+  for(int i = 0; i < 4; i = i + 1)/*Canonical*/
+  {
+    bit _pac_sc_s342 = i != replace_s339;
+    if(_pac_sc_s342)/*simple.sk:96*/
+    {
+      _pac_sc_s342 = 0;
+    }
+    if(_pac_sc_s342)/*simple.sk:96*/
+    {
+      _out_s337[i] = 4;
+    }
+  }
+  _out = _out_s337;
+  return;
+}
+/* END PACKAGE ANONYMOUS*/
+[SKETCH] DONE
+Total time = 4355

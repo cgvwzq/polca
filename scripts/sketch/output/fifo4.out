@@ -1,0 +1,147 @@
+SKETCH version 1.7.5
+Benchmark = fifo4.sk
+/* BEGIN PACKAGE ANONYMOUS*/
+/*fifo4.sk:5*/
+
+void _main ()/*fifo4.sk:5*/
+{
+  int[4] s0 = {3,2,1,0};
+  int[4] s1 = {0,3,2,1};
+  int[4] s2 = {1,0,3,2};
+  int[4] s3 = {2,1,0,3};
+  int[4] _out_s8 = {0,0,0,0};
+  missState(s0, _out_s8);
+  assert (_out_s8 == s1); //Assert at fifo4.sk:14 (0)
+  int[4] _out_s10 = {0,0,0,0};
+  missState(s1, _out_s10);
+  assert (_out_s10 == s2); //Assert at fifo4.sk:15 (0)
+  int[4] _out_s12 = {0,0,0,0};
+  missState(s2, _out_s12);
+  assert (_out_s12 == s3); //Assert at fifo4.sk:16 (0)
+  int[4] _out_s14 = {0,0,0,0};
+  missState(s3, _out_s14);
+  assert (_out_s14 == s0); //Assert at fifo4.sk:17 (0)
+  int _out_s16 = 0;
+  missIdx(s0, _out_s16);
+  assert (_out_s16 == 0); //Assert at fifo4.sk:20 (0)
+  int _out_s18 = 0;
+  missIdx(s1, _out_s18);
+  assert (_out_s18 == 1); //Assert at fifo4.sk:21 (0)
+  int _out_s20 = 0;
+  missIdx(s2, _out_s20);
+  assert (_out_s20 == 2); //Assert at fifo4.sk:22 (0)
+  int _out_s22 = 0;
+  missIdx(s3, _out_s22);
+  assert (_out_s22 == 3); //Assert at fifo4.sk:23 (0)
+  int[4] _out_s24 = {0,0,0,0};
+  hitState(s0, 0, _out_s24);
+  assert (_out_s24 == s0); //Assert at fifo4.sk:26 (0)
+  int[4] _out_s26 = {0,0,0,0};
+  hitState(s0, 1, _out_s26);
+  assert (_out_s26 == s0); //Assert at fifo4.sk:27 (0)
+  int[4] _out_s28 = {0,0,0,0};
+  hitState(s0, 2, _out_s28);
+  assert (_out_s28 == s0); //Assert at fifo4.sk:28 (0)
+  int[4] _out_s30 = {0,0,0,0};
+  hitState(s0, 3, _out_s30);
+  assert (_out_s30 == s0); //Assert at fifo4.sk:29 (0)
+  int[4] _out_s32 = {0,0,0,0};
+  hitState(s1, 0, _out_s32);
+  assert (_out_s32 == s1); //Assert at fifo4.sk:30 (0)
+  int[4] _out_s34 = {0,0,0,0};
+  hitState(s1, 1, _out_s34);
+  assert (_out_s34 == s1); //Assert at fifo4.sk:31 (0)
+  int[4] _out_s36 = {0,0,0,0};
+  hitState(s1, 2, _out_s36);
+  assert (_out_s36 == s1); //Assert at fifo4.sk:32 (0)
+  int[4] _out_s38 = {0,0,0,0};
+  hitState(s1, 3, _out_s38);
+  assert (_out_s38 == s1); //Assert at fifo4.sk:33 (0)
+  int[4] _out_s40 = {0,0,0,0};
+  hitState(s2, 0, _out_s40);
+  assert (_out_s40 == s2); //Assert at fifo4.sk:34 (0)
+  int[4] _out_s42 = {0,0,0,0};
+  hitState(s2, 1, _out_s42);
+  assert (_out_s42 == s2); //Assert at fifo4.sk:35 (0)
+  int[4] _out_s44 = {0,0,0,0};
+  hitState(s2, 2, _out_s44);
+  assert (_out_s44 == s2); //Assert at fifo4.sk:36 (0)
+  int[4] _out_s46 = {0,0,0,0};
+  hitState(s2, 3, _out_s46);
+  assert (_out_s46 == s2); //Assert at fifo4.sk:37 (0)
+  int[4] _out_s48 = {0,0,0,0};
+  hitState(s3, 0, _out_s48);
+  assert (_out_s48 == s3); //Assert at fifo4.sk:38 (0)
+  int[4] _out_s50 = {0,0,0,0};
+  hitState(s3, 1, _out_s50);
+  assert (_out_s50 == s3); //Assert at fifo4.sk:39 (0)
+  int[4] _out_s52 = {0,0,0,0};
+  hitState(s3, 2, _out_s52);
+  assert (_out_s52 == s3); //Assert at fifo4.sk:40 (0)
+  int[4] _out_s54 = {0,0,0,0};
+  hitState(s3, 3, _out_s54);
+  assert (_out_s54 == s3); //Assert at fifo4.sk:41 (0)
+}
+/*simple.sk:4*/
+
+void hitState (int[4] state, int pos, ref int[4] _out)/*simple.sk:4*/
+{
+  _out = state;
+  return;
+}
+/*fifo4.sk:5*/
+
+void main__Wrapper ()  implements main__WrapperNospec/*fifo4.sk:5*/
+{
+  _main();
+}
+/*fifo4.sk:5*/
+
+void main__WrapperNospec ()/*fifo4.sk:5*/
+{ }
+/*simple.sk:14*/
+
+void missIdx (int[4] state, ref int _out)/*simple.sk:14*/
+{
+  for(int i = 0; i < 4; i = i + 1)/*Canonical*/
+  {
+    int val = state[i];
+    if((val == 3) && (val > 2))/*simple.sk:18*/
+    {
+      _out = i;
+      return;
+    }
+  }
+  _out = -1;
+  return;
+}
+/*simple.sk:9*/
+
+void missState (int[4] state, ref int[4] _out)/*simple.sk:9*/
+{
+  int[4] _out_s97 = state;
+  int replace_s99 = 0;
+  missIdx(state, replace_s99);
+  assert (replace_s99 > -1); //Assert at simple.sk:90 (0)
+  _out_s97[replace_s99] = 0;
+  for(int i = 0; i < 4; i = i + 1)/*Canonical*/
+  {
+    bit _pac_sc_s102 = i != replace_s99;
+    if(_pac_sc_s102)/*simple.sk:96*/
+    {
+      int _out_s78 = state[i];
+      int _out_s80 = state[replace_s99];
+      _pac_sc_s102 = _out_s78 < _out_s80;
+    }
+    if(_pac_sc_s102)/*simple.sk:96*/
+    {
+      int val = state[i];
+      _out_s97[i] = val + 1;
+    }
+  }
+  _out = _out_s97;
+  return;
+}
+/* END PACKAGE ANONYMOUS*/
+[SKETCH] DONE
+Total time = 807
