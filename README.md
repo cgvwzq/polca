@@ -58,6 +58,73 @@ Example for learning L1 in Haswell machine:
 
 `./polca.sh -w 8 -p hw -b "ssh -t pepe@haswell ~/cachequery/cachequery.py -c ~/cachequery/cachequery.ini -i -l l1" -prefix "@ @" -verbose`
 
+## Docker
+
+To build the project and all dependencies in a docker container run:
+
+```
+docker build -t polca .
+```
+
+Make `tmp/` directory writeable (i.e. `chmod o+w tmp/`) to others, and run the following to get a command line into the container:
+
+```
+sudo docker run -ti -v $(pwd)/tmp:/home/user/polca/tmp polca
+```
+
+The `tmp/` directory is mounted inside the container in order to share output files with the host.
+
+In order to verify that everything works as expected run:
+
+```
+user@xxx:~/polca$ ./polca.sh --help
+```
+
+### Test 1 - Learn PLRU assoc=4 from simulator
+
+```
+$ ./polca.sh -w 4 -p plru -o tmp/plru.dot
+
+```
+
+In order to visualize the file from the host machine, run:
+
+```
+$ dot -Tpng tmp/plru.dot | feh -
+```
+
+Or, if `dot` or `feh` are not installed in the host system, convert the dot file into a PNG image inside the container:
+
+```
+dot -Tpng tmp/plru.dot -o tmp/plru.png
+```
+
+And open it with any tool of your choice.
+
+Feel free to modify the associativty or the policy under learning. All the learned policies from a simulator are available at `models/simul/`.
+
+### Test 2 - Synthesize exaplanation for LRU
+
+First of all we need to convert the automata model into a Sketch file, for this we run:
+
+```
+$ bash scripts/dot_to_constraints.sh models/simul/lru_4.dot 4 | tee tmp/lru4.sk
+```
+
+Compare (e.g. via `diff`) the resulting file with `~/polca/scripts/sketch/lru4.sk`, and run:
+
+```
+$ cd scripts/sketch/
+$ sketch lru4.sk | tee ../../tmp/lru.out
+```
+
+The resulting file is an explanation for the LRU policy.
+
+Directory `scripts/sketch/` contains all the Sketch files with the corresponding automata constraints; `scripts/sketch/output/` contains all the explanations/solutions (as `*.out` files) and a manually cleaned version of them (as `*.clean` files).
+
+
+
+
 ## Hardware Examples
 
 | CPU | Level | Ways | States | Description | Link to model | Prefix | HW mem queries | HW eq queries |
