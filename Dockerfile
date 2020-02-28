@@ -26,7 +26,7 @@ USER user
 RUN wget 'http://people.csail.mit.edu/asolar/sketch-1.7.5.tar.gz'
 RUN tar xvfz sketch-1.7.5.tar.gz
 WORKDIR sketch-1.7.5/sketch-backend/
-RUN chmod +x configure && bash autogen.sh && ./configure && make -j
+RUN chmod +x configure && bash autogen.sh && ./configure && make
 ENV PATH="/home/user/sketch-1.7.5/sketch-frontend:${PATH}"
 
 # install polca
