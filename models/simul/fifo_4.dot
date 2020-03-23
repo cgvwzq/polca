@@ -1,9 +1,9 @@
 digraph g {
 
-	s0 [shape="circle" label="s0"];
-	s1 [shape="circle" label="s1"];
-	s2 [shape="circle" label="s2"];
-	s3 [shape="circle" label="s3"];
+	s0 [shape="circle" label="0"];
+	s1 [shape="circle" label="1"];
+	s2 [shape="circle" label="2"];
+	s3 [shape="circle" label="3"];
 	s0 -> s0 [label="h(0) / _"];
 	s0 -> s0 [label="h(1) / _"];
 	s0 -> s0 [label="h(2) / _"];
