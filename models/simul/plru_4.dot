@@ -1,13 +1,13 @@
 digraph g {
 
-	s0 [shape="circle" label="s0"];
-	s1 [shape="circle" label="s1"];
-	s2 [shape="circle" label="s2"];
-	s3 [shape="circle" label="s3"];
-	s4 [shape="circle" label="s4"];
-	s5 [shape="circle" label="s5"];
-	s6 [shape="circle" label="s6"];
-	s7 [shape="circle" label="s7"];
+	s0 [shape="circle" label="0"];
+	s1 [shape="circle" label="1"];
+	s2 [shape="circle" label="2"];
+	s3 [shape="circle" label="3"];
+	s4 [shape="circle" label="4"];
+	s5 [shape="circle" label="5"];
+	s6 [shape="circle" label="6"];
+	s7 [shape="circle" label="7"];
 	s0 -> s1 [label="h(0) / _"];
 	s0 -> s6 [label="h(1) / _"];
 	s0 -> s5 [label="h(2) / _"];
