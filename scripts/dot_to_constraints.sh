@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 
-# Use:
-#
+if [[ $# -lt 1 ]]; then
+	echo "[!] use: $0 <file> [assoc] [template]"
+	exit 1
+fi
 
 file=$1
 assoc=${2:-4}
