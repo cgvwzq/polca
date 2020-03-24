@@ -56,7 +56,7 @@ Example for learning LRU assoc=4 from simulator:
 
 Example for learning L1 in Haswell machine:
 
-`./polca.sh -w 8 -p hw -b "ssh -t pepe@haswell ~/cachequery/cachequery.py -c ~/cachequery/cachequery.ini -i -l l1" -prefix "@ @" -verbose`
+`./polca.sh -w 8 -p hw -b \\\"ssh -t pepe@haswell ~/cachequery/cachequery.py -c ~/cachequery/cachequery.ini -i -l l1\\\" -prefix \\\"@ @\\\" -verbose`
 
 ## Docker
 
