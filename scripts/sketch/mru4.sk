@@ -1,4 +1,4 @@
-pragma options "--be:nosim --beopt:simplifycex NOSIM --bnd-inbits 1 --bnd-cbits 1 --bnd-unroll-amnt 4 --bnd-inline-amnt 1 --slv-seed 1337";
+pragma options "--be:nosim --beopt:simplifycex NOSIM --bnd-inbits 2 --bnd-cbits 2 --bnd-angelicbits 2 --bnd-unroll-amnt 1 --bnd-inline-amnt 2 --slv-seed 1337";
 int ASSOC = 4;
 include "templates/extra.sk";
 harness void main() {
@@ -25,13 +25,13 @@ harness void main() {
 	assert missState(s3) == s2;
 	assert missState(s4) == s11;
 	assert missState(s5) == s6;
-	assert missState(s6) == s8;
-	assert missState(s7) == s8;
-	assert missState(s8) == s0;
+	assert missState(s6) == s7;
+	assert missState(s7) == s0;
+	assert missState(s8) == s7;
 	assert missState(s9) == s4;
 	assert missState(s10) == s13;
 	assert missState(s11) == s12;
-	assert missState(s12) == s8;
+	assert missState(s12) == s7;
 	assert missState(s13) == s12;
 
 	// miss index
@@ -42,8 +42,8 @@ harness void main() {
 	assert missIdx(s4) == 1;
 	assert missIdx(s5) == 0;
 	assert missIdx(s6) == 1;
-	assert missIdx(s7) == 0;
-	assert missIdx(s8) == 3;
+	assert missIdx(s7) == 3;
+	assert missIdx(s8) == 0;
 	assert missIdx(s9) == 0;
 	assert missIdx(s10) == 0;
 	assert missIdx(s11) == 0;
@@ -72,21 +72,21 @@ harness void main() {
 	assert hitState(s4, 2) == s4;
 	assert hitState(s4, 3) == s4;
 	assert hitState(s5, 0) == s6;
-	assert hitState(s5, 1) == s7;
+	assert hitState(s5, 1) == s8;
 	assert hitState(s5, 2) == s5;
 	assert hitState(s5, 3) == s9;
 	assert hitState(s6, 0) == s6;
-	assert hitState(s6, 1) == s8;
+	assert hitState(s6, 1) == s7;
 	assert hitState(s6, 2) == s6;
 	assert hitState(s6, 3) == s4;
-	assert hitState(s7, 0) == s8;
+	assert hitState(s7, 0) == s7;
 	assert hitState(s7, 1) == s7;
 	assert hitState(s7, 2) == s7;
-	assert hitState(s7, 3) == s10;
-	assert hitState(s8, 0) == s8;
+	assert hitState(s7, 3) == s0;
+	assert hitState(s8, 0) == s7;
 	assert hitState(s8, 1) == s8;
 	assert hitState(s8, 2) == s8;
-	assert hitState(s8, 3) == s0;
+	assert hitState(s8, 3) == s10;
 	assert hitState(s9, 0) == s4;
 	assert hitState(s9, 1) == s10;
 	assert hitState(s9, 2) == s9;
@@ -97,11 +97,11 @@ harness void main() {
 	assert hitState(s10, 3) == s10;
 	assert hitState(s11, 0) == s12;
 	assert hitState(s11, 1) == s11;
-	assert hitState(s11, 2) == s7;
+	assert hitState(s11, 2) == s8;
 	assert hitState(s11, 3) == s3;
 	assert hitState(s12, 0) == s12;
 	assert hitState(s12, 1) == s12;
-	assert hitState(s12, 2) == s8;
+	assert hitState(s12, 2) == s7;
 	assert hitState(s12, 3) == s2;
 	assert hitState(s13, 0) == s13;
 	assert hitState(s13, 1) == s12;
