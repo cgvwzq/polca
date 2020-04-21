@@ -1,4 +1,5 @@
 # Polca
+[![DOI](https://zenodo.org/badge/227148348.svg)](https://zenodo.org/badge/latestdoi/227148348)
 
 Use LearnLib to learn automata models for cache replacement policies.
 
